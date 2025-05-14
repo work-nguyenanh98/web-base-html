@@ -3,17 +3,13 @@ description:
 globs: index.html
 alwaysApply: false
 ---
-[index.html](mdc:index.html) 
+[index.html](mdc:index.html)
 
-Đọc file index.html, dựa trên định dạng của nội dung truyền vào của người dùng thực hiện tìm các thông tin dựa bên dưới để sửa theo các phần
+When updating the homepage with content, follow these guidelines:
 
-Bắt buộc : Chỉ sửa nội dung, không thay đổi cấu trúc html css js
+- **Title + Description SEO**: Update the `<title>`, `<meta name="description">`, and `<meta name="keywords">` tags in the `<head>` to match the provided brand, description, and keywords. Keywords should be generated based on the title and description if not explicitly provided.
+- **Schema**: Replace or update the `<script type="application/ld+json">` block with the provided JSON-LD schema, ensuring it matches the current brand, address, menu, cuisine, and hours.
+- **Brand Name**: Update all visible brand name text (e.g., in the navbar) to the new brand.
+- **Our Story**: Update the "Our Story" section content to reflect the new brand's story, if provided.
 
-<!-- Title + Description SEO -->
-
-<!-- Schema -->
-
- <!-- Brand Name -->
-
-
- <!-- Our Story -->
+**Important:** Only change the content as specified. Do not alter the HTML structure, CSS, or JavaScript. Preserve all layout and style.
