@@ -1,0 +1,48 @@
+User-Agent: PetalBot
+Disallow: /
+
+User-Agent: SentiBot
+Disallow: /
+
+User-Agent: magpie-crawler
+Disallow: /
+
+User-Agent: Bytespider
+Disallow: /
+
+User-Agent: psbot
+Disallow: /
+
+User-Agent: TurnitinBot
+Disallow: /
+
+User-Agent: NPBot-1/2.0
+Disallow: /
+
+User-agent: NPBot
+Disallow: /
+
+User-Agent: ClaudeBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-Agent: *
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /ads.txt
+
+User-agent: AdX-Bot
+Allow: /ads.txt
+
+User-agent: Google-Ad-Manager
+Allow: /ads.txt
+
+
+# Chỉ định sitemap
+Sitemap: https://out-and-about-burgers.site/sitemap.xml

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" style="--color: #324f9b">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <title>Out and About Burgers Menus & Prices</title>
+    <meta name="description"
+        content="Browse the Out and About Burgers menu featuring freshly grilled burgers, Cagney sauce, sweet potato fries, grilled cheese, shakes, and local drive-thru favorites.">
+    <meta name="keywords"
+        content="Out and About Burgers, burger food truck, fresh burgers, Cagney sauce, sweet potato fries, milkshakes, local burger joint">
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://out-and-about-burgers.site/menu">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="theme-color" content="#324f9b">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Mobile optimization -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Out and About Burgers Menu – Fresh Burgers, Fries & Shakes">
+    <meta property="og:description"
+        content="Browse the Out and About Burgers menu featuring freshly grilled burgers, Cagney sauce, sweet potato fries, grilled cheese, shakes, and local drive-thru favorites.">
+    <meta property="og:url" content="https://out-and-about-burgers.site/menu">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://out-and-about-burgers.site/assets/img/burger-menu.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Out and About Burgers">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Out and About Burgers Menu – Fresh Burgers, Fries & Shakes">
+    <meta name="twitter:description"
+        content="Browse the Out and About Burgers menu featuring freshly grilled burgers, Cagney sauce, sweet potato fries, grilled cheese, shakes, and local drive-thru favorites.">
+    <meta name="twitter:image" content="https://out-and-about-burgers.site/assets/img/burger-menu.jpg">
+
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png">
+
+    <!-- Menu Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Out and About Burgers",
+      "url": "https://out-and-about-burgers.site/menu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "Local City",
+        "addressRegion": "MI",
+        "postalCode": "49855",
+        "addressCountry": "US"
+      },
+      "telephone": "+19061234567",
+      "servesCuisine": ["Burgers", "American", "Fast Food"],
+      "priceRange": "$5-10",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Out and About Burgers Menu",
+        "description": "Fresh burgers, fries, and milkshakes made to order",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Burgers",
+            "description": "Freshly grilled burgers with our signature Cagney sauce",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Double Cheeseburger",
+                "description": "Two fresh beef patties with melty cheese, lettuce, tomato, and our signature Cagney sauce",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "6.00",
+                  "priceCurrency": "USD"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Triple Cheeseburger",
+                "description": "Three beef patties with cheese and all the fixings",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "7.00",
+                  "priceCurrency": "USD"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Cheeseburger",
+                "description": "Classic single patty cheeseburger with fresh toppings",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "5.00",
+                  "priceCurrency": "USD"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Sides",
+            "description": "Perfect companions for your burger",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Regular Fries",
+                "description": "Crispy, golden french fries",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "3.95",
+                  "priceCurrency": "USD"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Sweet Potato Fries",
+                "description": "Sweet and savory fries",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "4.95",
+                  "priceCurrency": "USD"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Onion Rings",
+                "description": "Crispy battered onion rings",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "3.95",
+                  "priceCurrency": "USD"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Drinks & Shakes",
+            "description": "Beverages and milkshakes",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Milkshake",
+                "description": "Hand-spun milkshakes in various flavors",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "5.00",
+                  "priceCurrency": "USD"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Soft Drinks",
+                "description": "Various soft drink options",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "2.50",
+                  "priceCurrency": "USD"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <span class="brand-title">Out and About Burgers</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/menu">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero Section -->
+    <header class="py-5 menu-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Out and About Burgers Menu</h1>
+            <p class="lead mb-4">Fresh burgers, signature Cagney sauce, and handcrafted shakes</p>
+        </div>
+    </header>
+
+    <!-- Featured Menu Items Section -->
+    <section class="py-4">
+        <div class="container">
+            <div class="card border-0 shadow-sm rounded-4 p-3 mb-4 info-card">
+                <div class="text-center mb-3">
+                    <p class="mb-0">For more information or to place an order, please
+                        contact us at: <a href="tel:+19061234567">(906) 123-4567</a></p>
+                </div>
+
+                <div class="p-2 rounded-4 bg-white food-gallery-container">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-6 col-md-3">
+                            <div class="position-relative">
+                                <div class="rounded-circle overflow-hidden food-gallery-item">
+                                        <a href="assets/images/menu/food/food-1.jpg"
+                                            data-fancybox="food-gallery" data-caption="Double Cheeseburger">
+                                        <img src="assets/images/menu/food/food-1.jpg"
+                                            alt="Out and About Burgers signature double cheeseburger with Cagney sauce"
+                                            class="img-fluid w-100 h-100">
+                                    </a>
+                                    <div class="corner-accent"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="position-relative">
+                                <div class="rounded-circle overflow-hidden food-gallery-item">
+                                    <a href="assets/images/menu/food/food-2.jpg"
+                                        data-fancybox="food-gallery" data-caption="Fresh Cut Fries">
+                                        <img src="assets/images/menu/food/food-2.jpg"
+                                            alt="Out and About Burgers crispy fresh cut fries"
+                                            class="img-fluid w-100 h-100">
+                                    </a>
+                                    <div class="corner-accent"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="position-relative">
+                                <div class="rounded-circle overflow-hidden food-gallery-item">
+                                    <a href="assets/images/menu/food/food-3.jpg"
+                                        data-fancybox="food-gallery" data-caption="Onion Rings">
+                                        <img src="assets/images/menu/food/food-3.jpg"
+                                            alt="Out and About Burgers crispy onion rings"
+                                            class="img-fluid w-100 h-100">
+                                    </a>
+                                    <div class="corner-accent"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="position-relative">
+                                <div class="rounded-circle overflow-hidden food-gallery-item">
+                                    <a href="assets/images/menu/food/food-4.jpg"
+                                        data-fancybox="food-gallery" data-caption="Burger Meal">
+                                        <img src="assets/images/menu/food/food-4.jpg"
+                                            alt="Out and About Burgers complete meal with burger, fries and drink"
+                                            class="img-fluid w-100 h-100">
+                                    </a>
+                                    <div class="corner-accent"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Viewer Section -->
+    <section class="py-4">
+        <div class="container">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-3 menu-viewer-card">
+                <div class="text-center p-4 mb-0 menu-header">
+                    <h2 class="fw-bold">Our Menu</h2>
+                    <p class="mb-0">Explore our iconic thin crust pizzas and UP Michigan specialties</p>
+                </div>
+
+                <!-- Main Menu Display -->
+                <div class="menu-display p-0">
+                    <div class="position-relative overflow-hidden shadow-sm menu-image-container">
+                        <!-- Large menu image with Fancybox -->
+                        <a href="#" id="mainMenuLink" class="d-block menu-main-image">
+                            <img src="#" id="mainMenuImage" class="img-fluid w-100" alt="Congress Pizza full menu board">
+                        </a>
+                        <!-- Navigation arrows directly on main image -->
+                        <div class="gallery-navigation">
+                            <button class="gallery-nav-btn prev-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="gallery-nav-btn next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Fancybox Gallery Links -->
+                <div id="gallery-links-container" style="display: none;">
+                    <!-- Gallery links will be generated dynamically based on the number of images -->
+                </div>
+
+                <!-- Thumbnails Gallery -->
+                <div class="menu-thumbnails-wrapper">
+                    <div class="menu-thumbnails-container">
+                        <!-- Thumbnails will be dynamically generated here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories Section -->
+    <section class="py-2 menu-categories">
+        <div class="container">
+            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                <div class="card-body p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4">Discover the Bold Flavors of Out and About Burgers
+                    </h3>
+                    <ul class="menu-items">
+                        <li class="menu-intro">
+                            At Out and About Burgers, we believe in doing things the classic way—with fresh-off-the-grill flavor, signature Cagney Sauce, and unbeatable local charm. Whether you're craving a stacked cheeseburger, crispy fries, or a hand-spun milkshake, our menu has something for everyone.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                <div class="card-body p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4">Burgers – Grilled Fresh, Stacked Right</h3>
+                    <p class="menu-section-intro">Every burger is served with lettuce, tomato, grilled onions, and our famous Cagney Sauce (unless noted). Choose your level of indulgence:</p>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">BMC (Plain Double)</span>
+                                <span class="item-price">$5.65</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cheeseburger</span>
+                                <span class="item-price">$5.00</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Double Cheeseburger</span>
+                                <span class="item-price">$6.00</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Triple Cheeseburger</span>
+                                <span class="item-price">$7.00</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Hamburger</span>
+                                <span class="item-price">$4.20</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Double Hamburger</span>
+                                <span class="item-price">$5.20</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Triple Hamburger</span>
+                                <span class="item-price">$6.20</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Add Bacon</span>
+                                <span class="item-price">$1.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="menu-section-intro mt-3">Whether you're a purist or piling it high, our burgers hit the spot every time.</p>
+                </div>
+            </article>
+
+            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                <div class="card-body p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4">Grilled Cheese – Comfort Food, Upgraded</h3>
+                    <p class="menu-section-intro">Crispy golden, and melty to perfection</p>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Deluxe Grilled Cheese (with Cagney Sauce)</span>
+                                <span class="item-price">$3.50</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Plain Grilled Cheese</span>
+                                <span class="item-price">$2.50</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Add Bacon</span>
+                                <span class="item-price">$1.75</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="menu-section-intro mt-3">Perfect for kids, cheese lovers, or anyone craving simplicity done right.</p>
+                </div>
+            </article>
+            
+            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                <div class="card-body p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4">Sides – Crispy, Golden, and Seriously Good</h3>
+                    <p class="menu-section-intro">No burger is complete without the perfect side. Choose from:</p>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Regular Fries</span>
+                                <span class="item-price">$3.95</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Sweet Potato Fries</span>
+                                <span class="item-price">$4.95</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Onion Rings</span>
+                                <span class="item-price">$3.95</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Add "Cagney's Way"</span>
+                                <span class="item-price">$1.75</span>
+                            </div>
+                            <div class="item-description">(Adds sauce + seasoning for extra punch!)</div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                <div class="card-body p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4">Drinks – Cool Down Your Cravings</h3>
+                    <p class="menu-section-intro">Pick your size and flavor:</p>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Large (24 oz)</span>
+                                <span class="item-price">$2.50</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Small (16 oz)</span>
+                                <span class="item-price">$1.75</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="menu-section-intro mt-3">Flavors: Pepsi, Diet Pepsi, Starry, Sweet Tea, Unsweet Tea, Lemonade, Root Beer, Dr. Pepper, Diet Dr. Pepper, Mountain Dew, and our house-made Cagney's Cooler.</p>
+                </div>
+            </article>
+
+            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                <div class="card-body p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4">Milkshakes & Malts – Classic, Creamy, and Cold</h3>
+                    <p class="menu-section-intro">End on a sweet note with hand-spun shakes:</p>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Milkshake (20 oz)</span>
+                                <span class="item-price">$5.00</span>
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Malt (20 oz)</span>
+                                <span class="item-price">$6.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="menu-section-intro mt-3">Flavors: Chocolate, Vanilla, Orange Creamsicle, Strawberry, Black Raspberry</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pb-2">
+        <div class="container">
+            <hr>
+            <div class="footer-suggest-edit">
+                <div class="edit-title" onclick="window.location.href='suggestion'">
+                    <i class="bi bi-pencil-square"></i>
+                    Suggest an Edit
+                </div>
+                <div class="edit-desc">
+                    This is not the official website. Content is updated by the community.
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top button -->
+        <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});" aria-label="Scroll to top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>
