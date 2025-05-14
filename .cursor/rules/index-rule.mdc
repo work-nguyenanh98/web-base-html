@@ -1,0 +1,19 @@
+---
+description: 
+globs: index.html
+alwaysApply: false
+---
+[index.html](mdc:index.html) 
+
+Đọc file index.html, dựa trên định dạng của nội dung truyền vào của người dùng thực hiện tìm các thông tin dựa bên dưới để sửa theo các phần
+
+Bắt buộc : Chỉ sửa nội dung, không thay đổi cấu trúc html css js
+
+<!-- Title + Description SEO -->
+
+<!-- Schema -->
+
+ <!-- Brand Name -->
+
+
+ <!-- Our Story -->
