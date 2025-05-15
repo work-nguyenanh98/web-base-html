@@ -1,5 +1,5 @@
 ---
 description: 
-globs: index
+globs: reviews.html
 alwaysApply: false
 ---
