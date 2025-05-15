@@ -1,22 +1,58 @@
 ---
 description: 
-globs: index
+globs: index.html
 alwaysApply: false
 ---
-[index.html](mdc:index.html)
+# HOMEPAGE CONTENT UPDATE GUIDELINES
 
-When updating the homepage with content, follow these guidelines:
+## SEO ELEMENTS
+- Update `<title>`, `<meta name="description">`, and `<meta name="keywords">` tags in the `<head>` section
+- Generate keywords based on title and description if not explicitly provided
 
-- **Title + Description SEO**: Update the `<title>`, `<meta name="description">`, and `<meta name="keywords">` tags in the `<head>` to match the provided brand, description, and keywords. Keywords should be generated based on the title and description if not explicitly provided.
-- **Link web **: Update all link website
-- **Schema**: Replace or update the `<script type="application/ld+json">` block with the provided JSON-LD schema, ensuring it matches the current brand, address, menu, cuisine, and hours.
-- **Brand Name**: Update all visible brand name text (e.g., in the navbar) to the new brand.
-- **Our Story**: Update the "Our Story" section content to reflect the new brand's story, if provided.
-- **Highlights at Our Restaurant **: Update the Highlights at Our Restaurant content.
-- **Featured Menu**: Update the Featured Menu, keep image link, change title , description , price if provided.
-- **Contact and locations**: Update the Contact and locations. If there is 1 branch, remove the extra tab. If there are many branches, add the same code yourself.
-Map the correct fields (if any): Name, Price, Link Map, Link Embed Map, Address, Phone number, Email, Link Social, Opening Hours to the correct branches.
-If there are many branches but only 1 Opening hours data, fill in the data of the branch that has it into the branches that do not have it. 
-- **Order Online Section**: Keep title, automatically generate description.Based on branch, fill links in correct format.Link to a tag and title
+## IMAGE OPTIMIZATION
+- Check all `<img>` tags for missing or generic alt text
+- Update all image alt attributes to be descriptive and match the SEO title
+- Format: Change generic alt text to relevant descriptions based on page title/content
 
-**Important:** Only change the content as specified. Do not alter the HTML structure, CSS, or JavaScript. Preserve all layout and style.
+## WEBSITE LINKS
+- Update all website links throughout the page
+
+## SCHEMA DATA
+- Replace or update the `<script type="application/ld+json">` block with provided JSON-LD schema
+- Ensure schema matches current brand, address, menu, cuisine, and business hours
+
+## BRANDING
+- Update all visible brand name instances (navbar, footer, etc.) to the new brand
+
+## CONTENT SECTIONS
+1. **Our Story**
+   - Update "Our Story" section content to reflect the new brand narrative if provided
+
+2. **Restaurant Highlights**
+   - Update the "Highlights at Our Restaurant" content
+
+3. **Featured Menu**
+   - Update menu item details (title, description, price) if provided
+   - KEEP all image links unchanged
+
+4. **Contact and Locations**
+   - Update contact information and location details
+   - Branch management:
+     * If only 1 branch: Remove any extra tabs
+     * If multiple branches: Replicate the code structure for each branch
+   - Map correct fields to each branch:
+     * Name, Price, Link Map, Link Embed Map, Address
+     * Phone number, Email, Social links, Opening Hours
+   - If multiple branches but only 1 set of Opening Hours data:
+     * Copy this data to all branches missing Opening Hours
+
+5. **Order Online Section**
+   - Keep section title
+   - Automatically generate description
+   - Format links correctly based on branch information
+   - Link to appropriate tags and titles
+
+## CRITICAL REQUIREMENTS
+- Only change content as specified in these guidelines
+- DO NOT alter HTML structure, CSS, or JavaScript
+- Preserve all layout and style elements

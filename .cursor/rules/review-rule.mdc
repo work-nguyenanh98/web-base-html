@@ -3,3 +3,24 @@ description:
 globs: reviews.html
 alwaysApply: false
 ---
+Edit [reviews.html](mdc:reviews.html) only.
+
+When replace reviews, follow these guidelines:
+
+1. CONTENT HANDLING:
+   - If review content is missing: Automatically add according to the defined HTML structure
+   - If review content is redundant: Automatically remove redundant HTML
+   - Maintain existing HTML, CSS, and JavaScript structure
+
+2. IMAGES:
+   - New image links will be: /assets/images/reviews/review-{next order number}.png
+   - DO NOT change image links when only replace data
+
+3. DATA FORMATTING:
+   - Name: <span class="fw-bold">{name}</span>
+   - Review content: <p class="mb-0">{content}</p>
+
+IMPORTANT NOTE: 
+- Only change content as specifically requested
+- Preserve HTML structure, CSS, and JavaScript
+- Maintain the layout and style of the page
