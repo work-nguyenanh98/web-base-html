@@ -6,48 +6,69 @@ alwaysApply: false
 # HOMEPAGE CONTENT UPDATE GUIDELINES
 
 ## SEO ELEMENTS
+
 - Update `<title>`, `<meta name="description">`, and `<meta name="keywords">` tags in the `<head>` section
 - Generate keywords based on title and description if not explicitly provided
 
 ## WEBSITE LINKS
-- Update all website links throughout the page
+
+- Update all website links throughout the page ,get `Link web` in [common.md](mdc:web-base-html/common.md)
 
 ## BRANDING
+
 - Update all visible brand name instances (navbar, footer, etc.) to the new brand
 
 ## CONTENT SECTIONS
+
 1. **Contact and Locations**
+
    - Update contact information and location details
    - Branch management:
-     * If only 1 branch: Remove any extra tabs
-     * If multiple branches: Replicate the code structure for each branch
+     - If only 1 branch: Remove any extra tabs
+     - If multiple branches: Replicate the code structure for each branch
    - Map correct fields to each branch:
-     * Name, Price, Link Map, Link Embed Map, Address
-     * Phone number, Email, Social links, Opening Hours
+     - Name, Price, Link Map, Link Embed Map, Address
+     - Phone number, Email, Social links, Opening Hours
 
-2.  **Opening Hours***
-   - If multiple branches but only 1 set of Opening Hours data:
-     * Copy this data to all branches missing Opening Hours
+2. **Opening Hours**
 
-3. **Note Section***
-    - Auto generate a 4-5 line note.
+- Update opening hours as current HTML
+  - If multiple branches, set first branch is main.
+
+3. **Note Section**
+
+   - Auto generate a 4-5 line note.
 
 4. **Frequently Asked Questions**
-    - Auto generate a 4-5 line Frequently Asked Questions.
+
+   - Auto generate a 4-5 line Frequently Asked Questions.
 
 5. **Order Online Section**
+
    - Keep section title
    - Automatically generate description
    - Format links correctly based on branch information
    - Link to appropriate tags and titles
 
-6.  **General Contact Information** 
-   - Auto fill contact phone, mail ... , if provide.
+6. **General Contact Information**
 
-7. **Social link***
- - Auto map socical link if provided
+- Auto fill mail in left column, right column have info (Address, phone , Sumary onpening hours) ... only main branch, if provided.
+
+7. **Social link**
+
+- Auto map socical link if provided
+
+8. **Map location data**
+   - Auto map data map to fill (link map to mapUrl , link embed to mapsLink , address to address).
 
 ## CRITICAL REQUIREMENTS
-- Only change content as specified in these guidelines
-- DO NOT alter HTML structure, CSS, or JavaScript
-- Preserve all layout and style elements
+
+- Only change content as specified in these guidelines.
+
+- HTML elements without any content that are used solely for mapping purposes can be removed, but do NOT alter the HTML structure.
+
+- Do NOT alter the HTML structure, CSS, or JavaScript.
+
+- Preserve all layout and style elements.
+
+- Do NOT modify or remove existing `<!-- -->` comments, as they are markers indicating where changes should be made.
