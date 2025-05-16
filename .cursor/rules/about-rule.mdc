@@ -8,10 +8,8 @@ alwaysApply: false
 When updating the About page, follow these guidelines:
 
 - **Title + Description SEO**: Update the `<title>`, `<meta name="description">`, and `<meta name="keywords">` tags in the `<head>` to match the provided brand, about description, and keywords. Keywords should be generated based on the title and description if not explicitly provided.
-- **Schema**: Replace or update the `<script type="application/ld+json">` block with the provided JSON-LD schema, ensuring it matches the current brand, about story, and restaurant details.
+
 - **Brand Name**: Update all visible brand name text (e.g., in the navbar, hero, and section headings) to the new brand.
 - **About Story Sections**: Update the content in the main sections (e.g., "The Story Behind", "Our Food", "Our Space", "Our Promise") to reflect the new brand's story, food, and values, if provided.
-- **Hero Slider**: Update the hero image slider with new images and captions if provided, ensuring the Swiper structure is preserved.
-- **Footer**: Update the footer's "Suggest an Edit" and disclaimer text if needed, but preserve the structure and community-editable notice.
 
 **Important:** Only change the content as specified. Do not alter the HTML structure, CSS, or JavaScript. Preserve all layout, style, and interactive elements (e.g., Swiper, Fancybox, scroll-to-top button).
