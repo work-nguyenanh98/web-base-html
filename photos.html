@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" style="--color: #324f9b">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-
-    <title>Out and About Burgers Photos – Real Food, Real Moments</title>
-
+    <title>Birria Barrio Photos – Real Dining Moments in San Antonio</title>
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="View photos of Out and About Burgers—from its iconic trailer setup and loyal drive-thru lines to happy customers enjoying fresh burgers, fries, and shakes." />
-    <meta name="keywords"
-        content="Out and About Burgers photos, burger food truck gallery, fresh burgers photos, Cagney sauce, burger trailer" />
+    <meta name="description" content="Browse Birria Barrio photos and see why San Antonio locals love this spot. From tacos to school bus dining, these images tell a story of bold flavor and fun." />
+    <meta name="keywords" content="Birria Barrio photos, birria tacos, San Antonio food, quesabirria, school bus dining, food truck" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
@@ -19,101 +14,101 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <style>
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 2rem;
-        }
+      .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 2rem;
+      }
 
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
 
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-        }
+      .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      }
 
-        .gallery-item img {
-            border-radius: 12px;
-            object-fit: cover;
-            height: 250px;
-            width: 100%;
-            transition: transform 0.5s;
-        }
+      .gallery-item img {
+        border-radius: 12px;
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+        transition: transform 0.5s;
+      }
 
-        .gallery-item:hover img {
-            transform: scale(1.03);
-        }
+      .gallery-item:hover img {
+        transform: scale(1.03);
+      }
 
-        .gallery-item-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-            padding: 20px 15px;
-            color: white;
-            border-radius: 0 0 12px 12px;
-        }
+      .gallery-item-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        padding: 20px 15px;
+        color: white;
+        border-radius: 0 0 12px 12px;
+      }
 
-        .gallery-item-content h5 {
-            margin-bottom: 2px;
-            font-weight: 600;
-        }
+      .gallery-item-content h5 {
+        margin-bottom: 2px;
+        font-weight: 600;
+      }
 
-        .gallery-item-content p {
-            opacity: 0.9;
-            margin-bottom: 0;
-        }
+      .gallery-item-content p {
+        opacity: 0.9;
+        margin-bottom: 0;
+      }
 
-        #load-more {
-            padding: 10px 30px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            border-radius: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+      #load-more {
+        padding: 10px 30px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 30px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
 
-        .filter-options {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
+      .filter-options {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
 
-        .btn-filter {
-            background: #f1f1f1;
-            color: #666;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.2s;
-        }
+      .btn-filter {
+        background: #f1f1f1;
+        color: #666;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.2s;
+      }
 
-        .btn-filter.active,
-        .btn-filter:hover {
-            background: var(--primary-color);
-            color: white;
-        }
+      .btn-filter.active,
+      .btn-filter:hover {
+        background: var(--primary-color);
+        color: white;
+      }
     </style>
 
-    <link rel="canonical" href="https://out-and-about-burgers.site/photos" />
+    <link rel="canonical" href="https://birria-barrio.site/photos" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
     <meta name="format-detection" content="telephone=yes" />
     <meta name="theme-color" content="#324f9b" />
 
     <!-- <meta name="robots" content="index, follow"> -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
 
     <!-- Mobile optimization -->
     <meta name="HandheldFriendly" content="True" />
@@ -121,23 +116,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Out and About Burgers Photos – Real Food, Real Moments" />
-    <meta property="og:description"
-        content="View photos of Out and About Burgers—from its iconic trailer setup and loyal drive-thru lines to happy customers enjoying fresh burgers, fries, and shakes." />
-    <meta property="og:url" content="https://out-and-about-burgers.site/photos" />
+    <meta property="og:title" content="Birria Barrio Photos – Real Dining Moments in San Antonio" />
+    <meta
+      property="og:description"
+      content="Browse Birria Barrio photos and see why San Antonio locals love this spot. From tacos to school bus dining, these images tell a story of bold flavor and fun."
+    />
+    <meta property="og:url" content="https://birria-barrio.site/photos" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="https://out-and-about-burgers.site/assets/img/burger-trailer.jpg" />
+    <meta property="og:image" content="https://birria-barrio.site/assets/img/birria-tacos.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Out and About Burgers" />
+    <meta property="og:site_name" content="Birria Barrio" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Out and About Burgers Photos – Real Food, Real Moments" />
-    <meta name="twitter:description"
-        content="View photos of Out and About Burgers—from its iconic trailer setup and loyal drive-thru lines to happy customers enjoying fresh burgers, fries, and shakes." />
-    <meta name="twitter:image" content="https://out-and-about-burgers.site/assets/img/burger-trailer.jpg" />
+    <meta name="twitter:title" content="Birria Barrio Photos – Real Dining Moments in San Antonio" />
+    <meta
+      name="twitter:description"
+      content="Browse Birria Barrio photos and see why San Antonio locals love this spot. From tacos to school bus dining, these images tell a story of bold flavor and fun."
+    />
+    <meta name="twitter:image" content="https://birria-barrio.site/assets/img/birria-tacos.jpg" />
 
     <!-- Apple touch icon -->
     <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png" />
@@ -145,278 +144,209 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png" />
 
-
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://out-and-about-burgers.site/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Photo Gallery",
-            "item": "https://out-and-about-burgers.site/photos"
-          }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://birria-barrio.site/" },
+          { "@type": "ListItem", "position": 2, "name": "Photo Gallery", "item": "https://birria-barrio.site/photos" }
         ]
       }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05)">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <span
-                    style="font-weight: 800; color: var(--primary-color); font-family: var(--font-title); text-transform: uppercase; font-size: 34px">Out
-                    and About Burgers</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/menu">MENU</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/photos">PHOTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <span style="font-weight: 800; color: var(--primary-color); font-family: var(--font-title); text-transform: uppercase; font-size: 34px">Birria Barrio</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="/menu">MENU</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/photos">PHOTOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Gallery Hero Section -->
     <section class="py-5" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%)">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold" style="font-family: var(--font-title); color: var(--primary-color)">
-                Out and About Burgers Photos</h1>
-            <h3 class="lead mb-4">Real Food, Real Moments from Our Burger Trailer</h3>
-        </div>
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold" style="font-family: var(--font-title); color: var(--primary-color)">Birria Barrio Photos</h1>
+        <h3 class="lead mb-4">Photo Highlights of Birria Barrio's Flavor and Culture</h3>
+      </div>
     </section>
 
     <!-- Gallery Grid -->
     <section class="py-5 bg-light">
-        <div class="container">
-            <div class="gallery-container">
-                <!-- Restaurant Space -->
-                <div class="gallery-item restaurant">
-                    <a href="assets/images/gallery/gallery-1.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Trailer - Our food truck setup where all the magic happens">
-                        <img src="assets/images/gallery/gallery-1.jpg" class="img-fluid"
-                            alt="Out and About Burgers Trailer - Drive-thru food truck where fresh burgers are made to order" />
-                    </a>
-                </div>
+      <div class="container">
+        <div class="gallery-container">
+          <!-- Restaurant Space -->
+          <div class="gallery-item restaurant">
+            <a href="assets/images/gallery/gallery-1.jpg" data-fancybox="gallery" data-caption="Birria Barrio Setup - Our outdoor dining area where all the magic happens">
+              <img src="assets/images/gallery/gallery-1.jpg" class="img-fluid" alt="Birria Barrio Setup - Outdoor dining area where fresh birria is served" />
+            </a>
+          </div>
 
-                <div class="gallery-item restaurant">
-                    <a href="assets/images/gallery/gallery-2.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Drive-Thru - Our convenient order window where customers place their orders">
-                        <img src="assets/images/gallery/gallery-2.jpg" class="img-fluid"
-                            alt="Out and About Burgers Drive-Thru - Order window with friendly staff ready to serve" />
-                    </a>
-                </div>
+          <div class="gallery-item restaurant">
+            <a href="assets/images/gallery/gallery-2.jpg" data-fancybox="gallery" data-caption="Birria Barrio Counter - Our ordering counter where customers place their orders">
+              <img src="assets/images/gallery/gallery-2.jpg" class="img-fluid" alt="Birria Barrio Counter - Ordering area with friendly staff ready to serve" />
+            </a>
+          </div>
 
-                <div class="gallery-item restaurant">
-                    <a href="assets/images/gallery/gallery-3.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Location - Our trailer in its regular spot, convenient for drive-thru customers">
-                        <img src="assets/images/gallery/gallery-3.jpg" class="img-fluid"
-                            alt="Out and About Burgers Location - Food truck situated in a convenient location for customers" />
-                    </a>
-                </div>
+          <div class="gallery-item restaurant">
+            <a href="assets/images/gallery/gallery-3.jpg" data-fancybox="gallery" data-caption="Birria Barrio Location - Our San Antonio spot with the school bus seating area">
+              <img src="assets/images/gallery/gallery-3.jpg" class="img-fluid" alt="Birria Barrio Location - San Antonio location with school bus and outdoor seating" />
+            </a>
+          </div>
 
-                <div class="gallery-item restaurant">
-                    <a href="assets/images/gallery/gallery-4.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Menu Board - Our simple but delicious menu options">
-                        <img src="assets/images/gallery/gallery-4.jpg" class="img-fluid"
-                            alt="Out and About Burgers Menu Board - Simple and delicious options for customers to choose from" />
-                    </a>
-                </div>
+          <div class="gallery-item restaurant">
+            <a href="assets/images/gallery/gallery-4.jpg" data-fancybox="gallery" data-caption="Birria Barrio Menu Board - Our flavorful birria and taco options">
+              <img src="assets/images/gallery/gallery-4.jpg" class="img-fluid" alt="Birria Barrio Menu Board - Diverse menu featuring quesabirria, ramen, and tacos" />
+            </a>
+          </div>
 
-                <!-- Food -->
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-5.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Double Cheeseburger - Our signature double cheeseburger with all the fixings">
-                        <img src="assets/images/gallery/gallery-5.jpg" class="img-fluid"
-                            alt="Out and About Burgers Double Cheeseburger with lettuce, tomato and Cagney sauce" />
-                    </a>
-                </div>
+          <!-- Food -->
+          <div class="gallery-item food">
+            <a href="assets/images/gallery/gallery-5.jpg" data-fancybox="gallery" data-caption="Birria Barrio Quesabirria Tacos - Our signature tacos with melted cheese and tender birria">
+              <img src="assets/images/gallery/gallery-5.jpg" class="img-fluid" alt="Birria Barrio Quesabirria Tacos with cilantro, onion and consommé for dipping" />
+            </a>
+          </div>
 
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-6.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers French Fries - Our crispy, golden fries, perfect with any burger">
-                        <img src="assets/images/gallery/gallery-6.jpg" class="img-fluid"
-                            alt="Out and About Burgers French Fries - Crispy, golden fries" />
-                    </a>
-                </div>
+          <div class="gallery-item food">
+            <a href="assets/images/gallery/gallery-6.jpg" data-fancybox="gallery" data-caption="Birria Barrio Consommé - Our rich, flavorful broth for dipping quesabirria tacos">
+              <img src="assets/images/gallery/gallery-6.jpg" class="img-fluid" alt="Birria Barrio Consommé - Rich, flavorful broth with aromatic spices" />
+            </a>
+          </div>
 
-                <!-- Additional Images -->
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-7.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Triple Cheeseburger - For those with a big appetite">
-                        <img src="assets/images/gallery/gallery-7.jpg" class="img-fluid"
-                            alt="Out and About Burgers Triple Cheeseburger - Three juicy patties with cheese" />
-                    </a>
-                </div>
+          <!-- Additional Images -->
+          <div class="gallery-item food">
+            <a href="assets/images/gallery/gallery-7.jpg" data-fancybox="gallery" data-caption="Birria Barrio Grilled Cheese - Our birria grilled cheese sandwich with consommé for dipping">
+              <img src="assets/images/gallery/gallery-7.jpg" class="img-fluid" alt="Birria Barrio Grilled Cheese - Crispy sandwich filled with birria meat and melted cheese" />
+            </a>
+          </div>
 
-                <div class="gallery-item restaurant">
-                    <a href="assets/images/gallery/gallery-8.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Drive-Thru Line - Happy customers waiting for their orders">
-                        <img src="assets/images/gallery/gallery-8.jpg" class="img-fluid"
-                            alt="Out and About Burgers Drive-Thru Line - Customers lined up for fresh burgers" />
-                    </a>
-                </div>
+          <div class="gallery-item restaurant">
+            <a href="assets/images/gallery/gallery-8.jpg" data-fancybox="gallery" data-caption="Birria Barrio Line - Happy customers waiting for their birria tacos">
+              <img src="assets/images/gallery/gallery-8.jpg" class="img-fluid" alt="Birria Barrio Line - Customers lined up for fresh tacos and birria" />
+            </a>
+          </div>
 
-                <div class="gallery-item restaurant">
-                    <a href="assets/images/gallery/gallery-9.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers - External view of our trailer setup">
-                        <img src="assets/images/gallery/gallery-9.jpg" class="img-fluid"
-                            alt="Out and About Burgers - External view of the trailer and serving area" />
-                    </a>
-                </div>
+          <div class="gallery-item restaurant">
+            <a href="assets/images/gallery/gallery-9.jpg" data-fancybox="gallery" data-caption="Birria Barrio - External view of our school bus dining area">
+              <img src="assets/images/gallery/gallery-9.jpg" class="img-fluid" alt="Birria Barrio - External view of the converted school bus and outdoor seating" />
+            </a>
+          </div>
 
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-10.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Combo Meal - Burger, fries and drink, the perfect combination">
-                        <img src="assets/images/gallery/gallery-10.jpg" class="img-fluid"
-                            alt="Out and About Burgers Combo Meal - Burger, fries and drink ready to enjoy" />
-                    </a>
-                </div>
-
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-11.JPG" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Sweet Potato Fries - A delicious alternative to regular fries">
-                        <img src="assets/images/gallery/gallery-11.JPG" class="img-fluid"
-                            alt="Out and About Burgers Sweet Potato Fries - Crispy and flavorful" />
-                    </a>
-                </div>
-
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-12.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Complete Meal - Our classic burger meal with all the trimmings">
-                        <img src="assets/images/gallery/gallery-12.jpg" class="img-fluid"
-                            alt="Out and About Burgers Complete Meal - Fresh burger with fries and drink" />
-                    </a>
-                </div>
-
-                <div class="gallery-item food">
-                    <a href="assets/images/gallery/gallery-13.jpg" data-fancybox="gallery"
-                        data-caption="Out and About Burgers Onion Rings - Golden, crispy onion rings, a perfect side">
-                        <img src="assets/images/gallery/gallery-13.jpg" class="img-fluid"
-                            alt="Out and About Burgers Onion Rings - Golden, crispy rings for onion lovers" />
-                    </a>
-                </div>
-            </div>
+          <div class="gallery-item food">
+            <a href="assets/images/gallery/gallery-10.jpg" data-fancybox="gallery" data-caption="Birria Barrio Combo Meal - Quesabirria tacos, consommé and drink, the perfect combination">
+              <img src="assets/images/gallery/gallery-10.jpg" class="img-fluid" alt="Birria Barrio Combo Meal - Quesabirria tacos, consommé and drink ready to enjoy" />
+            </a>
+          </div>
+ 
         </div>
+      </div>
     </section>
 
+    <!-- Photos Content Item Section -->
     <main class="">
-        <div class="container">
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color: var(--primary-color)">The Overall Atmosphere of Out and
-                            About Burgers</h2>
-                        <p class="mb-0">
-                            Out and About Burgers offers a distinct dining experience through its minimalist drive-thru
-                            concept. Set up in a small trailer tucked into a parking lot, the space might be modest, but
-                            it draws a steady flow of customers, with cars often lined up waiting for their turn.
-                            Without indoor seating or flashy decorations, the focus remains purely on good food and
-                            genuine service. It's simple, efficient, and unexpectedly charming.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Interior Style and Design</h2>
-                        <p class="mb-0">
-                            There's no traditional interior at Out and About—just a compact kitchen inside the trailer
-                            where everything happens. But within that simplicity lies the essence of its appeal. The
-                            setup is clean and functional, allowing the food to shine as the main attraction. Order at
-                            one window, pick up at the other, and what you get is a hot, fresh, made-to-order burger
-                            without distractions.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color: var(--primary-color)">What Makes Out and About Visually
-                            Unique</h2>
-                        <p class="mb-0">
-                            What makes this place special isn't elaborate decor, but the scene it creates daily. The
-                            image of a trailer surrounded by loyal customers, cars wrapped around the lot, and happy
-                            faces receiving warm paper bags of food—it's authentic and unpretentious. The branding is
-                            clean and confident, with its logo proudly displayed, and the environment feels welcoming in
-                            a no-frills, all-flavor kind of way.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color: var(--primary-color)">The Outdoor Experience</h2>
-                        <p class="mb-0">
-                            The exterior is a reflection of the brand's down-to-earth spirit. A gravel lot, a few
-                            outdoor benches, and a steady stream of drive-thru traffic—that's all it needs. Many
-                            customers choose to eat right in their car, while others take their meal to a nearby spot to
-                            enjoy. It's fast, fresh, and made for people on the move, without sacrificing quality or
-                            comfort.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Real Guests, Real Stories</h2>
-                        <p class="mb-0">
-                            The heart of Out and About Burgers is in the stories told by its customers. Some drive an
-                            hour just to try the double cheeseburger. Others come back week after week with their
-                            family, each visit just as satisfying as the last. There are glowing reviews about the
-                            fries, the milkshakes, and the famous fry sauce. Even on busy days, people wait patiently,
-                            knowing the reward is worth it. These small, personal moments—captured in casual snapshots
-                            and shared smiles—are what give the place its soul.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
+      <div class="container">
+        <section class="mb-5">
+          <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">The Overall Atmosphere of Birria Barrio</h2>
+              <p class="mb-0">
+                At Birria Barrio, the moment you arrive, there's a buzz in the air—lines forming, orders being called out, and the unmistakable scent of seasoned birria drifting through the open
+                space. It's not a polished restaurant—it's better. It's real, local, and packed with energy. Whether you're grabbing a bite late at night or sitting down for dinner with family, the
+                vibe is casual, heartfelt, and deliciously consistent. From weekdays to weekends, guests come back again and again for something simple: food made with love, served hot, and full of
+                flavor.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Interior and Decor Vibe</h2>
+              <p class="mb-0">
+                The dining experience at Birria Barrio is uniquely memorable, not because of chandeliers or polished wood floors, but because of its character. One standout feature? A converted school
+                bus with A/C that doubles as a cozy indoor seating option. Outside, shaded picnic tables invite guests to enjoy their meal al fresco. The vibe feels somewhere between a roadside
+                taqueria and a hidden gem you're glad you stumbled upon. There's music, laughter, and that unmistakable hum of a spot where everyone's too busy enjoying their food to worry about much
+                else.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Signature Visuals and Flavor Highlights</h2>
+              <p class="mb-0">
+                What makes Birria Barrio visually stand out is the sight of tacos dunked into rich consommé, the crispy grilled cheese birsandwiches oozing with cheese, and bowls of birria ramen
+                steaming under the Texas sun. Portions are generous, the meat is tender and juicy, and every plate is vibrant with color from the fiery red salsa to the fresh green cilantro and lime
+                garnishes. For many guests, the visual appeal is just as satisfying as the first bite—and it's no surprise that the quesabirria tacos and grilled cheese are the stars of nearly every
+                photo.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Outdoor Experience</h2>
+              <p class="mb-0">
+                Set in an unpretentious part of San Antonio, the restaurant doesn't rely on a fancy facade. Instead, its charm lies in its authenticity. With ample parking and outdoor tables shaded by
+                tents or the converted bus, guests gather comfortably—even in the Texas heat. The setup is practical, efficient, and surprisingly inviting. Whether you're seated outside or perched in
+                the bus, there's something raw and enjoyable about eating bold, messy, mouthwatering food under open skies.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+            <div class="card-body p-4 p-lg-5">
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Real Guest Stories</h2>
+              <p class="mb-0">
+                Birria Barrio has become a part of people's personal routines and memories. Families visit together, kids giggle as they sit in the school bus, and out-of-towners declare it their
+                must-stop spot. Some come in search of the perfect birria and leave with a new favorite restaurant. Others share memories of sweating through 100-degree heat just to enjoy tacos that
+                were "worth fighting a bear for." Even the humorous chaos of crab leg lines or salsa debates becomes part of the fun. It's the kind of place where a simple taco turns into a story, and
+                where regulars don't just come for food—they come for connection, warmth, and a familiar face at the counter.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="pb-2" style="background: #fff; color: var(--secondary-color)">
-        <div class="container">
-            <hr style="margin-bottom: 1.5rem; color: #eee" />
-            <div class="footer-suggest-edit">
-                <div class="edit-title" onclick="window.location.href='suggestion'">
-                    <i class="bi bi-pencil-square"></i>
-                    Suggest an Edit
-                </div>
-                <div class="edit-desc">This is not the official website. Content is updated by the community.</div>
-            </div>
+      <div class="container">
+        <hr style="margin-bottom: 1.5rem; color: #eee" />
+        <div class="footer-suggest-edit">
+          <div class="edit-title" onclick="window.location.href='suggestion'">
+            <i class="bi bi-pencil-square"></i>
+            Suggest an Edit
+          </div>
+          <div class="edit-desc">This is not the official website. Content is updated by the community.</div>
         </div>
-        <!-- Scroll to top button -->
-        <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="
+      </div>
+      <!-- Scroll to top button -->
+      <button
+        id="scrollTopBtn"
+        onclick="window.scrollTo({top:0,behavior:'smooth'});"
+        style="
           position: fixed;
           bottom: 32px;
           right: 32px;
@@ -432,18 +362,19 @@
           align-items: center;
           justify-content: center;
           font-size: 1.6rem;
-        ">
-            <i class="bi bi-arrow-up-short"></i>
-        </button>
-        <script>
-            // Show/hide scroll top button
-            const scrollBtn = document.getElementById("scrollTopBtn");
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 200) scrollBtn.style.display = "flex";
-                else scrollBtn.style.display = "none";
-            });
-            scrollBtn.style.display = "none";
-        </script>
+        "
+      >
+        <i class="bi bi-arrow-up-short"></i>
+      </button>
+      <script>
+        // Show/hide scroll top button
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 200) scrollBtn.style.display = "flex";
+          else scrollBtn.style.display = "none";
+        });
+        scrollBtn.style.display = "none";
+      </script>
     </footer>
 
     <!-- Bootstrap JS & Icons -->
@@ -453,20 +384,19 @@
     <!-- Fancybox JS -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script>
-        // Fancybox init - simplified configuration
-        Fancybox.bind('[data-fancybox="gallery"]', {
-            // Simple configuration focusing on navigation
-            Images: {
-                zoom: true,
-            },
-            Toolbar: {
-                display: ["counter", "zoom", "slideshow", "fullscreen", "download", "thumbs", "close"],
-            },
-            Thumbs: {
-                autoStart: true,
-            },
-        });
+      // Fancybox init - simplified configuration
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        // Simple configuration focusing on navigation
+        Images: {
+          zoom: true,
+        },
+        Toolbar: {
+          display: ["counter", "zoom", "slideshow", "fullscreen", "download", "thumbs", "close"],
+        },
+        Thumbs: {
+          autoStart: true,
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>

@@ -21,6 +21,8 @@ When updating the About page, follow these guidelines:
 ## IMAGE OPTIMIZATION
 - Check all `<img>` tags for missing or generic alt text
 - Update all image alt attributes to be descriptive and match the SEO title
+- Also update all `data-caption` attributes to match the new branding and content
+- Ensure all `data-caption` text matches the context of the image and the brand
 - Format: Change generic alt text to relevant descriptions based on page title/content
 
 **Important:** Only change the content as specified. Do not alter the HTML structure, CSS, or JavaScript. Preserve all layout, style, and interactive elements (e.g., Swiper, Fancybox, scroll-to-top button).

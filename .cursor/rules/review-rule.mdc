@@ -15,6 +15,7 @@ When replace reviews, follow these guidelines:
 2. IMAGES:
    - New image links will be: /assets/images/reviews/review-{next order number}.png
    - DO NOT change image links when only replace data
+   - Alt tag image using name of review
 
 3. DATA FORMATTING:
    - Name: <span class="fw-bold">{name}</span>
