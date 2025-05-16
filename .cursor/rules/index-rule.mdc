@@ -3,58 +3,278 @@ description:
 globs: index.html
 alwaysApply: false
 ---
-# HOMEPAGE CONTENT UPDATE GUIDELINES
-
-## SEO ELEMENTS
-- Update `<title>`, `<meta name="description">`, and `<meta name="keywords">` tags in the `<head>` section
-- Generate keywords based on title and description if not explicitly provided
-
-## IMAGE OPTIMIZATION
-- Check all `<img>` tags for missing or generic alt text
-- Update all image alt attributes to be descriptive and match the SEO title
-- Also update all `data-caption` attributes to match the new branding and content
-- Ensure all `data-caption` text matches the context of the image and the brand
-- Format: Change generic alt text to relevant descriptions based on page title/content
-
-## WEBSITE LINKS
-- Update all website links throughout the page
-
-## SCHEMA DATA
-- Replace or update the `<script type="application/ld+json">` block with provided JSON-LD schema
-- Ensure schema matches current brand, address, menu, cuisine, and business hours
-
-## BRANDING
-- Update all visible brand name instances (navbar, footer, etc.) to the new brand
-
-## CONTENT SECTIONS
-1. **Our Story**
-   - Update "Our Story" section content to reflect the new brand narrative if provided
-
-2. **Restaurant Highlights**
-   - Update the "Highlights at Our Restaurant" content
-
-3. **Featured Menu**
-   - Update menu item details (title, description, price) if provided
-   - KEEP all image links unchanged
-
-4. **Contact and Locations**
-   - Update contact information and location details
-   - Branch management:
-     * If only 1 branch: Remove any extra tabs
-     * If multiple branches: Replicate the code structure for each branch
-   - Map correct fields to each branch:
-     * Name, Price, Link Map, Link Embed Map, Address
-     * Phone number, Email, Social links, Opening Hours
-   - If multiple branches but only 1 set of Opening Hours data:
-     * Copy this data to all branches missing Opening Hours
-
-5. **Order Online Section**
-   - Keep section title
-   - Automatically generate description
-   - Format links correctly based on branch information
-   - Link to appropriate tags and titles
-
-## CRITICAL REQUIREMENTS
-- Only change content as specified in these guidelines
-- DO NOT alter HTML structure, CSS, or JavaScript
-- Preserve all layout and style elements
+{
+  "rules": [
+    {
+      "name": "title",
+      "from": "{title}",
+      "to": "{{title}}"
+    },
+    {
+      "name": "description",
+      "from": "{description}",
+      "to": "{{description}}"
+    },
+    {
+      "name": "keywords",
+      "from": "{keywords}",
+      "to": "{{keywords}}"
+    },
+    {
+      "name": "canonical",
+      "from": "{canonical}",
+      "to": "{{canonical}}"
+    },
+    {
+      "name": "image",
+      "from": "{image}",
+      "to": "{{image}}"
+    },
+    {
+      "name": "brand_name",
+      "from": "{brand name}",
+      "to": "{{brand_name}}"
+    },
+    {
+      "name": "hero_title",
+      "from": "{text hero title}",
+      "to": "{{hero_title}}"
+    },
+    {
+      "name": "hero_description",
+      "from": "{text hero description}",
+      "to": "{{hero_description}}"
+    },
+    {
+      "name": "our_story",
+      "from": "{our Story}",
+      "to": "{{our_story}}"
+    },
+    {
+      "name": "highlights_title",
+      "from": "{text highlights title}",
+      "to": "{{highlights_title}}"
+    },
+    {
+      "name": "highlight_title_1",
+      "from": "{text highlights title 1}",
+      "to": "{{highlight_title_1}}"
+    },
+    {
+      "name": "highlight_description_1",
+      "from": "{text highlights description 1}",
+      "to": "{{highlight_description_1}}"
+    },
+    {
+      "name": "highlight_title_2",
+      "from": "{text highlights title 2}",
+      "to": "{{highlight_title_2}}"
+    },
+    {
+      "name": "highlight_description_2",
+      "from": "{text highlights description 2}",
+      "to": "{{highlight_description_2}}"
+    },
+    {
+      "name": "highlight_title_3",
+      "from": "{text highlights title 3}",
+      "to": "{{highlight_title_3}}"
+    },
+    {
+      "name": "highlight_description_3",
+      "from": "{text highlights description 3}",
+      "to": "{{highlight_description_3}}"
+    },
+    {
+      "name": "highlight_title_4",
+      "from": "{text highlights title 4}",
+      "to": "{{highlight_title_4}}"
+    },
+    {
+      "name": "highlight_description_4",
+      "from": "{text highlights description 4}",
+      "to": "{{highlight_description_4}}"
+    },
+    {
+      "name": "highlight_title_5",
+      "from": "{text highlights title 5}",
+      "to": "{{highlight_title_5}}"
+    },
+    {
+      "name": "highlight_description_5",
+      "from": "{text highlights description 5}",
+      "to": "{{highlight_description_5}}"
+    },
+    {
+      "name": "text_menu_title_1",
+      "from": "{text menu title 1}",
+      "to": "{{text_menu_title_1}}"
+    },
+    {
+      "name": "text_menu_description_1",
+      "from": "{text menu description 1}",
+      "to": "{{text_menu_description_1}}"
+    },
+    {
+      "name": "text_menu_price_1",
+      "from": "{text menu price 1}",
+      "to": "{{text_menu_price_1}}"
+    },
+    {
+      "name": "text_menu_title_2",
+      "from": "{text menu title 2}",
+      "to": "{{text_menu_title_2}}"
+    },
+    {
+      "name": "text_menu_description_2",
+      "from": "{text menu description 2}",
+      "to": "{{text_menu_description_2}}"
+    },
+    {
+      "name": "text_menu_price_2",
+      "from": "{text menu price 2}",
+      "to": "{{text_menu_price_2}}"
+    },
+    {
+      "name": "text_menu_title_3",
+      "from": "{text menu title 3}",
+      "to": "{{text_menu_title_3}}"
+    },
+    {
+      "name": "text_menu_description_3",
+      "from": "{text menu description 3}",
+      "to": "{{text_menu_description_3}}"
+    },
+    {
+      "name": "text_menu_price_3",
+      "from": "{text menu price 3}",
+      "to": "{{text_menu_price_3}}"
+    },
+    {
+      "name": "name_location_1",
+      "from": "{name location 1}",
+      "to": "{{name_location_1}}"
+    },
+    {
+      "name": "address_location_1",
+      "from": "{address location 1}",
+      "to": "{{address_location_1}}"
+    },
+    {
+      "name": "price_range_location_1",
+      "from": "{price range location 1}",
+      "to": "{{price_range_location_1}}"
+    },
+    {
+      "name": "phone_location_1",
+      "from": "{phone location 1}",
+      "to": "{{phone_location_1}}"
+    },
+    {
+      "name": "email_location_1",
+      "from": "{email location 1}",
+      "to": "{{email_location_1}}"
+    },
+    {
+      "name": "facebook_location_1",
+      "from": "{facebook location 1}",
+      "to": "{{facebook_location_1}}"
+    },
+    {
+      "name": "instagram_location_1",
+      "from": "{instagram location 1}",
+      "to": "{{instagram_location_1}}"
+    },
+    {
+      "name": "twitter_location_1",
+      "from": "{twitter location 1}",
+      "to": "{{twitter_location_1}}"
+    },
+    {
+      "name": "tiktok_location_1",
+      "from": "{tiktok location 1}",
+      "to": "{{tiktok_location_1}}"
+    },
+    {
+      "name": "link_map_embed_location_1",
+      "from": "{link map embed location 1}",
+      "to": "{{link_map_embed_location_1}}"
+    },
+    {
+      "name": "link_maps_location_1",
+      "from": "{link maps location 1}",
+      "to": "{{link_maps_location_1}}"
+    },
+    {
+      "name": "location_1_monday_hours",
+      "from": "{location_1_monday_hours}",
+      "to": "{{location_1_monday_hours}}"
+    },
+    {
+      "name": "location_1_monday_status",
+      "from": "{location_1_monday_status}",
+      "to": "{{location_1_monday_status}}"
+    },
+    {
+      "name": "location_1_monday_status_class",
+      "from": "{location_1_monday_status_class}",
+      "to": "{{location_1_monday_status_class}}"
+    },
+    // ... tiếp tục cho các ngày khác location 1, location 2 tương tự
+    {
+      "name": "name_location_2",
+      "from": "{name location 2}",
+      "to": "{{name_location_2}}"
+    },
+    {
+      "name": "address_location_2",
+      "from": "{address location 2}",
+      "to": "{{address_location_2}}"
+    },
+    {
+      "name": "price_range_location_2",
+      "from": "{price range location 2}",
+      "to": "{{price_range_location_2}}"
+    },
+    {
+      "name": "phone_location_2",
+      "from": "{phone location 2}",
+      "to": "{{phone_location_2}}"
+    },
+    {
+      "name": "email_location_2",
+      "from": "{email location 2}",
+      "to": "{{email_location_2}}"
+    },
+    {
+      "name": "facebook_location_2",
+      "from": "{facebook location 2}",
+      "to": "{{facebook_location_2}}"
+    },
+    {
+      "name": "instagram_location_2",
+      "from": "{instagram location 2}",
+      "to": "{{instagram_location_2}}"
+    },
+    {
+      "name": "twitter_location_2",
+      "from": "{twitter location 2}",
+      "to": "{{twitter_location_2}}"
+    },
+    {
+      "name": "tiktok_location_2",
+      "from": "{tiktok location 2}",
+      "to": "{{tiktok_location_2}}"
+    },
+    {
+      "name": "link_map_embed_location_2",
+      "from": "{link map embed location 2}",
+      "to": "{{link_map_embed_location_2}}"
+    },
+    {
+      "name": "link_maps_location_2",
+      "from": "{link maps location 2}",
+      "to": "{{link_maps_location_2}}"
+    }
+  ]
+}
