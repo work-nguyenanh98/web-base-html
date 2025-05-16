@@ -1,9 +1,11 @@
 ---
 description: 
-globs: index.html
+globs: contact.html
 alwaysApply: false
 ---
-# HOMEPAGE CONTENT UPDATE GUIDELINES
+[contact.html](mdc:contact.html)
+
+# CONTACT CONTENT UPDATE GUIDELINES
 
 ## SEO ELEMENTS
 
@@ -12,7 +14,7 @@ alwaysApply: false
 
 ## WEBSITE LINKS
 
-- Update all website links throughout the page ,get `Link web` in [common.md](mdc:web-base-html/common.md)
+- Update all website links throughout the page, get `Link web` in [common.md](mdc:web-base-html/common.md)
 
 ## BRANDING
 
@@ -30,32 +32,26 @@ alwaysApply: false
      - Name, Price, Link Map, Link Embed Map, Address
      - Phone number, Email, Social links, Opening Hours
 
-2. **Opening Hours**
-
-- Update opening hours as current HTML
-  - If multiple branches, set first branch is main.
+2. **Opening Hours Section**
+   - Update opening hours as current HTML
+   - If multiple branches, set first branch is main.
 
 3. **Note Section**
-
    - Auto generate a 4-5 line note.
 
 4. **Frequently Asked Questions**
-
    - Auto generate a 4-5 line Frequently Asked Questions.
 
 5. **Order Online Section**
-
    - Keep section title
    - Automatically generate description
    - Format links correctly based on branch information
    - Link to appropriate tags and titles
 
 6. **General Contact Information**
-
 - Auto fill mail in left column, right column have info (Address, phone , Sumary onpening hours) ... only main branch, if provided.
 
 7. **Social link**
-
 - Auto map socical link if provided
 
 8. **Map location data**
