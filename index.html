@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
     <!-- Title + Description SEO -->
-    <title>Birria Barrio – San Antonio's Favorite for Quesabirria & Ramen</title>
+    <title>{title}</title>
 
-    <meta name="description"
-        content="Discover Birria Barrio in San Antonio, home of bold Quesabirria tacos, Birria Ramen, grilled cheese sandwiches, keto options & Party Trays that fans crave.">
-    <meta name="keywords"
-        content="Birria Barrio, Quesabirria tacos, Birria Ramen, San Antonio, Mexican food, street food, birria tacos, grilled cheese birria, keto options, party trays, consomé, authentic birria, San Antonio restaurants, Texas Mexican food, quesatacos">
+    <meta name="description" content="{description}">
+    <meta name="keywords" content="{keywords}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="preload" as="style"
@@ -22,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
-    <link rel="canonical" href="https://birria-barrio.site">
+    <link rel="canonical" href="{canonical}">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
     <meta name="format-detection" content="telephone=yes">
@@ -36,13 +34,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Birria Barrio – San Antonio's Favorite for Quesabirria & Ramen">
-    <meta property="og:description"
-        content="Discover Birria Barrio in San Antonio, home of bold Quesabirria tacos, Birria Ramen, grilled cheese sandwiches, keto options & Party Trays that fans crave.">
-    <meta property="og:url" content="https://birria-barrio.site">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{description}">
+    <meta property="og:url" content="{canonical}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://birria-barrio.site/assets/img/restaurant-exterior.jpg">
+    <meta property="og:image" content="{image}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Birria Barrio">
@@ -50,9 +47,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Birria Barrio – San Antonio's Favorite for Quesabirria & Ramen">
-    <meta name="twitter:description"
-        content="Discover Birria Barrio in San Antonio, home of bold Quesabirria tacos, Birria Ramen, grilled cheese sandwiches, keto options & Party Trays that fans crave.">
-    <meta name="twitter:image" content="https://birria-barrio.site/assets/img/restaurant-exterior.jpg">
+    <meta name="twitter:description" content="{description}">
+    <meta name="twitter:image" content="{image}">
 
     <!-- Apple touch icon -->
     <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
@@ -61,54 +57,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png">
 
     <!-- Schema -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FoodEstablishment",
-          "name": "Birria Barrio",
-          "url": "https://birria-barrio.site.site",
-          "description": "Discover Birria Barrio in San Antonio, home of bold Quesabirria tacos, Birria Ramen, grilled cheese sandwiches, keto options & Party Trays that fans crave.",
-          "hasMenu": "https://birria-barrio.site.site/menu",
-          "servesCuisine": ["Mexican", "Birria", "Tacos", "Street Food"],
-          "priceRange": "$10–20 per person",
-          "openingHours": [
-            "We 14:00-00:00",
-            "Th 14:00-00:00",
-            "Fr 14:00-02:00",
-            "Sa 14:00-02:00",
-            "Su 14:00-00:00"
-          ],
-          "department": [
-            {
-              "@type": "FoodEstablishment",
-              "name": "Birria Barrio – S Presa St",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "2710 S Presa St",
-                "addressLocality": "San Antonio",
-                "addressRegion": "TX",
-                "postalCode": "78210",
-                "addressCountry": "US"
-              },
-              "telephone": "+1-210-289-4066"
-            },
-            {
-              "@type": "FoodEstablishment",
-              "name": "Birria Barrio – S Flores St",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "6203 S Flores St",
-                "addressLocality": "San Antonio",
-                "addressRegion": "TX",
-                "postalCode": "78214",
-                "addressCountry": "US"
-              },
-              "telephone": "+1-210-289-4066"
-            }
-          ]
-        }
-        </script>
-
+    <!-- {schema} -->
 
 
 </head>
@@ -120,8 +69,8 @@
             <a class="navbar-brand d-flex align-items-center" href="/">
                 <!-- Brand Name -->
                 <span
-                    style="font-weight:800; color:var(--primary-color); font-family:var(--font-title); text-transform:uppercase; font-size: 34px;">Birria
-                    Barrio</span>
+                    style="font-weight:800; color:var(--primary-color); font-family:var(--font-title); text-transform:uppercase; font-size: 34px;">{brand
+                    name}</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,9 +96,9 @@
             <div class="mb-5">
 
                 <h1 class="display-4 fw-bold mt-4" style="font-family:var(--font-title); color:var(--primary-color);">
-                    Birria Barrio
+                    {text hero title}
                 </h1>
-                <p class="lead mb-4">Authentic Birria Flavor with a Modern Street Vibe</p>
+                <p class="lead mb-4">{text hero description}</p>
                 <a href="/menu" class="btn btn-cta btn-xs">View Menu</a>
             </div>
             <!-- Replace static image with Swiper slider -->
@@ -158,73 +107,72 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-1.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers drive-thru">
-                                <img src="./assets/images/slider/slider-1.jpg" alt="Out and About Burgers drive-thru"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-1.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-2.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers menu board">
-                                <img src="./assets/images/slider/slider-2.jpg" alt="Out and About Burgers menu board"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-2.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-3.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers cheeseburger">
-                                <img src="./assets/images/slider/slider-3.jpg" alt="Out and About Burgers cheeseburger"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-3.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-4.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers fries">
-                                <img src="./assets/images/slider/slider-4.jpg" alt="Out and About Burgers fries"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-4.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-5.jpg" data-fancybox="hero-gallery"
                                 data-caption="Out and About Burgers double cheeseburger">
-                                <img src="./assets/images/slider/slider-5.jpg"
-                                    alt="Out and About Burgers double cheeseburger" loading="lazy"
+                                <img src="./assets/images/slider/slider-5.jpg" alt="{image alt}" loading="lazy"
                                     style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-6.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers exterior">
-                                <img src="./assets/images/slider/slider-6.jpg" alt="Out and About Burgers exterior"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-6.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-7.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers meal">
-                                <img src="./assets/images/slider/slider-7.jpg" alt="Out and About Burgers meal"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-7.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-8.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers sign">
-                                <img src="./assets/images/slider/slider-8.jpg" alt="Out and About Burgers sign"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-8.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-9.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers location">
-                                <img src="./assets/images/slider/slider-9.jpg" alt="Out and About Burgers location"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-9.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="./assets/images/slider/slider-10.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers onion rings">
-                                <img src="./assets/images/slider/slider-10.jpg" alt="Out and About Burgers onion rings"
-                                    loading="lazy" style="width: 100%; height: 500px; object-fit: cover;">
+                                data-caption="{image caption}">
+                                <img src="./assets/images/slider/slider-10.jpg" alt="{image alt}" loading="lazy"
+                                    style="width: 100%; height: 500px; object-fit: cover;">
                             </a>
                         </div>
                     </div>
@@ -244,14 +192,13 @@
             <h2 class="section-title">Our Story</h2>
             <div class="row align-items-center">
                 <div class="col-md-5 mb-4 mb-md-0">
-                    <img src="./assets/images/restaurant-exterior.jpg"
-                        alt="Birria Barrio restaurant in San Antonio" class="img-fluid rounded shadow"
-                        loading="lazy" style="border-radius:var(--border-radius);">
+                    <img src="./assets/images/restaurant-exterior.jpg" alt="Birria Barrio restaurant in San Antonio"
+                        class="img-fluid rounded shadow" loading="lazy" style="border-radius:var(--border-radius);">
                 </div>
 
                 <div class="col-md-7">
                     <!-- Our Story -->
-                    <p>BirBarrio is San Antonio's go-to destination for bold, flavorful birria creations served with heart. Known for their juicy Quesabirria Tacos with consommé, Birria Ramen, and over-the-top Grilled Cheese sandwiches, this local gem has quickly risen to cult-favorite status. From Texas toast packed with cheese and tender beef to keto-friendly options and ramen bowls infused with authentic spices, Birria Barrio fuses tradition with creativity. Customers rave about the rich consomé, generous meat portions and fast, friendly service. Dine outdoors or step into the air-conditioned school bus seating for a fun, unique experience. Birria Barrio isn't just a taco stand—it's a full-flavored adventure with a loyal fanbase that keeps coming back for more. Whether you're grabbing a Party Tray for the family or indulging solo, there's something unforgettable in every bite. Follow them on Facebook for updates and be sure to come early—this place gets busy!</p>
+                    <p>{our Story}</p>
 
                 </div>
             </div>
@@ -261,14 +208,14 @@
     <!-- Highlights Section for F&B Website -->
     <section id="highlights" class="py-5 bg-light highlights-section">
         <div class="container">
-            <h2 class="section-title">Discover Birria Barrio</h2>
+            <h2 class="section-title">{text highlights title}</h2>
             <div class="row g-4">
 
                 <div class="col-md-6">
                     <div class="p-4 bg-white rounded-4 shadow-sm d-flex align-items-start h-100">
                         <div>
-                            <h3 class="fw-bold mb-1">The Birria Barrio Experience: Flavor, Fun, and a Whole Lot of Heart</h3>
-                            <p class="mb-0 text-secondary">At Birria Barrio, dining is more than a meal—it's a full experience. Guests are welcomed by the bold aroma of seasoned beef simmering in consomé and the sounds of sizzling tortillas. Whether you're eating outside on their covered patio or inside the retrofitted school bus with A/C, the setting adds to the charm. Known for their quick service and friendly staff, this birria hotspot stands out not just for food, but for its personality. Customers appreciate the casual vibe, the festive atmosphere, and the attention to detail—from the colorful plating to the free-flowing napkins (you'll need them). The team behind Birria Barrio takes pride in delivering meals that hit the spot every single time. It's a popular spot for families, foodies, and anyone craving something that feels both familiar and exciting. Birria Barrio proves that comfort food can still surprise you.
+                            <h3 class="fw-bold mb-1">{text highlights title 1}</h3>
+                            <p class="mb-0 text-secondary">{text highlights description 1}</p>
                             </p>
                         </div>
                     </div>
@@ -277,19 +224,8 @@
                 <div class="col-md-6">
                     <div class="p-4 bg-white rounded-4 shadow-sm d-flex align-items-start h-100">
                         <div>
-                            <h3 class="fw-bold mb-1">Why Everyone is Talking About Quesabirria Tacos at Birria Barrio</h3>
-                            <p class="mb-0 text-secondary">The crown jewel of the Birria Barrio menu is without a doubt the Quesabirria Tacos. These tacos are loaded with juicy birria de res, melted cheese, fresh onion, and cilantro, then grilled to golden perfection. Served with a side of savory consomé for dipping, each bite bursts with flavor and richness. For those who want more, there's the El Chavo Tacos—an amped-up version that adds chicharrón and salsa to the mix. Customers frequently call these the best birria tacos in San Antonio, citing their crisp texture, meatiness, and balance of spice. Whether you're ordering a regular set of three or going all-in with the four-taco combo, the value and taste are unbeatable. The Party Tray option with 20 tacos and 5 consommés is a crowd-pleaser, perfect for sharing with friends or family. If you've never had a quesabirria before, Birria Barrio is the place to start.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="p-4 bg-white rounded-4 shadow-sm d-flex align-items-start h-100">
-                        <div>
-                            <h3 class="fw-bold mb-1">Birria Barrio's Birria Ramen and Mac & Cheese Are Unexpected Hits</h3>
-                            <p class="mb-0 text-secondary">While tacos may be the star, Birria Barrio's creativity shines with their signature Birria Ramen and Birria Mac & Cheese. These dishes take comfort food to the next level by fusing Mexican flavors with American classics. The Birria Ramen features Tapatio noodles loaded with slow-cooked beef, onion, lime, and cilantro—topped off with house-made salsa for a spicy finish. It's a warming, hearty meal that fans say is great day or night. Equally popular is the Birria Mac & Cheese, which balances cheesy goodness with the savory depth of birria consomé. With a touch of lime and onion, it's rich, flavorful, and surprisingly satisfying. These aren't just sides—they're main-event dishes for anyone looking to switch up their taco routine without losing that bold birria flavor. It's fusion done right, and customers can't get enough.
+                            <h3 class="fw-bold mb-1">{text highlights title 2}</h3>
+                            <p class="mb-0 text-secondary">{text highlights description 2}</p>
                             </p>
                         </div>
                     </div>
@@ -299,8 +235,8 @@
                 <div class="col-md-6">
                     <div class="p-4 bg-white rounded-4 shadow-sm d-flex align-items-start h-100">
                         <div>
-                            <h3 class="fw-bold mb-1">The Grilled Cheese Birria Sandwich Everyone Keeps Coming Back For</h3>
-                            <p class="mb-0 text-secondary">One of the most buzzed-about items at Birria Barrio is the Grilled Cheese con Consome—a sandwich that's far from ordinary. Using thick slices of Texas toast, the grilled cheese is loaded with birria beef, melted queso, cilantro, and onion. The edges are crisp, the inside is gooey, and it's served with a generous cup of consomé for dipping. The result? A decadent, cheesy, meaty explosion of flavor that's unlike anything else in town. Even regulars are surprised by how addictive this sandwich can be. It's frequently recommended by both staff and reviewers, with many calling it their favorite menu item. If you're not in the mood for tacos or ramen, this is the perfect indulgence that still delivers on the birria flavor you came for. Bonus: it's big enough to split—but you probably won't want to.
+                            <h3 class="fw-bold mb-1">{text highlights title 3}</h3>
+                            <p class="mb-0 text-secondary">{text highlights description 3}</p>
                             </p>
                         </div>
                     </div>
@@ -310,8 +246,19 @@
                 <div class="col-md-6">
                     <div class="p-4 bg-white rounded-4 shadow-sm d-flex align-items-start h-100">
                         <div>
-                            <h3 class="fw-bold mb-1">Affordable, Delicious, and Perfect for Every Appetite</h3>
-                            <p class="mb-0 text-secondary">Birria Barrio offers generous portions at prices that keep customers coming back. Most meals fall in the $10–$14 range, with items like the Keto Taco at just $6.99 and sides of rice or beans for $2. Drinks like Mexican sodas, aguas frescas, and bottled water round out the menu at $2–$3.50. The Party Tray is a steal at $74.99 for 20 tacos and 5 consomés—great for parties, events, or just taco-loving families. Despite the incredible value, there's no compromise on quality. Every item is made to order, with ingredients that are fresh, tender, and seasoned perfectly. Whether you're eating solo or feeding a group, Birria Barrio delivers a premium experience without the premium price tag. It's a spot where locals return often—and where newcomers instantly become fans.
+                            <h3 class="fw-bold mb-1">{text highlights title 4}</h3>
+                            <p class="mb-0 text-secondary">{text highlights description 4}</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded-4 shadow-sm d-flex align-items-start h-100">
+                        <div>
+                            <h3 class="fw-bold mb-1">{text highlights title 5}</h3>
+                            <p class="mb-0 text-secondary">{text highlights description 5}
                             </p>
                         </div>
                     </div>
@@ -329,57 +276,57 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-1.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers drive-thru">
-                            <img src="./assets/images/gallery/gallery-1.jpg" class="gallery-img"
-                                alt="Out and About Burgers drive-thru" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-1.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-2.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers menu board">
-                            <img src="./assets/images/gallery/gallery-2.jpg" class="gallery-img"
-                                alt="Out and About Burgers menu board" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-2.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-3.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers cheeseburger">
-                            <img src="./assets/images/gallery/gallery-3.jpg" class="gallery-img"
-                                alt="Out and About Burgers cheeseburger" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-3.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-4.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers fries">
-                            <img src="./assets/images/gallery/gallery-4.jpg" class="gallery-img"
-                                alt="Out and About Burgers fries" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-4.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-5.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers double cheeseburger">
-                            <img src="./assets/images/gallery/gallery-5.jpg" class="gallery-img"
-                                alt="Out and About Burgers double cheeseburger" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-5.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-6.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers exterior">
-                            <img src="./assets/images/gallery/gallery-6.jpg" class="gallery-img"
-                                alt="Out and About Burgers exterior" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-6.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="./assets/images/gallery/gallery-7.jpg" data-fancybox="gallery"
-                            data-caption="Out and About Burgers meal">
-                            <img src="./assets/images/gallery/gallery-7.jpg" class="gallery-img"
-                                alt="Out and About Burgers meal" loading="lazy"
+                            data-caption="{image caption}">
+                            <img src="./assets/images/gallery/gallery-7.jpg" class="gallery-img" alt="{image alt}"
+                                loading="lazy"
                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                         </a>
                     </div>
@@ -409,17 +356,18 @@
                         <!-- Quesabirria Tacos -->
                         <div class="col-md-4 mb-4">
                             <div class="menu-card p-3 text-center h-100 shadow-sm">
-                                <h3 class="fw-bold mb-3" style="color:var(--primary-color);">Quesabirria Tacos (3) with Consomé</h3>
+                                <h3 class="fw-bold mb-3" style="color:var(--primary-color);">{text menu title 1}</h3>
                                 <a href="./assets/images/food/food-1.jpg" data-fancybox="menu-gallery"
-                                    data-caption="Quesabirria Tacos (3) with Consomé">
-                                    <img src="./assets/images/food/food-1.jpg" alt="Quesabirria Tacos (3) with Consomé" loading="lazy"
+                                    data-caption="{image caption}">
+                                    <img src="./assets/images/food/food-1.jpg" alt="{image alt}" loading="lazy"
                                         style="width:100%;height:180px;object-fit:cover;border-radius:var(--border-radius);">
                                 </a>
                                 <div class="mt-3">
-                                    <p class="small mb-3">This is Birria Barrio's most iconic dish. Crispy tacos loaded with juicy shredded beef birria, melted cheese, onion, and cilantro. Served with a cup of rich consomé for dipping.
+                                    <p class="small mb-3">{text menu description 1}
                                     </p>
                                     <div class="pricing p-2 bg-light rounded-3 d-inline-block">
-                                        <span class="fw-bold fs-5" style="color:var(--primary-color);">$11.99</span>
+                                        <span class="fw-bold fs-5" style="color:var(--primary-color);">{text menu price
+                                            1}</span>
                                     </div>
                                 </div>
                             </div>
@@ -428,16 +376,18 @@
                         <!-- Grilled Cheese with Consomé -->
                         <div class="col-md-4 mb-4">
                             <div class="menu-card p-3 text-center h-100 shadow-sm">
-                                <h3 class="fw-bold mb-3" style="color:var(--primary-color);">Grilled Cheese with Consomé</h3>
+                                <h3 class="fw-bold mb-3" style="color:var(--primary-color);">{text menu title 2}</h3>
                                 <a href="./assets/images/food/food-2.jpg" data-fancybox="menu-gallery"
-                                    data-caption="Grilled Cheese with Consomé">
-                                    <img src="./assets/images/food/food-2.jpg" alt="Grilled Cheese with Consomé" loading="lazy"
+                                    data-caption="{image caption}">
+                                    <img src="./assets/images/food/food-2.jpg" alt="{image alt}" loading="lazy"
                                         style="width:100%;height:180px;object-fit:cover;border-radius:var(--border-radius);">
                                 </a>
                                 <div class="mt-3">
-                                    <p class="small mb-3">A creative twist: Texas toast stuffed with beef birria, melted cheese, onions, and cilantro. Served with consomé for dipping. A cheesy, savory explosion that's also kid-approved.</p>
+                                    <p class="small mb-3">{text menu description 2}
+                                    </p>
                                     <div class="pricing p-2 bg-light rounded-3 d-inline-block">
-                                        <span class="fw-bold fs-5" style="color:var(--primary-color);">$12.99</span>
+                                        <span class="fw-bold fs-5" style="color:var(--primary-color);">{text menu price
+                                            2}</span>
                                     </div>
                                 </div>
                             </div>
@@ -446,17 +396,18 @@
                         <!-- Birria Ramen -->
                         <div class="col-md-4 mb-4">
                             <div class="menu-card p-3 text-center h-100 shadow-sm">
-                                <h3 class="fw-bold mb-3" style="color:var(--primary-color);">Birria Ramen</h3>
+                                <h3 class="fw-bold mb-3" style="color:var(--primary-color);">{text menu title 3}</h3>
                                 <a href="./assets/images/food/food-3.jpg" data-fancybox="menu-gallery"
-                                    data-caption="Birria Ramen">
-                                    <img src="./assets/images/food/food-3.jpg" alt="Birria Ramen"
-                                        loading="lazy"
+                                    data-caption="{image caption}">
+                                    <img src="./assets/images/food/food-3.jpg" alt="{image alt}" loading="lazy"
                                         style="width:100%;height:180px;object-fit:cover;border-radius:var(--border-radius);">
                                 </a>
                                 <div class="mt-3">
-                                    <p class="small mb-3">Tapatío ramen noodles taken to the next level with tender beef birria, fresh cilantro, onion, lime, and their signature consomé broth. Bold, comforting, and unforgettable.</p>
+                                    <p class="small mb-3">{text menu description 3}
+                                    </p>
                                     <div class="pricing p-2 bg-light rounded-3 d-inline-block">
-                                        <span class="fw-bold fs-5" style="color:var(--primary-color);">$11.99</span>
+                                        <span class="fw-bold fs-5" style="color:var(--primary-color);">{text menu price
+                                            3}</span>
                                     </div>
                                 </div>
                             </div>
@@ -486,19 +437,23 @@
                                     <span class="fw-bold">Brandon</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">These tacos slap hard! We ordered the #1 Quesabirria tacos tonight and they blew us away. I will definitely be going back… soon!</p>
+                                <p class="mb-0">These tacos slap hard! We ordered the #1 Quesabirria tacos tonight and
+                                    they blew us away. I will definitely be going back… soon!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="review-card d-flex align-items-center">
-                            <img src="./assets/images/reviews/review-2.png" class="review-avatar" alt="stephanie graves">
+                            <img src="./assets/images/reviews/review-2.png" class="review-avatar"
+                                alt="stephanie graves">
                             <div>
                                 <div class="mb-1">
                                     <span class="fw-bold">stephanie graves</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">I don't do reviews. But this place deserves one, absolutley the best Birria I've had so far in San Antonio 10/10. I live over an hour away and its more than worth it for these tacos.</p>
+                                <p class="mb-0">I don't do reviews. But this place deserves one, absolutley the best
+                                    Birria I've had so far in San Antonio 10/10. I live over an hour away and its more
+                                    than worth it for these tacos.</p>
                             </div>
                         </div>
                     </div>
@@ -510,7 +465,10 @@
                                     <span class="fw-bold">Malorie</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">Loved it, had them three days ago and the birria tacos were delicious and the cooks made them in a timely manner when they're were many ppl in line ahead of me. The presentation of the tacos were not messy and how they were set up to go was convenient. I will definitely be returning.</p>
+                                <p class="mb-0">Loved it, had them three days ago and the birria tacos were delicious
+                                    and the cooks made them in a timely manner when they're were many ppl in line ahead
+                                    of me. The presentation of the tacos were not messy and how they were set up to go
+                                    was convenient. I will definitely be returning.</p>
                             </div>
                         </div>
                     </div>
@@ -518,13 +476,17 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="review-card d-flex align-items-center">
-                            <img src="./assets/images/reviews/review-4.png" class="review-avatar" alt="Aaliyah Benavides">
+                            <img src="./assets/images/reviews/review-4.png" class="review-avatar"
+                                alt="Aaliyah Benavides">
                             <div>
                                 <div class="mb-1">
                                     <span class="fw-bold">Aaliyah Benavides</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">The food was so good with reasonable prices. Me and my friend got the queso birria. We got it to go and when we finally got to our hotel at 1am, we sat without anything to each other and just ate the whole thing then passed out peacefully. We slept so good tht night. 10/10</p>
+                                <p class="mb-0">The food was so good with reasonable prices. Me and my friend got the
+                                    queso birria. We got it to go and when we finally got to our hotel at 1am, we sat
+                                    without anything to each other and just ate the whole thing then passed out
+                                    peacefully. We slept so good tht night. 10/10</p>
                             </div>
                         </div>
                     </div>
@@ -536,7 +498,10 @@
                                     <span class="fw-bold">Jorge Herrera</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">Worth every dollar!!! This place is soooo good!! I was skeptical bcs I don't like to try new food… but omg this food was very delicious, food was warm the tacos were just crispy!! Not greasy at all and the meat was loaded with cheese and the orange sauce!!!!! Man it was worth it!!!</p>
+                                <p class="mb-0">Worth every dollar!!! This place is soooo good!! I was skeptical bcs I
+                                    don't like to try new food… but omg this food was very delicious, food was warm the
+                                    tacos were just crispy!! Not greasy at all and the meat was loaded with cheese and
+                                    the orange sauce!!!!! Man it was worth it!!!</p>
                             </div>
                         </div>
                     </div>
@@ -548,7 +513,11 @@
                                     <span class="fw-bold">SpiffyG</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">Don't let the slight look of surly contempt on the guy's face who takes your order put you off. He expresses his love for you through his incredible birria. I swore I'd never go back after the first time. Then I tasted it. Now we eat there least twice a month and crave it five more. The consommé and salsas are brilliant, too. Eat here.</p>
+                                <p class="mb-0">Don't let the slight look of surly contempt on the guy's face who takes
+                                    your order put you off. He expresses his love for you through his incredible birria.
+                                    I swore I'd never go back after the first time. Then I tasted it. Now we eat there
+                                    least twice a month and crave it five more. The consommé and salsas are brilliant,
+                                    too. Eat here.</p>
                             </div>
                         </div>
                     </div>
@@ -562,7 +531,8 @@
                                     <span class="fw-bold">Tyler</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">Yummy late night food! Loud music makes it hard to hear and order but otherwise cool atmosphere. Surprisingly busy at 10pm.</p>
+                                <p class="mb-0">Yummy late night food! Loud music makes it hard to hear and order but
+                                    otherwise cool atmosphere. Surprisingly busy at 10pm.</p>
                             </div>
                         </div>
                     </div>
@@ -574,7 +544,10 @@
                                     <span class="fw-bold">Randy</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">Absolutely amazing!!! Took the family on a whim, after sightseeing the Alamo. About 11 min drive. We ordered The Quesabirria, Birria, and Mac and cheese birria. And the whole family loved it. Will definitely recommend to friends and family.</p>
+                                <p class="mb-0">Absolutely amazing!!! Took the family on a whim, after sightseeing the
+                                    Alamo. About 11 min drive. We ordered The Quesabirria, Birria, and Mac and cheese
+                                    birria. And the whole family loved it. Will definitely recommend to friends and
+                                    family.</p>
                             </div>
                         </div>
                     </div>
@@ -586,7 +559,12 @@
                                     <span class="fw-bold">Aliya Sayani</span>
                                     <span class="ms-2 text-warning">★★★★★</span>
                                 </div>
-                                <p class="mb-0">I've never had Birria tacos in San Antonio so I don't have anywhere to measure em against but these were seriously amazing. The meat was so tender and the tortillas weren't super greasy which is something I really dislike about some Birria taco places. They also give you some kind of creamy orange sauce/salsa situation that was so good. I will definitely be coming back here! Also I think 3 tacos for $12 is a great deal</p>
+                                <p class="mb-0">I've never had Birria tacos in San Antonio so I don't have anywhere to
+                                    measure em against but these were seriously amazing. The meat was so tender and the
+                                    tortillas weren't super greasy which is something I really dislike about some Birria
+                                    taco places. They also give you some kind of creamy orange sauce/salsa situation
+                                    that was so good. I will definitely be coming back here! Also I think 3 tacos for
+                                    $12 is a great deal</p>
                             </div>
                         </div>
                     </div>
@@ -618,13 +596,13 @@
                             <input type="radio" class="btn-check" name="location-options" id="meridian-btn"
                                 autocomplete="off" checked>
                             <label class="btn location-btn active" for="meridian-btn" data-bs-toggle="tab"
-                                data-bs-target="#first-location">S Presa St</label>
+                                data-bs-target="#first-location">{name location 1}</label>
 
                             <!-- Branch 2 -->
                             <input type="radio" class="btn-check" name="location-options" id="112th-btn"
                                 autocomplete="off">
                             <label class="btn location-btn" for="112th-btn" data-bs-toggle="tab"
-                                data-bs-target="#second-location">S Flores St</label>
+                                data-bs-target="#second-location">{name location 2}</label>
                         </div>
                     </div>
 
@@ -635,23 +613,35 @@
                             <div class="location-card p-4">
                                 <div class="location-header text-center mb-4">
                                     <div class="location-name fw-bold fs-4 mb-2" style="color:var(--primary-color);">
-                                        Birria Barrio - S Presa St</div>
-                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>2710 S Presa St,
-                                        San Antonio, TX 78210
+                                        {name location 1}</div>
+                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>{address
+                                        location 1}
                                     </p>
-                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>$10–20 per person
+                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>{price range
+                                        location 1}
                                     </p>
-                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>+1-210-289-4066
+                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>{phone location 1}
                                     </p>
-                                    <!-- <p class="email mb-3"><i
-                                            class="bi bi-envelope-fill me-2"></i> 
-                                    </p> -->
+                                    <p class="email mb-3"><i class="bi bi-envelope-fill me-2"> {email location 1} </i>
+                                    </p>
 
                                     <div class="social-icons">
-                                        <a rel="nofollow" target="_blank"
-                                            href="https://www.facebook.com/Birriabarrio" class="social-icon-link"
-                                            rel="noopener" aria-label="Follow Birria Barrio on Facebook"><i
-                                                class="bi bi-facebook" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{facebook location 1}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 1} on Facebook"><i class="bi bi-facebook"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{instagram location 1}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 1} on Instagram"><i
+                                                class="bi bi-instagram" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{twitter location 1}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 1} on Twitter"><i class="bi bi-twitter"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{tiktok location 1}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 1} on TikTok"><i class="bi bi-tiktok"
+                                                aria-hidden="true"></i></a>
                                     </div>
                                 </div>
 
@@ -660,17 +650,15 @@
                                     <div class="col-md-6 mb-4 mb-md-0">
                                         <div class="map-container">
                                             <div class="map-responsive">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.2161385900254!2d-98.48103468813488!3d29.394902963546542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf7af822e440f%3A0xe48b15283c3f7176!2sBirria%20Barrio!5e0!3m2!1sen!2sus!4v1747299067262!5m2!1sen!2sus"
-                                                    width="100%" height="350" style="border:0;" allowfullscreen=""
-                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                                    title="Birria Barrio S Presa St location map"></iframe>
+                                                <iframe src="{link map embed location 1}" width="100%" height="350"
+                                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"
+                                                    title="{name location 1} location map"></iframe>
                                             </div>
                                             <button class="map-expand-btn" data-bs-toggle="modal"
-                                                data-bs-target="#mapModal"
-                                                data-map-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.2161385900254!2d-98.48103468813488!3d29.394902963546542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf7af822e440f%3A0xe48b15283c3f7176!2sBirria%20Barrio!5e0!3m2!1sen!2sus!4v1747299067262!5m2!1sen!2sus"
-                                                data-location="Birria Barrio: 2710 S Presa St, San Antonio, TX 78210"
-                                                data-maps-link="https://maps.app.goo.gl/aGpe6u4L7rbdXGNTA">
+                                                data-bs-target="#mapModal" data-map-url="{link map embed location 1}"
+                                                data-location="{name location 1}"
+                                                data-maps-link="{link maps location 1}">
                                                 <i class="bi bi-arrows-fullscreen"></i>
                                             </button>
                                         </div>
@@ -678,7 +666,7 @@
                                             <div class="text-center">
                                                 <p class="small text-muted mb-2"><i class="bi bi-arrows-fullscreen"></i>
                                                     Click the icon to view a larger map</p>
-                                                <a href="https://maps.app.goo.gl/aGpe6u4L7rbdXGNTA" target="_blank"
+                                                <a href="{link maps location 1}" target="_blank"
                                                     class="btn btn-outline-primary btn-sm">
                                                     <i class="bi bi-box-arrow-up-right me-1"></i>Open in Google Maps
                                                 </a>
@@ -749,23 +737,35 @@
                             <div class="location-card p-4">
                                 <div class="location-header text-center mb-4">
                                     <div class="location-name fw-bold fs-4 mb-2" style="color:var(--primary-color);">
-                                        Birria Barrio y más of - S Flores St</div>
-                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>6203 S Flores St,
-                                        San Antonio, TX 78214
+                                        {name location 2}</div>
+                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>{address
+                                        location 2}
                                     </p>
-                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>$10–20 per person
+                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>{price range
+                                        location 2}
                                     </p>
-                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>+1-210-289-4066
+                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>{phone location 2}
                                     </p>
-                                    <!-- <p class="email mb-3"><i
-                                            class="bi bi-envelope-fill me-2"></i> 
-                                    </p> -->
+                                    <p class="email mb-3"><i class="bi bi-envelope-fill me-2"> {email location 2} </i>
+                                    </p>
 
                                     <div class="social-icons">
-                                        <a rel="nofollow" target="_blank"
-                                            href="https://www.facebook.com/Birriabarrio" class="social-icon-link"
-                                            rel="noopener" aria-label="Follow Birria Barrio on Facebook"><i
-                                                class="bi bi-facebook" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="https://www.facebook.com/Birriabarrio"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 2} on Facebook"><i class="bi bi-facebook"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{instagram location 2}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 2} on Instagram"><i
+                                                class="bi bi-instagram" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{twitter location 2}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 2} on Twitter"><i class="bi bi-twitter"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{tiktok location 2}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 2} on TikTok"><i class="bi bi-tiktok"
+                                                aria-hidden="true"></i></a>
                                     </div>
                                 </div>
 
@@ -774,17 +774,15 @@
                                     <div class="col-md-6 mb-4 mb-md-0">
                                         <div class="map-container">
                                             <div class="map-responsive">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27809.254264083767!2d-98.49922877388695!3d29.394969275166357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c59849fef531b%3A0x113eaf8311b478cf!2sBirria%20Barrio%20y%20m%C3%A1s!5e0!3m2!1sen!2sus!4v1747299024993!5m2!1sen!2sus"
-                                                    width="100%" height="350" style="border:0;" allowfullscreen=""
-                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                                    title="Birria Barrio S Flores St location map"></iframe>
+                                                <iframe src="{link map embed location 2}" width="100%" height="350"
+                                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"
+                                                    title="{name location 2} location map"></iframe>
                                             </div>
                                             <button class="map-expand-btn" data-bs-toggle="modal"
-                                                data-bs-target="#mapModal"
-                                                data-map-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27809.254264083767!2d-98.49922877388695!3d29.394969275166357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c59849fef531b%3A0x113eaf8311b478cf!2sBirria%20Barrio%20y%20m%C3%A1s!5e0!3m2!1sen!2sus!4v1747299024993!5m2!1sen!2sus"
-                                                data-location="Birria Barrio y más: 6203 S Flores St, San Antonio, TX 78214"
-                                                data-maps-link="https://maps.app.goo.gl/Ue7MAvFrvVm62LmF8">
+                                                data-bs-target="#mapModal" data-map-url="{link map embed location 2}"
+                                                data-location="{name location 2}"
+                                                data-maps-link="{link maps location 2}">
                                                 <i class="bi bi-arrows-fullscreen"></i>
                                             </button>
                                         </div>
@@ -792,7 +790,7 @@
                                             <div class="text-center">
                                                 <p class="small text-muted mb-2"><i class="bi bi-arrows-fullscreen"></i>
                                                     Click the icon to view a larger map</p>
-                                                <a href="https://maps.app.goo.gl/Ue7MAvFrvVm62LmF8" target="_blank"
+                                                <a href="{link maps location 2}" target="_blank"
                                                     class="btn btn-outline-primary btn-sm">
                                                     <i class="bi bi-box-arrow-up-right me-1"></i>Open in Google Maps
                                                 </a>
@@ -868,7 +866,8 @@
     <section id="order-now" class="py-5">
         <div class="container">
             <h2 class="section-title">Order Online</h2>
-            <p class="text-center mb-4">Enjoy Birria Barrio at home or on the go by ordering through our partner services
+            <p class="text-center mb-4">Enjoy {brand name} at home or on the go by ordering through our partner
+                services
             </p>
 
             <div class="row g-4">
@@ -877,36 +876,33 @@
                     <div class="order-card h-100 p-0 shadow-sm rounded-4 overflow-hidden">
                         <div class="order-card-header p-3"
                             style="background-color: var(--primary-color); color: white;">
-                            <h5 class="mb-0 fw-bold"><i class="bi bi-geo-alt-fill me-2"></i>Birria Barrio - S Presa St</h5>
+                            <h5 class="mb-0 fw-bold"><i class="bi bi-geo-alt-fill me-2"></i>{name location 1}
+                            </h5>
                         </div>
                         <div class="order-card-body p-3">
-                            <p class="small mb-2 text-muted"><i class="bi bi-telephone-fill me-1"></i>+1-210-289-4066</p>
+                            <p class="small mb-2 text-muted"><i class="bi bi-telephone-fill me-1"></i>{phone location 1}
+                            </p>
                             <hr class="my-2">
                             <div class="d-grid gap-2 mt-3">
-                                <a rel=""nofollow""
-                                    href="https://order.online/store/birria-barrio-san-antonio-1311953/"
-                                    target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Order.online
+                                <a rel="" nofollow"" href="{link order online location 1}" target="_blank"
+                                    class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{order online name 1}
                                 </a>
-                                <a rel=""nofollow""
-                                    href="https://www.trycaviar.com/store/birria-barrio-san-antonio-1311953/1883445/"
-                                    target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Trycaviar.com
+                                <a rel="" nofollow"" href="{link trycaviar location 1}" target="_blank"
+                                    class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{trycaviar name 1}
                                 </a>
-                                <a rel=""nofollow"" 
-                                    href="https://www.doordash.com/store/birria-barrio-san-antonio-1311953/1883445/"
-                                    target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Doordash.com
+                                <a rel="" nofollow"" href="{link doordash location 1}" target="_blank"
+                                    class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{doordash name 1}
                                 </a>
-                                <a rel=""nofollow""
-                                    href="https://postmates.com/store/birria-barrio-2710-s-presa/NFov-gWhT0ijFa1i3XtVYg"
-                                    target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Postmates.com
+                                <a rel="" nofollow"" href="{link postmates location 1}" target="_blank"
+                                    class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{postmates name 1}
                                 </a>
-                                <a rel=""nofollow""
-                                    href="https://www.ubereats.com/store/birria-barrio-2710-s-presa/NFov-gWhT0ijFa1i3XtVYg"
-                                    target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Ubereats.com
+                                <a rel="" nofollow"" href="{link ubereats location 1}" target="_blank"
+                                    class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{ubereats name 1}
                                 </a>
                             </div>
                         </div>
@@ -918,31 +914,33 @@
                     <div class="order-card h-100 p-0 shadow-sm rounded-4 overflow-hidden">
                         <div class="order-card-header p-3"
                             style="background-color: var(--primary-color); color: white;">
-                            <h5 class="mb-0 fw-bold"><i class="bi bi-geo-alt-fill me-2"></i>Birria Barrio y más - S Flores St</h5>
+                            <h5 class="mb-0 fw-bold"><i class="bi bi-geo-alt-fill me-2"></i>{name location 2}
+                            </h5>
                         </div>
                         <div class="order-card-body p-3">
-                            <p class="small mb-2 text-muted"><i class="bi bi-telephone-fill me-1"></i>+1-210-289-4066</p>
+                            <p class="small mb-2 text-muted"><i class="bi bi-telephone-fill me-1"></i>{phone location 2}
+                            </p>
                             <hr class="my-2">
                             <div class="d-grid gap-2 mt-3">
-                                <a rel=""nofollow""
+                                <a rel="" nofollow""
                                     href="https://order.online/store/birria-barrio-y-mas-san-antonio-24619894/"
                                     target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Order.online
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{order online name 2}
                                 </a>
-                                <a rel=""nofollow""
+                                <a rel="" nofollow""
                                     href="https://www.doordash.com/store/birria-barrio-y-mas-san-antonio-24619894/18697160/"
                                     target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Doordash.com
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{doordash name 2}
                                 </a>
-                                <a rel=""nofollow""
+                                <a rel="" nofollow""
                                     href="https://postmates.com/store/birria-barrio-y-mas-6203-s-flores/WUZrF9OJVeKcrFO3sbS35Q"
                                     target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Postmates.com
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{postmates name 2}
                                 </a>
-                                <a rel=""nofollow""
+                                <a rel="" nofollow""
                                     href="https://www.ubereats.com/store/birria-barrio-y-mas-6203-s-flores/WUZrF9OJVeKcrFO3sbS35Q"
                                     target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Ubereats.com
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{ubereats name 2}
                                 </a>
                             </div>
                         </div>
@@ -992,13 +990,12 @@
                     <div class="map-responsive-full">
                         <iframe id="modalMapFrame" src="#" width="100%" height="500" style="border:0;"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Congress Pizza Location - Detailed Map View"></iframe>
+                            title="{name location 1} location map"></iframe>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="contact-info-small me-auto">
-                        <small id="modalAddress"><i class="bi bi-geo-alt-fill"></i> 2309 Eggert Rd Suite 5, Tonawanda
-                            Town, NY 14150, United States</small>
+                        <small id="modalAddress"><i class="bi bi-geo-alt-fill"></i></small>
                     </div>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <a href="#" target="_blank" class="btn btn-primary" id="modalMapsLink">
