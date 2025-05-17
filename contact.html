@@ -93,17 +93,6 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png">
 
-    <!-- Structured Data for SEO -->
-    <script
-        type="application/ld+json">    {      "@context": "https://schema.org",      "@type": "Restaurant",      "name": "Birria Barrio",      "url": "https://birriabarrio.site/contact.html",      "logo": "https://birriabarrio.site/assets/img/logo.png",      "sameAs": [        "https://www.facebook.com/Birriabarrio"      ],      "telephone": "+12102894066",      "description": "Birria Barrio is a popular taco restaurant with locations on S Presa St and S Flores St in San Antonio, TX. Visit us for delicious birria tacos in a welcoming atmosphere.",      "priceRange": "$10-20",      "servesCuisine": "Mexican, Tacos, Birria",      "hasMap": "https://maps.app.goo.gl/aGpe6u4L7rbdXGNTA",      "areaServed": "San Antonio, TX",      "department": [        {          "@type": "Restaurant",          "name": "Birria Barrio - S Presa St",          "address": {            "@type": "PostalAddress",            "streetAddress": "2710 S Presa St",            "addressLocality": "San Antonio",            "addressRegion": "TX",            "postalCode": "78210",            "addressCountry": "US"          },          "telephone": "+12102894066",          "openingHoursSpecification": [            {              "@type": "OpeningHoursSpecification",              "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday", "Wednesday"],              "opens": "14:00",              "closes": "00:00"            },            {              "@type": "OpeningHoursSpecification",              "dayOfWeek": ["Friday", "Saturday"],              "opens": "14:00",              "closes": "02:00"            }          ]        },        {          "@type": "Restaurant",          "name": "Birria Barrio y más - S Flores St",          "address": {            "@type": "PostalAddress",            "streetAddress": "6203 S Flores St",            "addressLocality": "San Antonio",            "addressRegion": "TX",            "postalCode": "78214",            "addressCountry": "US"          },          "telephone": "+12102894066",          "openingHoursSpecification": [            {              "@type": "OpeningHoursSpecification",              "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday", "Wednesday"],              "opens": "14:00",              "closes": "00:00"            },            {              "@type": "OpeningHoursSpecification",              "dayOfWeek": ["Friday", "Saturday"],              "opens": "14:00",              "closes": "02:00"            }          ]        }      ]    }    </script>
-
-    <!-- FAQ Structured Data -->
-    <script
-        type="application/ld+json">    {      "@context": "https://schema.org",      "@type": "FAQPage",      "mainEntity": [        {          "@type": "Question",          "name": "What are Birria Barrio's operating hours?",          "acceptedAnswer": {            "@type": "Answer",            "text": "Birria Barrio locations are open Wednesday through Sunday from 2:00 PM to midnight, with extended hours until 2:00 AM on Fridays and Saturdays. We are closed on Mondays and Tuesdays."          }        },        {          "@type": "Question",          "name": "Do I need reservations at Birria Barrio?",          "acceptedAnswer": {            "@type": "Answer",            "text": "Reservations are recommended for groups of 6 or more, especially on weekends when our restaurants are busiest. We suggest making reservations 2-3 days in advance for Friday and Saturday visits to ensure availability."          }        },        {          "@type": "Question",          "name": "Which Birria Barrio location is the main branch?",          "acceptedAnswer": {            "@type": "Answer",            "text": "Our S Presa location at 2710 S Presa St, San Antonio, TX 78210 is our main branch. This was our first restaurant and serves as our headquarters. All locations offer the same great menu and quality."          }        },        {          "@type": "Question",          "name": "How can I contact Birria Barrio for catering services?",          "acceptedAnswer": {            "@type": "Answer",            "text": "For catering inquiries, please call our main phone number at +1 (210) 289-4066. We offer catering services for events of all sizes with advance notice."          }        }      ]    }    </script>
-
-    <!-- BreadcrumbList Structured Data -->
-    <script
-        type="application/ld+json">    {      "@context": "https://schema.org",      "@type": "BreadcrumbList",      "itemListElement": [        {          "@type": "ListItem",          "position": 1,          "name": "Home",          "item": "https://birriabarrio.site/"        },        {          "@type": "ListItem",          "position": 2,          "name": "Contact",          "item": "https://birriabarrio.site/contact"        }      ]    }    </script>
 
 </head>
 
@@ -136,7 +125,8 @@
     <!-- Contact Hero Section -->
     <section class="py-5 hero-section" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%);">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold" style="font-family:var(--font-title); color:var(--primary-color);">{text hero title}</h1>
+            <h1 class="display-4 fw-bold" style="font-family:var(--font-title); color:var(--primary-color);">{text hero
+                title}</h1>
             <p class="lead mb-4">{text hero description}</p>
         </div>
     </section>
@@ -148,12 +138,12 @@
 
             <!-- Location Selector Tabs -->
             <ul class="nav nav-tabs mb-4" id="locationTabs" role="tablist">
-                <li class="nav-item" role="presentation"> <button class="nav-link active" id="spresa-tab"
-                        data-bs-toggle="tab" data-bs-target="#spresa" type="button" role="tab" aria-selected="true"
-                        onclick="updateMap('spresa')"> S Presa St </button> </li>
-                <li class="nav-item" role="presentation"> <button class="nav-link" id="sflores-tab" data-bs-toggle="tab"
-                        data-bs-target="#sflores" type="button" role="tab" aria-selected="false"
-                        onclick="updateMap('sflores')"> S Flores St </button> </li>
+                <li class="nav-item" role="presentation"> <button class="nav-link active" id="location-1-tab"
+                        data-bs-toggle="tab" data-bs-target="#location-1" type="button" role="tab" aria-selected="true"
+                        onclick="updateMap('location-1')"> {text location 1 name} </button> </li>
+                <li class="nav-item" role="presentation"> <button class="nav-link" id="location-2-tab" data-bs-toggle="tab"
+                        data-bs-target="#location-2" type="button" role="tab" aria-selected="false"
+                        onclick="updateMap('location-2')"> {text location 2 name} </button> </li>
             </ul>
 
             <div class="row g-4">
@@ -163,17 +153,17 @@
                         style="height:450px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                         <div class="map-responsive h-100" id="locationMap">
                             <iframe id="mapFrame"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.2161385900254!2d-98.48103468813488!3d29.394902963546542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf7af822e440f%3A0xe48b15283c3f7176!2sBirria%20Barrio!5e0!3m2!1sen!2sus!4v1747299067262!5m2!1sen!2sus"
+                                src="{text location 1 google maps}"
                                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                title="Birria Barrio S Presa St Location Map"></iframe>
+                                title="Location Map"></iframe>
                         </div>
                         <button class="map-expand-btn" data-bs-toggle="modal" data-bs-target="#mapModal">
                             <i class="bi bi-arrows-fullscreen"></i>
                         </button>
                     </div>
                     <div class="mt-3">
-                        <a href="https://maps.app.goo.gl/aGpe6u4L7rbdXGNTA" target="_blank"
+                        <a href="{text location 1 google maps}" target="_blank"
                             class="btn btn-outline-primary" id="mapsLink"> <i
                                 class="bi bi-box-arrow-up-right me-2"></i>Open in Google Maps </a>
                     </div>
@@ -182,16 +172,15 @@
                 <!-- Location Details -->
                 <div class="col-lg-5">
                     <div class="tab-content" id="locationTabContent">
-                        <!-- S Presa St Location -->
-                        <div class="tab-pane fade show active" id="spresa" role="tabpanel">
+                        <div class="tab-pane fade show active" id="location-1" role="tabpanel">
                             <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
-                                <h4 class="fw-bold" style="color:var(--primary-color);">Birria Barrio – S Presa St </h4>
+                                <h4 class="fw-bold" style="color:var(--primary-color);">{text location 1 name}</h4>
                                 <div class="d-flex align-items-start mt-4 mb-3">
                                     <div class="contact-icon me-3"> <i class="bi bi-geo-alt-fill fs-4"
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Address</h5>
-                                        <p class="mb-0">2710 S Presa St, San Antonio, TX 78210, United States</p>
+                                        <p class="mb-0">{text location 1 address}</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -199,8 +188,9 @@
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Phone</h5>
-                                        <p class="mb-0"><a href="tel:+12102894066" class="text-decoration-none">+1
-                                                210-289-4066</a></p>
+                                        <p class="mb-0"><a href="tel:{text location 1 phone}"
+                                                class="text-decoration-none">+1
+                                                {text location 1 phone}</a></p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -208,10 +198,7 @@
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Opening Hours</h5>
-                                        <p class="mb-0">Thursday - Sunday: 2:00 PM - 12:00 AM</p>
-                                        <p class="mb-0">Friday - Saturday: 2:00 PM - 2:00 AM</p>
-                                        <p class="mb-0">Monday - Tuesday: Closed</p>
-                                        <p class="mb-0">Wednesday: 2:00 PM - 12:00 AM</p>
+                                        <p class="mb-0">{text location 1 hours}</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -219,27 +206,24 @@
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Features</h5>
-                                        <p class="mb-0">Main branch with full services</p>
-                                        <p class="mb-0">Price Range: $10–20 per person</p>
+                                        <p class="mb-0">{text location 1 features}</p>
                                     </div>
                                 </div>
-                                <div class="mt-3 d-flex gap-2"> <a href="https://www.facebook.com/Birriabarrio"
-                                        target="_blank" class="btn btn-outline-primary"> <i
-                                            class="bi bi-facebook me-2"></i>Facebook </a> </div>
+                                <div class="mt-3 d-flex gap-2"> <a href="{text location 1 facebook}" target="_blank"
+                                        class="btn btn-outline-primary"> <i class="bi bi-facebook me-2"></i>Facebook
+                                    </a> </div>
                             </div>
                         </div>
 
-                        <!-- S Flores St Location -->
-                        <div class="tab-pane fade" id="sflores" role="tabpanel">
+                        <div class="tab-pane fade" id="location-2" role="tabpanel">
                             <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
-                                <h4 class="fw-bold" style="color:var(--primary-color);">Birria Barrio y más – S Flores
-                                    St</h4>
+                                <h4 class="fw-bold" style="color:var(--primary-color);">{text location 2 name}</h4>
                                 <div class="d-flex align-items-start mt-4 mb-3">
                                     <div class="contact-icon me-3"> <i class="bi bi-geo-alt-fill fs-4"
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Address</h5>
-                                        <p class="mb-0">6203 S Flores St, San Antonio, TX 78214, United States</p>
+                                        <p class="mb-0">{text location 2 address}</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -247,8 +231,9 @@
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Phone</h5>
-                                        <p class="mb-0"><a href="tel:+12102894066" class="text-decoration-none">+1
-                                                210-289-4066</a></p>
+                                        <p class="mb-0"><a href="tel:{text location 2 phone}"
+                                                class="text-decoration-none">+1
+                                                {text location 2 phone}</a></p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -256,10 +241,7 @@
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Opening Hours</h5>
-                                        <p class="mb-0">Thursday - Sunday: 2:00 PM - 12:00 AM</p>
-                                        <p class="mb-0">Friday - Saturday: 2:00 PM - 2:00 AM</p>
-                                        <p class="mb-0">Monday - Tuesday: Closed</p>
-                                        <p class="mb-0">Wednesday: 2:00 PM - 12:00 AM</p>
+                                        <p class="mb-0">{text location 2 hours}</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -267,8 +249,7 @@
                                             style="color:var(--primary-color);"></i> </div>
                                     <div>
                                         <h5 class="fw-bold">Features</h5>
-                                        <p class="mb-0">Full service restaurant</p>
-                                        <p class="mb-0">Price Range: $10–20 per person</p>
+                                        <p class="mb-0">{text location 2 features}</p>
                                     </div>
                                 </div>
                             </div>
@@ -292,9 +273,10 @@
                             style="background-color: var(--primary-color); color: white;">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <h3 class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>S Presa St</h3>
-                                    <p class="mb-0 mt-1 text-white-50">2710 S Presa St, San Antonio, TX 78210, USA</p>
-                                </div> <span class="badge bg-white text-primary ms-auto px-3 py-2">Main Location</span>
+                                    <h3 class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>{text location 1 name}</h3>
+                                    <p class="mb-0 mt-1 text-white-50">{text location 1 address}</p>
+                                </div> <span class="badge bg-white text-primary ms-auto px-3 py-2">{text location 1
+                                    main}</span>
                             </div>
                         </div>
                         <div class="card-body p-4">
@@ -314,11 +296,8 @@
                                     <h5 class="mb-3">Contact:</h5>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i><a
-                                                href="tel:+12102894066" class="text-decoration-none">+1 (210)
-                                                289-4066</a></li>
-                                        <li><i class="bi bi-facebook me-2"></i><a
-                                                href="https://www.facebook.com/Birriabarrio" target="_blank"
-                                                class="text-decoration-none">facebook.com/Birriabarrio</a></li>
+                                                href="tel:{text location 1 phone}" class="text-decoration-none">+1
+                                                {text location 1 phone}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -335,9 +314,8 @@
                             <div class="d-flex align-items-center">
                                 <div>
                                     <h3 class="mb-0" style="color: var(--primary-color);"><i
-                                            class="bi bi-geo-alt-fill me-2"></i>S Flores St</h3>
-                                    <p class="mb-0 mt-1 text-muted">6203 S Flores St, San Antonio, TX 78214, United
-                                        States</p>
+                                            class="bi bi-geo-alt-fill me-2"></i>{text location 2 name}</h3>
+                                    <p class="mb-0 mt-1 text-muted">{text location 2 address}</p>
                                 </div>
                             </div>
                         </div>
@@ -358,8 +336,8 @@
                                     <h5 class="mb-3">Contact:</h5>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i><a
-                                                href="tel:+12102894066" class="text-decoration-none">+1 (210)
-                                                289-4066</a></li>
+                                                href="tel:{text location 2 phone}" class="text-decoration-none">+1
+                                                {text location 2 phone}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -382,78 +360,72 @@
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-header py-3" style="background-color: #f8f9fa;">
                             <h4 class="mb-0" style="color: var(--primary-color);"><i
-                                    class="bi bi-geo-alt-fill me-2"></i>Birria Barrio - S Presa St</h4>
+                                    class="bi bi-geo-alt-fill me-2"></i>{text location 1 name}</h4>
                         </div>
                         <div class="card-body">
-                            <p><i class="bi bi-map me-2"></i>2710 S Presa St, San Antonio, TX 78210, United States</p>
-                            <p><i class="bi bi-telephone-fill me-2"></i>Phone: <a href="tel:+12102894066"
-                                    class="text-decoration-none">(210) 289-4066</a></p>
+                            <p><i class="bi bi-map me-2"></i>{text location 1 address}</p>
+                            <p><i class="bi bi-telephone-fill me-2"></i>Phone: <a href="tel:{text location 1 phone}"
+                                    class="text-decoration-none">{text location 1 phone}</a></p>
 
                             <h5 class="mt-4 mb-3">Order Online:</h5>
                             <div class="d-grid gap-2">
-                                <a rel="" nofollow""
-                                    href="https://order.online/store/birria-barrio-san-antonio-1311953/" target="_blank"
-                                    class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Order.Online
+                                <a rel="" nofollow"" href="{link link 1}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 1}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://www.trycaviar.com/store/birria-barrio-san-antonio-1311953/1883445/"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Trycaviar
+                                <a rel="" nofollow"" href="{link link 2}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 2}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://www.doordash.com/store/birria-barrio-san-antonio-1311953/1883445/"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>DoorDash
+                                <a rel="" nofollow"" href="{link link 3}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 3}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://postmates.com/store/birria-barrio-2710-s-presa/NFov-gWhT0ijFa1i3XtVYg"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Postmates
+                                <a rel="" nofollow"" href="{link link 4}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 4}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://www.ubereats.com/store/birria-barrio-2710-s-presa/NFov-gWhT0ijFa1i3XtVYg"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Uber Eats
+                                <a rel="" nofollow"" href="{link link 5}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 5}
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- S Flores St Order Card -->
                 <div class="col-lg-6 col-md-12 mb-4">
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-header py-3" style="background-color: #f8f9fa;">
                             <h4 class="mb-0" style="color: var(--primary-color);"><i
-                                    class="bi bi-geo-alt-fill me-2"></i>Birria Barrio y más - S Flores St</h4>
+                                    class="bi bi-geo-alt-fill me-2"></i>{text location 2 name}</h4>
                         </div>
                         <div class="card-body">
-                            <p><i class="bi bi-map me-2"></i>6203 S Flores St, San Antonio, TX 78214, United States</p>
-                            <p><i class="bi bi-telephone-fill me-2"></i>Phone: <a href="tel:+12102894066"
-                                    class="text-decoration-none">(210) 289-4066</a></p>
+                            <p><i class="bi bi-map me-2"></i>{text location 2 address}</p>
+                            <p><i class="bi bi-telephone-fill me-2"></i>Phone: <a href="tel:{text location 2 phone}"
+                                    class="text-decoration-none">{text location 2 phone}</a></p>
 
                             <h5 class="mt-4 mb-3">Order Online:</h5>
                             <div class="d-grid gap-2">
-                                <a rel="" nofollow""
-                                    href="https://order.online/store/birria-barrio-y-mas-san-antonio-24619894/"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Order.Online
+                                <a rel="" nofollow"" href="{link link 1}" target="_blank"
+                                    class="btn btn-outline-primary  ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 1}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://www.doordash.com/store/birria-barrio-y-mas-san-antonio-24619894/18697160/"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>DoorDash
+                                <a rel="" nofollow"" href="{link link 2}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 2}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://postmates.com/store/birria-barrio-y-mas-6203-s-flores/WUZrF9OJVeKcrFO3sbS35Q"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Postmates
+                                <a rel="" nofollow"" href="{link link 3}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 3}
                                 </a>
-                                <a rel="" nofollow""
-                                    href="https://www.ubereats.com/store/birria-barrio-y-mas-6203-s-flores/WUZrF9OJVeKcrFO3sbS35Q"
-                                    target="_blank" class="btn btn-outline-primary">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>Uber Eats
+                                <a rel="" nofollow"" href="{link link 4}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 4}
+                                </a>
+                                <a rel="" nofollow"" href="{link link 5}" target="_blank"
+                                    class="btn btn-outline-primary ">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 5}
                                 </a>
                             </div>
                         </div>
@@ -568,48 +540,17 @@
         <div class="container">
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="fw-bold mb-4" style="color:var(--primary-color);">General Contact Information</h2>
-
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center py-4">
-                                    <div class="mb-3"> <i class="bi bi-telephone-fill fs-1"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <h5 class="fw-bold">S Presa St Branch</h5>
-                                    <p class="mb-1"><a href="tel:+12102894066" class="text-decoration-none">+1 (210)
-                                            289-4066</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center py-4">
-                                    <div class="mb-3"> <i class="bi bi-geo-alt-fill fs-1"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <h5 class="fw-bold">S Flores St Branch</h5>
-                                    <p class="mb-1"><a href="tel:+12102894066" class="text-decoration-none">+1 (210)
-                                            289-4066</a> </p>
-                                    <p class="mb-0">Thursday - Sunday: 2:00 PM - 12:00 AM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-5">
-                        <h5 class="fw-bold mb-3">Connect with us</h5>
-                        <div class="social-icons d-flex justify-content-center gap-3">
-                            <a href="https://www.facebook.com/outandaboutburgers" target="_blank" class="social-icon"
-                                style="font-size:1.8rem; color:var(--primary-color);" aria-label="Facebook"
-                                title="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/outandaboutburgers" target="_blank" class="social-icon"
-                                style="font-size:1.8rem; color:var(--primary-color);" aria-label="Instagram"
-                                title="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.tiktok.com/@outandaboutburgers" target="_blank" class="social-icon"
-                                style="font-size:1.8rem; color:var(--primary-color);" aria-label="TikTok"
-                                title="Follow us on TikTok"><i class="bi bi-tiktok"></i></a>
-                        </div>
+                    <h5 class="fw-bold mb-3">Connect with us</h5>
+                    <div class="social-icons d-flex justify-content-center gap-3">
+                        <a href="{text location 1 facebook}" target="_blank" class="social-icon"
+                            style="font-size:1.8rem; color:var(--primary-color);" aria-label="Facebook"
+                            title="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="{text location 1 instagram}" target="_blank" class="social-icon"
+                            style="font-size:1.8rem; color:var(--primary-color);" aria-label="Instagram"
+                            title="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="{text location 1 tiktok}" target="_blank" class="social-icon"
+                            style="font-size:1.8rem; color:var(--primary-color);" aria-label="TikTok"
+                            title="Follow us on TikTok"><i class="bi bi-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -626,7 +567,7 @@
                     Suggest an Edit
                 </div>
                 <div class="edit-desc">
-                    Thank you for visiting the Out and About Burgers website. Content is regularly updated.
+                    This is not the official website. Content is updated by the community.
                 </div>
             </div>
         </div>
@@ -638,15 +579,15 @@
         <script>
             // Map location data
             const locationData = {
-                meridian: {
-                    mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d173731.76048480524!2d-122.5817944!3d47.1273182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490fd18feed435f%3A0xfc77740070dc9f31!2sOut%20%26%20About%20Burgers!5e0!3m2!1svi!2s!4v1747060358641!5m2!1svi!2s",
-                    mapsLink: "https://maps.app.goo.gl/Cu2Mp8YnWEdiH5kYA",
-                    address: "14214 Meridian E, Puyallup, WA 98373, United States"
+                'location-1': {
+                    mapUrl: "{text location 1 google maps}",
+                    mapsLink: "{text location 1 google maps}",
+                    address: "{text location 1 address}"
                 },
-                "112th": {
-                    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.1530410285377!2d-122.35083440000001!3d47.154857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490fd86a7375cb1%3A0xe85c1721813f7bbf!2sOut%20%26%20About%20Burgers!5e0!3m2!1svi!2s!4v1747060421862!5m2!1svi!2s",
-                    mapsLink: "https://maps.app.goo.gl/4RPKe7J9ZgXhHJZF6",
-                    address: "5815 112th St E, Puyallup, WA 98373, United States"
+                'location-2': {
+                    mapUrl: "{text location 2 google maps}",
+                    mapsLink: "{text location 2 google maps}",
+                    address: "{text location 2 address}"
                 }
             };
 
