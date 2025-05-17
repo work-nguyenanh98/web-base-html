@@ -121,6 +121,14 @@ body {
   color: #fff;
 }
 
+.brand-name {
+  font-weight: 800;
+  color: var(--primary-color);
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: 34px;
+}
+
 .gallery-img {
   border-radius: var(--border-radius);
   object-fit: cover;
