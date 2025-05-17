@@ -3,8 +3,6 @@ description:
 globs: index.html
 alwaysApply: false
 ---
-[index.html](mdc:index.html)
-
 # Rule: Header & Hero , Content page.
 
 # Mô tả: Thay thế các placeholder trong file HTML bằng dữ liệu từ người dùng
@@ -16,7 +14,7 @@ alwaysApply: false
 3.  **Thay thế:** Thay thế "{ten_bien}" bằng giá trị của biến "ten_bien".
 4.  **Xử lý thiếu dữ liệu:** Nếu không tìm thấy biến, để trống hoặc thông báo lỗi.
 5.  **Giữ nguyên định dạng:** Không thay đổi định dạng của text khi thay thế.
-6.  **Alt** Tìm các biến {image alt} và {image caption} thay đổi thành title
+6.  **Nhận diện Image alt & image caption ** Tìm các biến {image alt} và {image caption} thay đổi thành title giống title website.
 
 </CORE_PRINCIPLES>
 
@@ -30,11 +28,15 @@ alwaysApply: false
 
 # <meta name="description" content="{description}">
 
+# `<a href="#" data-fancybox="hero-gallery"  data-caption="{image caption}"> <img src="#" alt="{image alt}" loading="lazy"                                    style="width: 100%; height: 500px; object-fit: cover;"> </a>
+
 # Kết quả sau khi thay thế:
 
 # <title>Trang web của tôi</title>
 
 # <meta name="description" content="Đây là mô tả">
+
+# <a href="#" data-fancybox="hero-gallery"  data-caption="Trang web của tôi"> <img src="#" alt="Trang web của tôi" loading="lazy"                                    style="width: 100%; height: 500px; object-fit: cover;"> </a>
 
 </EXAMPLES>
 
