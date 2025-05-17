@@ -3,278 +3,191 @@ description:
 globs: index.html
 alwaysApply: false
 ---
-{
-  "rules": [
-    {
-      "name": "title",
-      "from": "{title}",
-      "to": "{{title}}"
-    },
-    {
-      "name": "description",
-      "from": "{description}",
-      "to": "{{description}}"
-    },
-    {
-      "name": "keywords",
-      "from": "{keywords}",
-      "to": "{{keywords}}"
-    },
-    {
-      "name": "canonical",
-      "from": "{canonical}",
-      "to": "{{canonical}}"
-    },
-    {
-      "name": "image",
-      "from": "{image}",
-      "to": "{{image}}"
-    },
-    {
-      "name": "brand_name",
-      "from": "{brand name}",
-      "to": "{{brand_name}}"
-    },
-    {
-      "name": "hero_title",
-      "from": "{text hero title}",
-      "to": "{{hero_title}}"
-    },
-    {
-      "name": "hero_description",
-      "from": "{text hero description}",
-      "to": "{{hero_description}}"
-    },
-    {
-      "name": "our_story",
-      "from": "{our Story}",
-      "to": "{{our_story}}"
-    },
-    {
-      "name": "highlights_title",
-      "from": "{text highlights title}",
-      "to": "{{highlights_title}}"
-    },
-    {
-      "name": "highlight_title_1",
-      "from": "{text highlights title 1}",
-      "to": "{{highlight_title_1}}"
-    },
-    {
-      "name": "highlight_description_1",
-      "from": "{text highlights description 1}",
-      "to": "{{highlight_description_1}}"
-    },
-    {
-      "name": "highlight_title_2",
-      "from": "{text highlights title 2}",
-      "to": "{{highlight_title_2}}"
-    },
-    {
-      "name": "highlight_description_2",
-      "from": "{text highlights description 2}",
-      "to": "{{highlight_description_2}}"
-    },
-    {
-      "name": "highlight_title_3",
-      "from": "{text highlights title 3}",
-      "to": "{{highlight_title_3}}"
-    },
-    {
-      "name": "highlight_description_3",
-      "from": "{text highlights description 3}",
-      "to": "{{highlight_description_3}}"
-    },
-    {
-      "name": "highlight_title_4",
-      "from": "{text highlights title 4}",
-      "to": "{{highlight_title_4}}"
-    },
-    {
-      "name": "highlight_description_4",
-      "from": "{text highlights description 4}",
-      "to": "{{highlight_description_4}}"
-    },
-    {
-      "name": "highlight_title_5",
-      "from": "{text highlights title 5}",
-      "to": "{{highlight_title_5}}"
-    },
-    {
-      "name": "highlight_description_5",
-      "from": "{text highlights description 5}",
-      "to": "{{highlight_description_5}}"
-    },
-    {
-      "name": "text_menu_title_1",
-      "from": "{text menu title 1}",
-      "to": "{{text_menu_title_1}}"
-    },
-    {
-      "name": "text_menu_description_1",
-      "from": "{text menu description 1}",
-      "to": "{{text_menu_description_1}}"
-    },
-    {
-      "name": "text_menu_price_1",
-      "from": "{text menu price 1}",
-      "to": "{{text_menu_price_1}}"
-    },
-    {
-      "name": "text_menu_title_2",
-      "from": "{text menu title 2}",
-      "to": "{{text_menu_title_2}}"
-    },
-    {
-      "name": "text_menu_description_2",
-      "from": "{text menu description 2}",
-      "to": "{{text_menu_description_2}}"
-    },
-    {
-      "name": "text_menu_price_2",
-      "from": "{text menu price 2}",
-      "to": "{{text_menu_price_2}}"
-    },
-    {
-      "name": "text_menu_title_3",
-      "from": "{text menu title 3}",
-      "to": "{{text_menu_title_3}}"
-    },
-    {
-      "name": "text_menu_description_3",
-      "from": "{text menu description 3}",
-      "to": "{{text_menu_description_3}}"
-    },
-    {
-      "name": "text_menu_price_3",
-      "from": "{text menu price 3}",
-      "to": "{{text_menu_price_3}}"
-    },
-    {
-      "name": "name_location_1",
-      "from": "{name location 1}",
-      "to": "{{name_location_1}}"
-    },
-    {
-      "name": "address_location_1",
-      "from": "{address location 1}",
-      "to": "{{address_location_1}}"
-    },
-    {
-      "name": "price_range_location_1",
-      "from": "{price range location 1}",
-      "to": "{{price_range_location_1}}"
-    },
-    {
-      "name": "phone_location_1",
-      "from": "{phone location 1}",
-      "to": "{{phone_location_1}}"
-    },
-    {
-      "name": "email_location_1",
-      "from": "{email location 1}",
-      "to": "{{email_location_1}}"
-    },
-    {
-      "name": "facebook_location_1",
-      "from": "{facebook location 1}",
-      "to": "{{facebook_location_1}}"
-    },
-    {
-      "name": "instagram_location_1",
-      "from": "{instagram location 1}",
-      "to": "{{instagram_location_1}}"
-    },
-    {
-      "name": "twitter_location_1",
-      "from": "{twitter location 1}",
-      "to": "{{twitter_location_1}}"
-    },
-    {
-      "name": "tiktok_location_1",
-      "from": "{tiktok location 1}",
-      "to": "{{tiktok_location_1}}"
-    },
-    {
-      "name": "link_map_embed_location_1",
-      "from": "{link map embed location 1}",
-      "to": "{{link_map_embed_location_1}}"
-    },
-    {
-      "name": "link_maps_location_1",
-      "from": "{link maps location 1}",
-      "to": "{{link_maps_location_1}}"
-    },
-    {
-      "name": "location_1_monday_hours",
-      "from": "{location_1_monday_hours}",
-      "to": "{{location_1_monday_hours}}"
-    },
-    {
-      "name": "location_1_monday_status",
-      "from": "{location_1_monday_status}",
-      "to": "{{location_1_monday_status}}"
-    },
-    {
-      "name": "location_1_monday_status_class",
-      "from": "{location_1_monday_status_class}",
-      "to": "{{location_1_monday_status_class}}"
-    },
-    // ... tiếp tục cho các ngày khác location 1, location 2 tương tự
-    {
-      "name": "name_location_2",
-      "from": "{name location 2}",
-      "to": "{{name_location_2}}"
-    },
-    {
-      "name": "address_location_2",
-      "from": "{address location 2}",
-      "to": "{{address_location_2}}"
-    },
-    {
-      "name": "price_range_location_2",
-      "from": "{price range location 2}",
-      "to": "{{price_range_location_2}}"
-    },
-    {
-      "name": "phone_location_2",
-      "from": "{phone location 2}",
-      "to": "{{phone_location_2}}"
-    },
-    {
-      "name": "email_location_2",
-      "from": "{email location 2}",
-      "to": "{{email_location_2}}"
-    },
-    {
-      "name": "facebook_location_2",
-      "from": "{facebook location 2}",
-      "to": "{{facebook_location_2}}"
-    },
-    {
-      "name": "instagram_location_2",
-      "from": "{instagram location 2}",
-      "to": "{{instagram_location_2}}"
-    },
-    {
-      "name": "twitter_location_2",
-      "from": "{twitter location 2}",
-      "to": "{{twitter_location_2}}"
-    },
-    {
-      "name": "tiktok_location_2",
-      "from": "{tiktok location 2}",
-      "to": "{{tiktok_location_2}}"
-    },
-    {
-      "name": "link_map_embed_location_2",
-      "from": "{link map embed location 2}",
-      "to": "{{link_map_embed_location_2}}"
-    },
-    {
-      "name": "link_maps_location_2",
-      "from": "{link maps location 2}",
-      "to": "{{link_maps_location_2}}"
-    }
-  ]
-}
+# Rule: Header & Hero , Content page.
+
+# Mô tả: Thay thế các placeholder trong file HTML bằng dữ liệu từ người dùng
+
+<CORE_PRINCIPLES>
+
+1.  **Nhận diện placeholder:** Tìm các đoạn text có dạng "{ten_bien}".
+2.  **Tìm dữ liệu:** Tìm biến "ten_bien" trong file Content.txt.
+3.  **Thay thế:** Thay thế "{ten_bien}" bằng giá trị của biến "ten_bien".
+4.  **Xử lý thiếu dữ liệu:** Nếu không tìm thấy biến, để trống hoặc thông báo lỗi.
+5.  **Giữ nguyên định dạng:** Không thay đổi định dạng của text khi thay thế.
+6.  **Alt** Tìm các biến {image alt} và {image caption} thay đổi thành title
+
+</CORE_PRINCIPLES>
+
+<EXAMPLES>
+# title = Trang web của tôi
+# description = Đây là mô tả
+
+# index.html:
+
+# <title>{title}</title>
+
+# <meta name="description" content="{description}">
+
+# Kết quả sau khi thay thế:
+
+# <title>Trang web của tôi</title>
+
+# <meta name="description" content="Đây là mô tả">
+
+</EXAMPLES>
+
+# Rule: Phần xử lý cho Contact and location
+
+# Mô tả: Sinh HTML cho từng chi nhánh từ input dạng text (Contact and locations), tự động nhận diện các trường: tên, địa chỉ, giá, link map, embed, giờ mở cửa, số điện thoại, social...
+
+<CORE_PRINCIPLES>
+
+1. **Nhận diện từng chi nhánh:**
+
+   - Tìm các block bắt đầu bằng "Branch X :" hoặc "Branch KEY :".
+   - Mỗi block chứa các trường: Name, Price, Link/Link Map, Embed/Link Embed, Address, Phone number, Social (nếu có).
+
+2. **Trích xuất dữ liệu từng trường:**
+
+   - Name: sau "Name :"
+   - Price: sau "Price :"
+   - Link Map: sau "Link :" hoặc "Link Map :"
+   - Embed: sau "Embed :" hoặc "Link Embed :"
+   - Address: sau "Address:"
+   - Phone: sau "Phone number:" hoặc "Phone Number:"
+   - Social: sau "Social:" (có thể nhiều dòng, mỗi dòng 1 mạng xã hội)
+
+3. **Giờ mở cửa:**
+
+   - Tìm block "Opening Hours". Mỗi dòng là 1 ngày, định dạng: "Day Time" hoặc "Day Closed".
+   - Gán giờ mở cửa này cho tất cả các chi nhánh nếu không có giờ riêng từng chi nhánh.
+
+4. **Sinh HTML cho từng chi nhánh:**
+
+   - Tạo tab selector và tab content cho từng chi nhánh.
+   - Trong mỗi tab:
+     - Hiển thị Name, Address, Price, Phone, Social (nếu có)
+     - Hiển thị map embed (iframe)
+     - Nút mở Google Maps (link map)
+     - Bảng giờ mở cửa (dùng dữ liệu đã trích xuất)
+
+5. **Social:**
+
+   - Nếu có social, sinh icon/link tương ứng (Facebook, Instagram, ...)
+   - Nếu không có, ẩn phần social.
+
+6. **Tối ưu cho mở rộng:**
+
+   - Khi thêm chi nhánh mới, chỉ cần thêm block "Branch ..." vào input, rule tự động nhận diện và sinh giao diện.
+   - Nếu có giờ mở cửa riêng từng chi nhánh, cho phép block "Opening Hours" nằm trong từng branch.
+
+7. **Đồng bộ dữ liệu:**
+   - Nếu có phần "Contact Details" ở cuối, dùng để xác nhận lại địa chỉ/số điện thoại cho từng chi nhánh (ưu tiên data trong branch nếu trùng).
+
+</CORE_PRINCIPLES>
+
+<INPUT_FORMAT>
+
+# Dữ liệu đầu vào là text dạng:
+
+# Contact and locations:
+
+# Branch 1 :
+
+# Name : ...
+
+# Price : ...
+
+# Link : ...
+
+# Embed : ...
+
+# Address: ...
+
+# Phone number: ...
+
+# ...
+
+# Branch 2 :
+
+# ...
+
+# Opening Hours
+
+# Friday ...
+
+# ...
+
+# Social:
+
+# Facebook: ...
+
+# ...
+
+# Contact Details
+
+# ...
+
+# Rule sẽ tự động nhận diện, trích xuất và sinh HTML tương ứng cho từng chi nhánh.
+
+</INPUT_FORMAT>
+
+# Rule: Sinh HTML cho Order Online section từ input dạng text
+
+<CORE_PRINCIPLES>
+
+1. **Nhận diện từng chi nhánh (Branch):**
+
+   - Tìm các block bắt đầu bằng "Branch : <Tên chi nhánh>".
+   - Mỗi block chứa nhiều cặp Name/Link cho các dịch vụ order online.
+
+2. **Trích xuất dữ liệu dịch vụ:**
+
+   - Trong mỗi branch, tìm tất cả các cặp:
+     - Name : <Tên dịch vụ>
+     - Link : <URL>
+   - Cho phép nhiều dịch vụ cho mỗi branch, thứ tự không quan trọng.
+
+3. **Sinh HTML cho từng chi nhánh:**
+
+   - Tạo 1 card cho mỗi branch, gồm:
+     - Tiêu đề: Tên chi nhánh
+     - Danh sách các dịch vụ: mỗi dịch vụ là 1 nút/link với tên dịch vụ và icon (nếu có)
+     - Nếu có số điện thoại hoặc địa chỉ, có thể bổ sung (nếu input cung cấp)
+   - Mỗi dịch vụ order online là 1 nút/link với class `btn btn-outline-primary btn-sm`, target="\_blank"
+
+4. **Tối ưu cho mở rộng:**
+
+   - Khi thêm chi nhánh mới, chỉ cần thêm block "Branch : ..." vào input, rule tự động nhận diện và sinh giao diện.
+   - Khi thêm dịch vụ mới cho branch, chỉ cần thêm cặp Name/Link.
+
+5. **Đồng bộ dữ liệu:**
+   - Nếu có nhiều section order online, rule có thể áp dụng cho từng section riêng biệt.
+
+</CORE_PRINCIPLES>
+
+<INPUT_FORMAT>
+
+# Dữ liệu đầu vào là text dạng:
+
+# Order online section :
+
+# Branch : <Tên chi nhánh>
+
+# Name : <Tên dịch vụ>
+
+# Link : <URL>
+
+# Name : <Tên dịch vụ 2>
+
+# Link : <URL 2>
+
+# ...
+
+# Branch : <Tên chi nhánh 2>
+
+# ...
+
+# Rule sẽ tự động nhận diện, trích xuất và sinh HTML tương ứng cho từng chi nhánh, mỗi dịch vụ là 1 nút/link trong card của chi nhánh.
+
+</rewritten_file>

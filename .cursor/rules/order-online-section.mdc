@@ -1,0 +1,48 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Sinh HTML cho Order Online section từ input dạng text
+
+<CORE_PRINCIPLES>
+1. **Nhận diện từng chi nhánh (Branch):**
+   * Tìm các block bắt đầu bằng "Branch : <Tên chi nhánh>".
+   * Mỗi block chứa nhiều cặp Name/Link cho các dịch vụ order online.
+
+2. **Trích xuất dữ liệu dịch vụ:**
+   * Trong mỗi branch, tìm tất cả các cặp:
+     - Name : <Tên dịch vụ>
+     - Link : <URL>
+   * Cho phép nhiều dịch vụ cho mỗi branch, thứ tự không quan trọng.
+
+3. **Sinh HTML cho từng chi nhánh:**
+   * Tạo 1 card cho mỗi branch, gồm:
+     - Tiêu đề: Tên chi nhánh
+     - Danh sách các dịch vụ: mỗi dịch vụ là 1 nút/link với tên dịch vụ và icon (nếu có)
+     - Nếu có số điện thoại hoặc địa chỉ, có thể bổ sung (nếu input cung cấp)
+   * Mỗi dịch vụ order online là 1 nút/link với class `btn btn-outline-primary btn-sm`, target="_blank"
+
+4. **Tối ưu cho mở rộng:**
+   * Khi thêm chi nhánh mới, chỉ cần thêm block "Branch : ..." vào input, rule tự động nhận diện và sinh giao diện.
+   * Khi thêm dịch vụ mới cho branch, chỉ cần thêm cặp Name/Link.
+
+5. **Đồng bộ dữ liệu:**
+   * Nếu có nhiều section order online, rule có thể áp dụng cho từng section riêng biệt.
+
+</CORE_PRINCIPLES>
+
+<INPUT_FORMAT>
+# Dữ liệu đầu vào là text dạng:
+# Order online section :
+# Branch : <Tên chi nhánh>
+# Name : <Tên dịch vụ>
+# Link : <URL>
+# Name : <Tên dịch vụ 2>
+# Link : <URL 2>
+# ...
+# Branch : <Tên chi nhánh 2>
+# ...
+
+# Rule sẽ tự động nhận diện, trích xuất và sinh HTML tương ứng cho từng chi nhánh, mỗi dịch vụ là 1 nút/link trong card của chi nhánh.
+</rewritten_file>

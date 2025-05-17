@@ -1,0 +1,70 @@
+---
+description: 
+globs: index.html
+alwaysApply: false
+---
+# Mô tả: Sinh HTML cho từng chi nhánh từ input dạng text (Contact and locations), tự động nhận diện các trường: tên, địa chỉ, giá, link map, embed, giờ mở cửa, số điện thoại, social...
+
+<CORE_PRINCIPLES>
+1. **Nhận diện từng chi nhánh:**
+   * Tìm các block bắt đầu bằng "Branch X :" hoặc "Branch KEY :".
+   * Mỗi block chứa các trường: Name, Price, Link/Link Map, Embed/Link Embed, Address, Phone number, Social (nếu có).
+
+2. **Trích xuất dữ liệu từng trường:**
+   * Name: sau "Name :"
+   * Price: sau "Price :"
+   * Link Map: sau "Link :" hoặc "Link Map :"
+   * Embed: sau "Embed :" hoặc "Link Embed :"
+   * Address: sau "Address:"
+   * Phone: sau "Phone number:" hoặc "Phone Number:"
+   * Social: sau "Social:" (có thể nhiều dòng, mỗi dòng 1 mạng xã hội)
+
+3. **Giờ mở cửa:**
+   * Tìm block "Opening Hours". Mỗi dòng là 1 ngày, định dạng: "Day Time" hoặc "Day Closed".
+   * Gán giờ mở cửa này cho tất cả các chi nhánh nếu không có giờ riêng từng chi nhánh.
+
+4. **Sinh HTML cho từng chi nhánh:**
+   * Tạo tab selector và tab content cho từng chi nhánh.
+   * Trong mỗi tab:
+     - Hiển thị Name, Address, Price, Phone, Social (nếu có)
+     - Hiển thị map embed (iframe)
+     - Nút mở Google Maps (link map)
+     - Bảng giờ mở cửa (dùng dữ liệu đã trích xuất)
+
+5. **Social:**
+   * Nếu có social, sinh icon/link tương ứng (Facebook, Instagram, ...)
+   * Nếu không có, ẩn phần social.
+
+6. **Tối ưu cho mở rộng:**
+   * Khi thêm chi nhánh mới, chỉ cần thêm block "Branch ..." vào input, rule tự động nhận diện và sinh giao diện.
+   * Nếu có giờ mở cửa riêng từng chi nhánh, cho phép block "Opening Hours" nằm trong từng branch.
+
+7. **Đồng bộ dữ liệu:**
+   * Nếu có phần "Contact Details" ở cuối, dùng để xác nhận lại địa chỉ/số điện thoại cho từng chi nhánh (ưu tiên data trong branch nếu trùng).
+
+</CORE_PRINCIPLES>
+
+<INPUT_FORMAT>
+# Dữ liệu đầu vào là text dạng:
+# Contact and locations:
+# Branch 1 :
+# Name : ...
+# Price : ...
+# Link : ...
+# Embed : ...
+# Address: ...
+# Phone number: ...
+# ...
+# Branch 2 :
+# ...
+# Opening Hours
+# Friday ...
+# ...
+# Social:
+# Facebook: ...
+# ...
+# Contact Details
+# ...
+
+# Rule sẽ tự động nhận diện, trích xuất và sinh HTML tương ứng cho từng chi nhánh.
+</INPUT_FORMAT>
