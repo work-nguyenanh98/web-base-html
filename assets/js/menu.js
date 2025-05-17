@@ -19,6 +19,7 @@ const MENU_IMAGES = [
   "./assets/images/menu/menu-9.jpg",
 ];
 
+
 // Initialize when document is ready
 document.addEventListener("DOMContentLoaded", function () {
   initScrollTopButton();
@@ -57,12 +58,12 @@ function initGallery() {
   if (mainMenuImage && mainMenuLink && MENU_IMAGES.length > 0) {
     mainMenuImage.src = MENU_IMAGES[0];
     mainMenuLink.href = MENU_IMAGES[0];
-
+    
     // Remove data-fancybox attribute from mainMenuLink to prevent duplicate in gallery
     // Instead, use data-trigger-gallery attribute
     mainMenuLink.removeAttribute("data-fancybox");
     mainMenuLink.setAttribute("data-trigger-gallery", "menu-gallery");
-
+    
     // Add click event to open gallery via JavaScript instead
     mainMenuLink.addEventListener("click", (e) => {
       e.preventDefault();
@@ -81,6 +82,9 @@ function initGallery() {
   // Navigation button event listeners
   if (prevBtn) prevBtn.addEventListener("click", () => navigateGallery(-1));
   if (nextBtn) nextBtn.addEventListener("click", () => navigateGallery(1));
+
+  // Add drag functionality to main image
+  addDragCapability();
 
   // Navigate to previous or next image
   function navigateGallery(direction) {
@@ -116,15 +120,135 @@ function initGallery() {
       }, 200);
     }
   }
-
+  
+  // Add drag capability to the main menu image
+  function addDragCapability() {
+    const mainImageContainer = document.querySelector(".menu-main-image");
+    if (!mainImageContainer) return;
+    
+    let isDragging = false;
+    let startX = 0;
+    let currentDragX = 0;
+    let dragThreshold = 50; // Minimum drag distance to trigger navigation
+    
+    // Visual feedback helper
+    function updateDragVisualFeedback(diffX) {
+      if (Math.abs(diffX) > 20) {
+        mainMenuImage.style.transform = `translateX(${diffX * 0.2}px)`;
+        
+        // Show directional hint
+        if (diffX > 0) {
+          mainImageContainer.classList.add("dragging-right");
+          mainImageContainer.classList.remove("dragging-left");
+        } else if (diffX < 0) {
+          mainImageContainer.classList.add("dragging-left");
+          mainImageContainer.classList.remove("dragging-right");
+        }
+      }
+    }
+    
+    // Reset visual feedback
+    function resetDragVisualFeedback() {
+      mainMenuImage.style.transform = "";
+      mainImageContainer.classList.remove("dragging-left", "dragging-right");
+    }
+    
+    // Touch events for mobile
+    mainImageContainer.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+      currentDragX = startX;
+      isDragging = true;
+      mainImageContainer.classList.add("dragging");
+    });
+    
+    mainImageContainer.addEventListener("touchmove", (e) => {
+      if (!isDragging) return;
+      e.preventDefault(); // Prevent scrolling while dragging
+      
+      currentDragX = e.touches[0].clientX;
+      const diffX = currentDragX - startX;
+      updateDragVisualFeedback(diffX);
+    });
+    
+    mainImageContainer.addEventListener("touchend", (e) => {
+      if (!isDragging) return;
+      
+      const endX = e.changedTouches[0].clientX;
+      const diffX = endX - startX;
+      
+      if (Math.abs(diffX) > dragThreshold) {
+        if (diffX > 0) {
+          navigateGallery(-1); // Drag right -> previous image
+        } else {
+          navigateGallery(1); // Drag left -> next image
+        }
+      }
+      
+      isDragging = false;
+      mainImageContainer.classList.remove("dragging");
+      resetDragVisualFeedback();
+    });
+    
+    // Mouse events for desktop
+    mainImageContainer.addEventListener("mousedown", (e) => {
+      e.preventDefault();
+      startX = e.clientX;
+      currentDragX = startX;
+      isDragging = true;
+      mainImageContainer.style.cursor = "grabbing";
+      mainImageContainer.classList.add("dragging");
+    });
+    
+    mainImageContainer.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      
+      currentDragX = e.clientX;
+      const diffX = currentDragX - startX;
+      updateDragVisualFeedback(diffX);
+    });
+    
+    mainImageContainer.addEventListener("mouseup", (e) => {
+      if (!isDragging) return;
+      
+      const endX = e.clientX;
+      const diffX = endX - startX;
+      
+      if (Math.abs(diffX) > dragThreshold) {
+        if (diffX > 0) {
+          navigateGallery(-1); // Drag right -> previous image
+        } else {
+          navigateGallery(1); // Drag left -> next image
+        }
+      }
+      
+      isDragging = false;
+      mainImageContainer.style.cursor = "grab";
+      mainImageContainer.classList.remove("dragging");
+      resetDragVisualFeedback();
+    });
+    
+    mainImageContainer.addEventListener("mouseleave", () => {
+      if (isDragging) {
+        isDragging = false;
+        mainImageContainer.style.cursor = "grab";
+        mainImageContainer.classList.remove("dragging");
+        resetDragVisualFeedback();
+      }
+    });
+    
+    // Set initial cursor style
+    mainImageContainer.style.cursor = "grab";
+  }
+  
   // Generate hidden gallery links dynamically
   function generateGalleryLinks() {
     const container = document.getElementById('gallery-links-container');
     if (!container) return;
-
+    
     // Clear existing gallery links
     container.innerHTML = '';
-
+    
     // Create new gallery links based on array length - we don't actually need these anymore
     // since we're using JavaScript to start the gallery, but keeping for compatibility
     MENU_IMAGES.forEach((url, index) => {
@@ -132,7 +256,7 @@ function initGallery() {
       galleryLink.href = url;
       galleryLink.className = "hidden-gallery-item";
       galleryLink.style.display = "none"; // Make sure they're not clickable
-
+      
       container.appendChild(galleryLink);
     });
   }

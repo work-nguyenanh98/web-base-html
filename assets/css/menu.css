@@ -145,10 +145,66 @@
     position: relative;
     display: block;
     overflow: hidden;
+    user-select: none; /* Prevent text selection during drag */
 }
 
 .menu-main-image:hover #mainMenuImage {
     transform: scale(1.03);
+}
+
+/* Menu Main Image - drag indicators */
+.menu-main-image::before,
+.menu-main-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* .menu-main-image::before {
+    left: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 18l-6-6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.menu-main-image::after {
+    right: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.menu-main-image:hover::before,
+.menu-main-image:hover::after {
+    opacity: 0.8;
+} */
+
+/* Menu Main Image - drag states */
+.menu-main-image.dragging #mainMenuImage {
+    transition: transform 0.1s ease;
+}
+
+.menu-main-image.dragging-left::after {
+    opacity: 0.9 !important;
+}
+
+.menu-main-image.dragging-right::before {
+    opacity: 0.9 !important;
+}
+
+.menu-main-image:not(.dragging) #mainMenuImage {
+    transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 /* Gallery Navigation */
