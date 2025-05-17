@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>Birria Barrio Photos – Real Dining Moments in San Antonio</title>
+    <title>{title}</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Browse Birria Barrio photos and see why San Antonio locals love this spot. From tacos to school bus dining, these images tell a story of bold flavor and fun." />
-    <meta name="keywords" content="Birria Barrio photos, birria tacos, San Antonio food, quesabirria, school bus dining, food truck" />
+    <meta name="description" content="{description}" />
+    <meta name="keywords" content="{keywords}" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
@@ -101,7 +101,7 @@
       }
     </style>
 
-    <link rel="canonical" href="https://birria-barrio.site/photos" />
+    <link rel="canonical" href="{canonical}" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
     <meta name="format-detection" content="telephone=yes" />
@@ -116,27 +116,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Birria Barrio Photos – Real Dining Moments in San Antonio" />
-    <meta
-      property="og:description"
-      content="Browse Birria Barrio photos and see why San Antonio locals love this spot. From tacos to school bus dining, these images tell a story of bold flavor and fun."
-    />
-    <meta property="og:url" content="https://birria-barrio.site/photos" />
+    <meta property="og:title" content="{title}" />
+    <meta property="og:description" content="{description}" />
+    <meta property="og:url" content="{canonical}" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="https://birria-barrio.site/assets/img/birria-tacos.jpg" />
+    <meta property="og:image" content="{image}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Birria Barrio" />
+    <meta property="og:site_name" content="{brand name}" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Birria Barrio Photos – Real Dining Moments in San Antonio" />
-    <meta
-      name="twitter:description"
-      content="Browse Birria Barrio photos and see why San Antonio locals love this spot. From tacos to school bus dining, these images tell a story of bold flavor and fun."
-    />
-    <meta name="twitter:image" content="https://birria-barrio.site/assets/img/birria-tacos.jpg" />
+    <meta name="twitter:title" content="{title}" />
+    <meta name="twitter:description" content="{description}" />
+    <meta name="twitter:image" content="{image}" />
 
     <!-- Apple touch icon -->
     <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png" />
@@ -144,17 +138,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png" />
 
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://birria-barrio.site/" },
-          { "@type": "ListItem", "position": 2, "name": "Photo Gallery", "item": "https://birria-barrio.site/photos" }
-        ]
-      }
-    </script>
+      
   </head>
 
   <body>
@@ -162,7 +146,7 @@
     <nav class="navbar navbar-expand-lg sticky-top" style="background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05)">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="/">
-          <span style="font-weight: 800; color: var(--primary-color); font-family: var(--font-title); text-transform: uppercase; font-size: 34px">Birria Barrio</span>
+          <span class="brand-name">{brand name}</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -184,8 +168,8 @@
     <!-- Gallery Hero Section -->
     <section class="py-5" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%)">
       <div class="container text-center">
-        <h1 class="display-4 fw-bold" style="font-family: var(--font-title); color: var(--primary-color)">Birria Barrio Photos</h1>
-        <h3 class="lead mb-4">Photo Highlights of Birria Barrio's Flavor and Culture</h3>
+        <h1 class="display-4 fw-bold" style="font-family: var(--font-title); color: var(--primary-color)">{text hero title}</h1>
+        <h3 class="lead mb-4">{text hero description}</h3>
       </div>
     </section>
 
@@ -195,64 +179,64 @@
         <div class="gallery-container">
           <!-- Restaurant Space -->
           <div class="gallery-item restaurant">
-            <a href="assets/images/gallery/gallery-1.jpg" data-fancybox="gallery" data-caption="Birria Barrio Setup - Our outdoor dining area where all the magic happens">
-              <img src="assets/images/gallery/gallery-1.jpg" class="img-fluid" alt="Birria Barrio Setup - Outdoor dining area where fresh birria is served" />
+            <a href="assets/images/gallery/gallery-1.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-1.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item restaurant">
-            <a href="assets/images/gallery/gallery-2.jpg" data-fancybox="gallery" data-caption="Birria Barrio Counter - Our ordering counter where customers place their orders">
-              <img src="assets/images/gallery/gallery-2.jpg" class="img-fluid" alt="Birria Barrio Counter - Ordering area with friendly staff ready to serve" />
+            <a href="assets/images/gallery/gallery-2.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-2.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item restaurant">
-            <a href="assets/images/gallery/gallery-3.jpg" data-fancybox="gallery" data-caption="Birria Barrio Location - Our San Antonio spot with the school bus seating area">
-              <img src="assets/images/gallery/gallery-3.jpg" class="img-fluid" alt="Birria Barrio Location - San Antonio location with school bus and outdoor seating" />
+            <a href="assets/images/gallery/gallery-3.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-3.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item restaurant">
-            <a href="assets/images/gallery/gallery-4.jpg" data-fancybox="gallery" data-caption="Birria Barrio Menu Board - Our flavorful birria and taco options">
-              <img src="assets/images/gallery/gallery-4.jpg" class="img-fluid" alt="Birria Barrio Menu Board - Diverse menu featuring quesabirria, ramen, and tacos" />
+            <a href="assets/images/gallery/gallery-4.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-4.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <!-- Food -->
           <div class="gallery-item food">
-            <a href="assets/images/gallery/gallery-5.jpg" data-fancybox="gallery" data-caption="Birria Barrio Quesabirria Tacos - Our signature tacos with melted cheese and tender birria">
-              <img src="assets/images/gallery/gallery-5.jpg" class="img-fluid" alt="Birria Barrio Quesabirria Tacos with cilantro, onion and consommé for dipping" />
+            <a href="assets/images/gallery/gallery-5.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-5.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item food">
-            <a href="assets/images/gallery/gallery-6.jpg" data-fancybox="gallery" data-caption="Birria Barrio Consommé - Our rich, flavorful broth for dipping quesabirria tacos">
-              <img src="assets/images/gallery/gallery-6.jpg" class="img-fluid" alt="Birria Barrio Consommé - Rich, flavorful broth with aromatic spices" />
+            <a href="assets/images/gallery/gallery-6.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-6.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <!-- Additional Images -->
           <div class="gallery-item food">
-            <a href="assets/images/gallery/gallery-7.jpg" data-fancybox="gallery" data-caption="Birria Barrio Grilled Cheese - Our birria grilled cheese sandwich with consommé for dipping">
-              <img src="assets/images/gallery/gallery-7.jpg" class="img-fluid" alt="Birria Barrio Grilled Cheese - Crispy sandwich filled with birria meat and melted cheese" />
+            <a href="assets/images/gallery/gallery-7.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-7.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item restaurant">
-            <a href="assets/images/gallery/gallery-8.jpg" data-fancybox="gallery" data-caption="Birria Barrio Line - Happy customers waiting for their birria tacos">
-              <img src="assets/images/gallery/gallery-8.jpg" class="img-fluid" alt="Birria Barrio Line - Customers lined up for fresh tacos and birria" />
+            <a href="assets/images/gallery/gallery-8.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-8.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item restaurant">
-            <a href="assets/images/gallery/gallery-9.jpg" data-fancybox="gallery" data-caption="Birria Barrio - External view of our school bus dining area">
-              <img src="assets/images/gallery/gallery-9.jpg" class="img-fluid" alt="Birria Barrio - External view of the converted school bus and outdoor seating" />
+            <a href="assets/images/gallery/gallery-9.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-9.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
 
           <div class="gallery-item food">
-            <a href="assets/images/gallery/gallery-10.jpg" data-fancybox="gallery" data-caption="Birria Barrio Combo Meal - Quesabirria tacos, consommé and drink, the perfect combination">
-              <img src="assets/images/gallery/gallery-10.jpg" class="img-fluid" alt="Birria Barrio Combo Meal - Quesabirria tacos, consommé and drink ready to enjoy" />
+            <a href="assets/images/gallery/gallery-10.jpg" data-fancybox="gallery" data-caption="{image caption}">
+              <img src="assets/images/gallery/gallery-10.jpg" class="img-fluid" alt="{image alt}" />
             </a>
           </div>
  
@@ -266,64 +250,40 @@
         <section class="mb-5">
           <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
             <div class="card-body p-4 p-lg-5">
-              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">The Overall Atmosphere of Birria Barrio</h2>
-              <p class="mb-0">
-                At Birria Barrio, the moment you arrive, there's a buzz in the air—lines forming, orders being called out, and the unmistakable scent of seasoned birria drifting through the open
-                space. It's not a polished restaurant—it's better. It's real, local, and packed with energy. Whether you're grabbing a bite late at night or sitting down for dinner with family, the
-                vibe is casual, heartfelt, and deliciously consistent. From weekdays to weekends, guests come back again and again for something simple: food made with love, served hot, and full of
-                flavor.
-              </p>
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">{text title item 1}</h2>
+              <p class="mb-0">{text description item 1}</p>
             </div>
           </div>
         </section>
         <section class="mb-5">
           <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
             <div class="card-body p-4 p-lg-5">
-              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Interior and Decor Vibe</h2>
-              <p class="mb-0">
-                The dining experience at Birria Barrio is uniquely memorable, not because of chandeliers or polished wood floors, but because of its character. One standout feature? A converted school
-                bus with A/C that doubles as a cozy indoor seating option. Outside, shaded picnic tables invite guests to enjoy their meal al fresco. The vibe feels somewhere between a roadside
-                taqueria and a hidden gem you're glad you stumbled upon. There's music, laughter, and that unmistakable hum of a spot where everyone's too busy enjoying their food to worry about much
-                else.
-              </p>
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">{text title item 2}</h2>
+              <p class="mb-0">{text description item 2}</p>
             </div>
           </div>
         </section>
         <section class="mb-5">
           <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
             <div class="card-body p-4 p-lg-5">
-              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Signature Visuals and Flavor Highlights</h2>
-              <p class="mb-0">
-                What makes Birria Barrio visually stand out is the sight of tacos dunked into rich consommé, the crispy grilled cheese birsandwiches oozing with cheese, and bowls of birria ramen
-                steaming under the Texas sun. Portions are generous, the meat is tender and juicy, and every plate is vibrant with color from the fiery red salsa to the fresh green cilantro and lime
-                garnishes. For many guests, the visual appeal is just as satisfying as the first bite—and it's no surprise that the quesabirria tacos and grilled cheese are the stars of nearly every
-                photo.
-              </p>
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">{text title item 3}</h2>
+              <p class="mb-0">{text description item 3}</p>
             </div>
           </div>
         </section>
         <section class="mb-5">
           <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
             <div class="card-body p-4 p-lg-5">
-              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Outdoor Experience</h2>
-              <p class="mb-0">
-                Set in an unpretentious part of San Antonio, the restaurant doesn't rely on a fancy facade. Instead, its charm lies in its authenticity. With ample parking and outdoor tables shaded by
-                tents or the converted bus, guests gather comfortably—even in the Texas heat. The setup is practical, efficient, and surprisingly inviting. Whether you're seated outside or perched in
-                the bus, there's something raw and enjoyable about eating bold, messy, mouthwatering food under open skies.
-              </p>
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">{text title item 4}</h2>
+              <p class="mb-0">{text description item 4}</p>
             </div>
           </div>
         </section>
         <section class="mb-5">
           <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
             <div class="card-body p-4 p-lg-5">
-              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">Real Guest Stories</h2>
-              <p class="mb-0">
-                Birria Barrio has become a part of people's personal routines and memories. Families visit together, kids giggle as they sit in the school bus, and out-of-towners declare it their
-                must-stop spot. Some come in search of the perfect birria and leave with a new favorite restaurant. Others share memories of sweating through 100-degree heat just to enjoy tacos that
-                were "worth fighting a bear for." Even the humorous chaos of crab leg lines or salsa debates becomes part of the fun. It's the kind of place where a simple taco turns into a story, and
-                where regulars don't just come for food—they come for connection, warmth, and a familiar face at the counter.
-              </p>
+              <h2 class="fw-bold mb-4" style="color: var(--primary-color)">{text title item 5}</h2>
+              <p class="mb-0">{text description item 5}</p>
             </div>
           </div>
         </section>

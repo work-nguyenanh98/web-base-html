@@ -18,8 +18,9 @@ When replace reviews, follow these guidelines:
    - Alt tag image using name of review
 
 3. DATA FORMATTING:
-   - Name: <span class="fw-bold">{name}</span>
-   - Review content: <p class="mb-0">{content}</p>
+   - Name: <span class="fw-bold">{review name}</span>
+   - Review content: <p class="mb-0">{review}</p>
+   - Alt tag : Using review name
 
 IMPORTANT NOTE: 
 - Only change content as specifically requested
