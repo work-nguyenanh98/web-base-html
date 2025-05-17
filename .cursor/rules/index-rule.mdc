@@ -3,6 +3,8 @@ description:
 globs: index.html
 alwaysApply: false
 ---
+[index.html](mdc:index.html)
+
 # Rule: Header & Hero , Content page.
 
 # Mô tả: Thay thế các placeholder trong file HTML bằng dữ liệu từ người dùng
