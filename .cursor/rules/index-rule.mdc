@@ -10,7 +10,7 @@ alwaysApply: false
 <CORE_PRINCIPLES>
 
 1.  **Nhận diện placeholder:** Tìm các đoạn text có dạng "{ten_bien}".
-2.  **Tìm dữ liệu:** Tìm biến "ten_bien" trong file Content.txt.
+2.  **Tìm dữ liệu:** Tìm biến "ten_bien" trong nội dung người dùng đưa.
 3.  **Thay thế:** Thay thế "{ten_bien}" bằng giá trị của biến "ten_bien".
 4.  **Xử lý thiếu dữ liệu:** Nếu không tìm thấy biến, để trống hoặc thông báo lỗi.
 5.  **Giữ nguyên định dạng:** Không thay đổi định dạng của text khi thay thế.
