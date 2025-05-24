@@ -1,650 +1,915 @@
 <!DOCTYPE html>
 <html lang="en" style="--color: #324f9b">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        <title>{title}</title>
+        <meta name="description" content="{description}" />
+        <meta name="keywords" content="{keywords}" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>{title}</title>
-    <meta name="description" content="{description}">
-    <meta name="keywords" content="{keywords}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-    <style>
-        .nav-link {
-            color: var(--primary-color);
-        }
-
-        .location-hours-tabs .nav-link {
-            color: var(--primary-color);
-            border-radius: 6px;
-            padding: 8px 16px;
-            margin-right: 4px;
-        }
-
-        .location-hours-tabs .nav-link.active {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        .hours-comparison-table th,
-        .hours-comparison-table td {
-            vertical-align: middle;
-        }
-
-        .text-success {
-            color: #198754 !important;
-        }
-
-        .text-warning {
-            color: #ffc107 !important;
-        }
-
-        .location-hours-card {
-            background-color: #fff;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 767px) {
-            .nav-pills .nav-link {
-                font-size: 0.85rem;
-                padding: 6px 10px;
+        <style>
+            .nav-link {
+                color: var(--primary-color);
             }
-        }
-    </style>
 
-    <link rel="canonical" href="{canonical}">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
-    <meta name="format-detection" content="telephone=yes">
-    <meta name="theme-color" content="#00205B">
+            .location-hours-tabs .nav-link {
+                color: var(--primary-color);
+                border-radius: 6px;
+                padding: 8px 16px;
+                margin-right: 4px;
+            }
 
-    <meta name="robots" content="noindex, nofollow">
+            .location-hours-tabs .nav-link.active {
+                background-color: var(--primary-color);
+                color: white;
+            }
 
-    <!-- Mobile optimization -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            .hours-comparison-table th,
+            .hours-comparison-table td {
+                vertical-align: middle;
+            }
 
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="{description}">
-    <meta property="og:url" content="{canonical}">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{image}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="{brand name}">
+            .text-success {
+                color: #198754 !important;
+            }
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{image}">
+            .text-warning {
+                color: #ffc107 !important;
+            }
 
-    <!-- Apple touch icon -->
-    <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png">
+            .location-hours-card {
+                background-color: #fff;
+                border-radius: 8px;
+            }
 
-
-</head>
-
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top" style="background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <span class="brand-name">{brand name}</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link " href="/">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/menu">MENU</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/contact">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- Contact Hero Section -->
-    <section class="py-5 hero-section" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%);">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold hero-title">{text hero title}</h1>
-            <p class="lead mb-4">{text hero description}</p>
-        </div>
-    </section>
-
-    <!-- Locations Section -->
-    <section class="py-5 locations-section">
-        <div class="container">
-            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">Our Locations</h2>
-
-            <!-- Location Selector Tabs -->
-            <ul class="nav nav-tabs mb-4" id="locationTabs" role="tablist">
-                <li class="nav-item" role="presentation"> <button class="nav-link active" id="location-1-tab"
-                        data-bs-toggle="tab" data-bs-target="#location-1" type="button" role="tab" aria-selected="true"
-                        onclick="updateMap('location-1')"> {text location 1 name} </button> </li>
-                <li class="nav-item" role="presentation"> <button class="nav-link" id="location-2-tab"
-                        data-bs-toggle="tab" data-bs-target="#location-2" type="button" role="tab" aria-selected="false"
-                        onclick="updateMap('location-2')"> {text location 2 name} </button> </li>
-            </ul>
-
-            <div class="row g-4">
-                <!-- Map Container -->
-                <div class="col-lg-7">
-                    <div class="map-container"
-                        style="height:450px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                        <div class="map-responsive h-100" id="locationMap">
-                            <iframe id="mapFrame" src="{text location 1 google maps}" width="100%" height="100%"
-                                style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" title="Location Map"></iframe>
-                        </div>
-                        <button class="map-expand-btn" data-bs-toggle="modal" data-bs-target="#mapModal">
-                            <i class="bi bi-arrows-fullscreen"></i>
-                        </button>
-                    </div>
-                    <div class="mt-3">
-                        <a rel="nofollow" href="{text location 1 google maps}" target="_blank"
-                            class="btn btn-outline-primary" id="mapsLink"> <i
-                                class="bi bi-box-arrow-up-right me-2"></i>Open in Google Maps </a>
-                    </div>
-                </div>
-
-                <!-- Location Details -->
-                <div class="col-lg-5">
-                    <div class="tab-content" id="locationTabContent">
-                        <div class="tab-pane fade show active" id="location-1" role="tabpanel">
-                            <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
-                                <h4 class="fw-bold" style="color:var(--primary-color);">{text location 1 name}</h4>
-                                <div class="d-flex align-items-start mt-4 mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-geo-alt-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Address</h5>
-                                        <p class="mb-0">{text location 1 address}</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-telephone-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Phone</h5>
-                                        <p class="mb-0"><a href="tel:{text location 1 phone}"
-                                                class="text-decoration-none">+1
-                                                {text location 1 phone}</a></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-clock-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Opening Hours</h5>
-                                        <p class="mb-0">{text location 1 hours}</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-star-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Features</h5>
-                                        <p class="mb-0">{text location 1 features}</p>
-                                    </div>
-                                </div>
-                                <div class="mt-3 d-flex gap-2"> <a rel="nofollow" href="{text location 1 facebook}"
-                                        target="_blank" class="btn btn-outline-primary"> <i
-                                            class="bi bi-facebook me-2"></i>Facebook
-                                    </a> </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="location-2" role="tabpanel">
-                            <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
-                                <h4 class="fw-bold" style="color:var(--primary-color);">{text location 2 name}</h4>
-                                <div class="d-flex align-items-start mt-4 mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-geo-alt-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Address</h5>
-                                        <p class="mb-0">{text location 2 address}</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-telephone-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Phone</h5>
-                                        <p class="mb-0"><a href="tel:{text location 2 phone}"
-                                                class="text-decoration-none">+1
-                                                {text location 2 phone}</a></p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-clock-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Opening Hours</h5>
-                                        <p class="mb-0">{text location 2 hours}</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <div class="contact-icon me-3"> <i class="bi bi-star-fill fs-4"
-                                            style="color:var(--primary-color);"></i> </div>
-                                    <div>
-                                        <h5 class="fw-bold">Features</h5>
-                                        <p class="mb-0">{text location 2 features}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Opening Hours Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="fw-bold mb-4 text-center" style="color:var(--primary-color);">Opening Hours</h2>
-
-            <!-- S Presa St Location -->
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-header border-0 py-3"
-                            style="background-color: var(--primary-color); color: white;">
-                            <div class="d-flex align-items-center">
-                                <div>
-                                    <h3 class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>{text location 1 name}</h3>
-                                    <p class="mb-0 mt-1 text-white-50">{text location 1 address}</p>
-                                </div> <span class="badge bg-white text-primary ms-auto px-3 py-2">{text location 1
-                                    main}</span>
-                            </div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h5 class="mb-3">Hours:</h5>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2 d-flex justify-content-between"> <span><strong>Thursday, Sunday,
-                                                    Wednesday:</strong></span> <span>2:00 PM - 12:00 AM</span> </li>
-                                        <li class="mb-2 d-flex justify-content-between"> <span><strong>Friday -
-                                                    Saturday:</strong></span> <span>2:00 PM - 2:00 AM</span> </li>
-                                        <li class="d-flex justify-content-between"> <span><strong>Monday -
-                                                    Tuesday:</strong></span> <span>Closed</span> </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5 class="mb-3">Contact:</h5>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i><a
-                                                href="tel:{text location 1 phone}" class="text-decoration-none">+1
-                                                {text location 1 phone}</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- S Flores St Location -->
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-header border-0 py-3" style="background-color: #f8f9fa;">
-                            <div class="d-flex align-items-center">
-                                <div>
-                                    <h3 class="mb-0" style="color: var(--primary-color);"><i
-                                            class="bi bi-geo-alt-fill me-2"></i>{text location 2 name}</h3>
-                                    <p class="mb-0 mt-1 text-muted">{text location 2 address}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h5 class="mb-3">Hours:</h5>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2 d-flex justify-content-between"> <span><strong>Thursday, Sunday,
-                                                    Wednesday:</strong></span> <span>2:00 PM - 12:00 AM</span> </li>
-                                        <li class="mb-2 d-flex justify-content-between"> <span><strong>Friday -
-                                                    Saturday:</strong></span> <span>2:00 PM - 2:00 AM</span> </li>
-                                        <li class="d-flex justify-content-between"> <span><strong>Monday -
-                                                    Tuesday:</strong></span> <span>Closed</span> </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5 class="mb-3">Contact:</h5>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i><a
-                                                href="tel:{text location 2 phone}" class="text-decoration-none">+1
-                                                {text location 2 phone}</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Order online section-->
-    <section id="order-now" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="fw-bold mb-4 text-center" style="color:var(--primary-color);">Order Now</h2>
-
-            <div class="row justify-content-center">
-                <!-- S Presa St Order Card -->
-                <div class="col-lg-6 col-md-12 mb-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-header py-3" style="background-color: #f8f9fa;">
-                            <h4 class="mb-0" style="color: var(--primary-color);"><i
-                                    class="bi bi-geo-alt-fill me-2"></i>{text location 1 name}</h4>
-                        </div>
-                        <div class="card-body">
-                            <p><i class="bi bi-map me-2"></i>{text location 1 address}</p>
-                            <p><i class="bi bi-telephone-fill me-2"></i>Phone: <a href="tel:{text location 1 phone}"
-                                    class="text-decoration-none">{text location 1 phone}</a></p>
-
-                            <h5 class="mt-4 mb-3">Order Online:</h5>
-                            <div class="d-grid gap-2">
-                                <a rel="nofollow" href="{link link 1}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 1}
-                                </a>
-                                <a rel="nofollow" href="{link link 2}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 2}
-                                </a>
-                                <a rel="nofollow" href="{link link 3}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 3}
-                                </a>
-                                <a rel="nofollow" href="{link link 4}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 4}
-                                </a>
-                                <a rel="nofollow" href="{link link 5}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 5}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 mb-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-header py-3" style="background-color: #f8f9fa;">
-                            <h4 class="mb-0" style="color: var(--primary-color);"><i
-                                    class="bi bi-geo-alt-fill me-2"></i>{text location 2 name}</h4>
-                        </div>
-                        <div class="card-body">
-                            <p><i class="bi bi-map me-2"></i>{text location 2 address}</p>
-                            <p><i class="bi bi-telephone-fill me-2"></i>Phone: <a href="tel:{text location 2 phone}"
-                                    class="text-decoration-none">{text location 2 phone}</a></p>
-
-                            <h5 class="mt-4 mb-3">Order Online:</h5>
-                            <div class="d-grid gap-2">
-                                <a rel="nofollow" href="{link link 1}" target="_blank"
-                                    class="btn btn-outline-primary  ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 1}
-                                </a>
-                                <a rel="nofollow" href="{link link 2}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 2}
-                                </a>
-                                <a rel="nofollow" href="{link link 3}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 3}
-                                </a>
-                                <a rel="nofollow" href="{link link 4}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 4}
-                                </a>
-                                <a rel="nofollow" href="{link link 5}" target="_blank" class="btn btn-outline-primary ">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>{name link 5}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Notes Section -->
-    <section class="py-2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="mt-0">
-                        <div class="card p-3 border-0 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="fw-bold mb-3" style="color:var(--primary-color);"><i
-                                        class="bi bi-info-circle me-2"></i>Notes</h5>
-                                <p class="mb-2">• Please make a reservation for groups of 6 or more</p>
-                                <p class="mb-2">• Saturdays and Sundays are busy, reservation 2-3 days in advance
-                                    recommended</p>
-                                <p class="mb-0">• The restaurant may close early on special holidays</p>
-                                <p class="mb-0 mt-2">• Each branch may have different operating hours, please check
-                                    specific branch details above</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Section for SEO -->
-                    <div class="mt-5">
-                        <div class="card p-3 border-0 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="fw-bold mb-4" style="color:var(--primary-color);"><i
-                                        class="bi bi-question-circle me-2"></i>Frequently Asked Questions</h3>
-
-                                <div class="accordion" id="locationFAQ">
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
-                                                aria-controls="faq1"> What are Birria Barrio's operating hours?
-                                            </button>
-                                        </h4>
-                                        <div id="faq1" class="accordion-collapse collapse"
-                                            data-bs-parent="#locationFAQ">
-                                            <div class="accordion-body"> Birria Barrio locations are open Wednesday
-                                                through Sunday from 2:00 PM to midnight, with extended hours until 2:00
-                                                AM on Fridays and Saturdays. We are closed on Mondays and Tuesdays.
-                                                Hours may vary on holidays, so please check our specific location
-                                                details or call ahead. </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
-                                                aria-controls="faq2"> Do I need reservations at Birria Barrio? </button>
-                                        </h4>
-                                        <div id="faq2" class="accordion-collapse collapse"
-                                            data-bs-parent="#locationFAQ">
-                                            <div class="accordion-body"> Reservations are recommended for groups of 6 or
-                                                more, especially on weekends when our restaurants are busiest. We
-                                                suggest making reservations 2-3 days in advance for Friday and Saturday
-                                                visits to ensure availability. </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
-                                                aria-controls="faq3"> Which Birria Barrio location is the main branch?
-                                            </button>
-                                        </h4>
-                                        <div id="faq3" class="accordion-collapse collapse"
-                                            data-bs-parent="#locationFAQ">
-                                            <div class="accordion-body"> Our S Presa location at 2710 S Presa St, San
-                                                Antonio, TX 78210 is our main branch. This was our first restaurant and
-                                                serves as our headquarters. All locations offer the same great menu and
-                                                quality. </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
-                                                aria-controls="faq4"> How can I contact Birria Barrio for catering
-                                                services? </button>
-                                        </h4>
-                                        <div id="faq4" class="accordion-collapse collapse"
-                                            data-bs-parent="#locationFAQ">
-                                            <div class="accordion-body"> For catering inquiries, please call our main
-                                                phone number at +1 (210) 289-4066. We offer catering services for events
-                                                of all sizes with advance notice. </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- General Contact Information -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h5 class="fw-bold mb-3">Connect with us</h5>
-                    <div class="social-icons d-flex justify-content-center gap-3">
-                        <a rel="nofollow" href="{text location 1 facebook}" target="_blank" class="social-icon"
-                            style="font-size:1.8rem; color:var(--primary-color);" aria-label="Facebook"
-                            title="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
-                        <a rel="nofollow" href="{text location 1 instagram}" target="_blank" class="social-icon"
-                            style="font-size:1.8rem; color:var(--primary-color);" aria-label="Instagram"
-                            title="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
-                        <a rel="nofollow" href="{text location 1 tiktok}" target="_blank" class="social-icon"
-                            style="font-size:1.8rem; color:var(--primary-color);" aria-label="TikTok"
-                            title="Follow us on TikTok"><i class="bi bi-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="pb-2" style="background:#fff; color:var(--secondary-color);">
-        <div class="container">
-            <hr style="margin-bottom: 1.5rem; color:#eee;">
-            <div class="footer-suggest-edit">
-                <div class="edit-title" onclick="window.location.href='suggestion'">
-                    <i class="bi bi-pencil-square"></i>
-                    Suggest an Edit
-                </div>
-                <div class="edit-desc">
-                    This is not the official website. Content is updated by the community.
-                </div>
-            </div>
-        </div>
-        <!-- Scroll to top button -->
-        <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});"
-            style="position:fixed;bottom:32px;right:32px;z-index:999;background:var(--primary-color);color:#fff;border:none;width:48px;height:48px;border-radius:50%;box-shadow:0 2px 8px rgba(139, 95, 14, 0.12);display:flex;align-items:center;justify-content:center;font-size:1.6rem;">
-            <i class="bi bi-arrow-up-short"></i>
-        </button>
-        <script>
-            // Map location data
-            const locationData = {
-                'location-1': {
-                    mapUrl: "{text location 1 google maps}",
-                    mapsLink: "{text location 1 google maps}",
-                    address: "{text location 1 address}"
-                },
-                'location-2': {
-                    mapUrl: "{text location 2 google maps}",
-                    mapsLink: "{text location 2 google maps}",
-                    address: "{text location 2 address}"
+            @media (max-width: 767px) {
+                .nav-pills .nav-link {
+                    font-size: 0.85rem;
+                    padding: 6px 10px;
                 }
-            };
-
-            // Function to update map based on selected location
-            function updateMap(locationId) {
-                const location = locationData[locationId];
-                document.getElementById('mapFrame').src = location.mapUrl;
-                document.getElementById('mapsLink').href = location.mapsLink;
-
-                // Update modal map too
-                const modalMap = document.getElementById('modalMapFrame');
-                if (modalMap) modalMap.src = location.mapUrl;
-
-                const modalMapsLink = document.getElementById('modalMapsLink');
-                if (modalMapsLink) modalMapsLink.href = location.mapsLink;
-
-                const modalAddress = document.getElementById('modalAddress');
-                if (modalAddress) modalAddress.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${location.address}`;
             }
+        </style>
 
-            // Show/hide scroll top button
-            const scrollBtn = document.getElementById('scrollTopBtn');
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 200) scrollBtn.style.display = 'flex';
-                else scrollBtn.style.display = 'none';
-            });
-            scrollBtn.style.display = 'none';
-        </script>
-    </footer>
+        <link rel="canonical" href="{canonical}" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="theme-color" content="#00205B" />
 
-    <!-- Map Modal -->
-    <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-fullscreen-md-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="mapModalLabel"><i class="bi bi-geo-alt-fill me-2"></i>Restaurant
-                        Location</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <meta name="robots" content="noindex, nofollow" />
+
+        <!-- Mobile optimization -->
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="{title}" />
+        <meta property="og:description" content="{description}" />
+        <meta property="og:url" content="{canonical}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="{image}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="{brand name}" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{title}" />
+        <meta name="twitter:description" content="{description}" />
+        <meta name="twitter:image" content="{image}" />
+
+        <!-- Apple touch icon -->
+        <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png" />
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-lg sticky-top"
+            style="background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);"
+        >
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <span class="brand-name">{brand name}</span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link " href="/">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/menu">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/contact">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
+                    </ul>
                 </div>
-                <div class="modal-body p-0">
-                    <div class="map-responsive-full">
-                        <iframe id="modalMapFrame"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8222.302746720417!2d-96.25588930907615!3d29.94916985337683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864153b5846d2e6f%3A0x99e31ee2d650690!2sTrump%20Burger%20of%20Bellville!5e0!3m2!1svi!2s!4v1746542534457!5m2!1svi!2s"
-                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Out and About Burgers Location - Detailed Map View"></iframe>
+            </div>
+        </nav>
+
+        <!-- Contact Hero Section -->
+        <section class="py-5 hero-section" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%);">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold hero-title">{text hero title}</h1>
+                <p class="lead mb-4">{text hero description}</p>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="py-5 locations-section">
+            <div class="container">
+                <h2 class="fw-bold mb-4" style="color:var(--primary-color);">Our Locations</h2>
+
+                <!-- Location Selector Tabs -->
+                <ul class="nav nav-tabs mb-4" id="locationTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link active"
+                            id="location-1-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#location-1"
+                            type="button"
+                            role="tab"
+                            aria-selected="true"
+                            onclick="updateMap('location-1')"
+                        >
+                            {text location 1 name}
+                            <span class="badge bg-primary ms-1">Main</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="location-2-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#location-2"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                            onclick="updateMap('location-2')"
+                        >
+                            {text location 2 name}
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="row g-4">
+                    <!-- Map Container -->
+                    <div class="col-lg-7">
+                        <div
+                            class="map-container"
+                            style="height:450px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;"
+                        >
+                            <div class="map-responsive h-100" id="locationMap">
+                                <iframe
+                                    id="mapFrame"
+                                    src="{text location 1 google maps}"
+                                    width="100%"
+                                    height="100%"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Location Map"
+                                ></iframe>
+                            </div>
+                            <button class="map-expand-btn" data-bs-toggle="modal" data-bs-target="#mapModal">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <a
+                                rel="nofollow"
+                                href="{text location 1 google maps}"
+                                target="_blank"
+                                class="btn btn-outline-primary"
+                                id="mapsLink"
+                            >
+                                <i class="bi bi-box-arrow-up-right me-2"></i>
+                                Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Location Details -->
+                    <div class="col-lg-5">
+                        <div class="tab-content" id="locationTabContent">
+                            <div class="tab-pane fade show active" id="location-1" role="tabpanel">
+                                <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
+                                    <h4 class="fw-bold" style="color:var(--primary-color);">
+                                        {text location 1 name}
+                                        <span class="badge bg-primary ms-1">Main</span>
+                                    </h4>
+                                    <div class="d-flex align-items-start mt-4 mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-geo-alt-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Address</h5>
+                                            <p class="mb-0">{text location 1 address}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i
+                                                class="bi bi-telephone-fill fs-4"
+                                                style="color:var(--primary-color);"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Phone</h5>
+                                            <p class="mb-0">
+                                                <a href="tel:{text location 1 phone}" class="text-decoration-none">
+                                                    +1 {text location 1 phone}
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-clock-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Opening Hours</h5>
+                                            <p class="mb-0">{text location 1 hours}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-star-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Features</h5>
+                                            <p class="mb-0">{text location 1 features}</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 d-flex gap-2">
+                                        <a
+                                            rel="nofollow"
+                                            href="{text location 1 facebook}"
+                                            target="_blank"
+                                            class="btn btn-outline-primary"
+                                        >
+                                            <i class="bi bi-facebook me-2"></i>
+                                            Facebook
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="location-2" role="tabpanel">
+                                <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
+                                    <h4 class="fw-bold" style="color:var(--primary-color);">{text location 2 name}</h4>
+                                    <div class="d-flex align-items-start mt-4 mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-geo-alt-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Address</h5>
+                                            <p class="mb-0">{text location 2 address}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i
+                                                class="bi bi-telephone-fill fs-4"
+                                                style="color:var(--primary-color);"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Phone</h5>
+                                            <p class="mb-0">
+                                                <a href="tel:{text location 2 phone}" class="text-decoration-none">
+                                                    +1 {text location 2 phone}
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-clock-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Opening Hours</h5>
+                                            <p class="mb-0">{text location 2 hours}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-star-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Features</h5>
+                                            <p class="mb-0">{text location 2 features}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="contact-info-small me-auto">
-                        <small id="modalAddress"><i class="bi bi-geo-alt-fill"></i> 14214 Meridian E, Puyallup, WA
-                            98373,
-                            USA</small>
+            </div>
+        </section>
+
+        <!-- Opening Hours Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-4 text-center" style="color:var(--primary-color);">Opening Hours</h2>
+
+                <!-- S Presa St Location -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="card border-0 shadow-sm">
+                            <div
+                                class="card-header border-0 py-3"
+                                style="background-color: var(--primary-color); color: white;"
+                            >
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3 class="mb-0">
+                                            <i class="bi bi-geo-alt-fill me-2"></i>
+                                            {text location 1 name}
+                                        </h3>
+                                        <p class="mb-0 mt-1 text-white-50">{text location 1 address}</p>
+                                    </div>
+                                    <span class="badge bg-white text-primary ms-auto px-3 py-2">Main</span>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Hours:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>Thursday, Sunday, Wednesday:</strong></span>
+                                                <span>2:00 PM - 12:00 AM</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>Friday - Saturday:</strong></span>
+                                                <span>2:00 PM - 2:00 AM</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span><strong>Monday - Tuesday:</strong></span>
+                                                <span>Closed</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Contact:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-telephone-fill me-2"></i>
+                                                <a href="tel:{text location 1 phone}" class="text-decoration-none">
+                                                    +1 {text location 1 phone}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a rel="nofollow" href="https://maps.app.goo.gl/Cu2Mp8YnWEdiH5kYA" target="_blank"
-                        class="btn btn-primary" id="modalMapsLink">
-                        <i class="bi bi-box-arrow-up-right me-1"></i>Open in Google Maps
-                    </a>
+                </div>
+
+                <!-- S Flores St Location -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header border-0 py-3" style="background-color: #f8f9fa;">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3 class="mb-0" style="color: var(--primary-color);">
+                                            <i class="bi bi-geo-alt-fill me-2"></i>
+                                            {text location 2 name}
+                                        </h3>
+                                        <p class="mb-0 mt-1 text-muted">{text location 2 address}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Hours:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>Thursday, Sunday, Wednesday:</strong></span>
+                                                <span>2:00 PM - 12:00 AM</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>Friday - Saturday:</strong></span>
+                                                <span>2:00 PM - 2:00 AM</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span><strong>Monday - Tuesday:</strong></span>
+                                                <span>Closed</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Contact:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-telephone-fill me-2"></i>
+                                                <a href="tel:{text location 2 phone}" class="text-decoration-none">
+                                                    +1 {text location 2 phone}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order online section-->
+        <section id="order-now" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold mb-4 text-center" style="color:var(--primary-color);">Order Now</h2>
+
+                <div class="row justify-content-center">
+                    <!-- S Presa St Order Card -->
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header py-3" style="background-color: #f8f9fa;">
+                                <h4 class="mb-0" style="color: var(--primary-color);">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    {text location 1 name}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="bi bi-map me-2"></i>
+                                    {text location 1 address}
+                                </p>
+                                <p>
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    Phone:
+                                    <a href="tel:{text location 1 phone}" class="text-decoration-none">
+                                        {text location 1 phone}
+                                    </a>
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Order Online:</h5>
+                                <div class="d-grid gap-2">
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 1}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 1}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 2}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 2}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 3}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 3}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 4}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 4}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 5}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 5}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header py-3" style="background-color: #f8f9fa;">
+                                <h4 class="mb-0" style="color: var(--primary-color);">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    {text location 2 name}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="bi bi-map me-2"></i>
+                                    {text location 2 address}
+                                </p>
+                                <p>
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    Phone:
+                                    <a href="tel:{text location 2 phone}" class="text-decoration-none">
+                                        {text location 2 phone}
+                                    </a>
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Order Online:</h5>
+                                <div class="d-grid gap-2">
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 1}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary  "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 1}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 2}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 2}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 3}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 3}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 4}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 4}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 5}"
+                                        target="_blank"
+                                        class="btn btn-outline-primary "
+                                    >
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>
+                                        {name link 5}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="py-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="mt-0">
+                            <div class="card p-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="fw-bold mb-3" style="color:var(--primary-color);">
+                                        <i class="bi bi-info-circle me-2"></i>
+                                        Notes
+                                    </h5>
+                                    <p class="mb-2">• Please make a reservation for groups of 6 or more</p>
+                                    <p class="mb-2">
+                                        • Saturdays and Sundays are busy, reservation 2-3 days in advance recommended
+                                    </p>
+                                    <p class="mb-0">• The restaurant may close early on special holidays</p>
+                                    <p class="mb-0 mt-2">
+                                        • Each branch may have different operating hours, please check specific branch
+                                        details above
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section for SEO -->
+                        <div class="mt-5">
+                            <div class="card p-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="fw-bold mb-4" style="color:var(--primary-color);">
+                                        <i class="bi bi-question-circle me-2"></i>
+                                        Frequently Asked Questions
+                                    </h3>
+
+                                    <div class="accordion" id="locationFAQ">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq1"
+                                                    aria-expanded="false"
+                                                    aria-controls="faq1"
+                                                >
+                                                    What are Birria Barrio's operating hours?
+                                                </button>
+                                            </h4>
+                                            <div
+                                                id="faq1"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#locationFAQ"
+                                            >
+                                                <div class="accordion-body">
+                                                    Birria Barrio locations are open Wednesday through Sunday from 2:00
+                                                    PM to midnight, with extended hours until 2:00 AM on Fridays and
+                                                    Saturdays. We are closed on Mondays and Tuesdays. Hours may vary on
+                                                    holidays, so please check our specific location details or call
+                                                    ahead.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq2"
+                                                    aria-expanded="false"
+                                                    aria-controls="faq2"
+                                                >
+                                                    Do I need reservations at Birria Barrio?
+                                                </button>
+                                            </h4>
+                                            <div
+                                                id="faq2"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#locationFAQ"
+                                            >
+                                                <div class="accordion-body">
+                                                    Reservations are recommended for groups of 6 or more, especially on
+                                                    weekends when our restaurants are busiest. We suggest making
+                                                    reservations 2-3 days in advance for Friday and Saturday visits to
+                                                    ensure availability.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq3"
+                                                    aria-expanded="false"
+                                                    aria-controls="faq3"
+                                                >
+                                                    Which Birria Barrio location is the main branch?
+                                                </button>
+                                            </h4>
+                                            <div
+                                                id="faq3"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#locationFAQ"
+                                            >
+                                                <div class="accordion-body">
+                                                    Our S Presa location at 2710 S Presa St, San Antonio, TX 78210 is
+                                                    our main branch. This was our first restaurant and serves as our
+                                                    headquarters. All locations offer the same great menu and quality.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq4"
+                                                    aria-expanded="false"
+                                                    aria-controls="faq4"
+                                                >
+                                                    How can I contact Birria Barrio for catering services?
+                                                </button>
+                                            </h4>
+                                            <div
+                                                id="faq4"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#locationFAQ"
+                                            >
+                                                <div class="accordion-body">
+                                                    For catering inquiries, please call our main phone number at +1
+                                                    (210) 289-4066. We offer catering services for events of all sizes
+                                                    with advance notice.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- General Contact Information -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h5 class="fw-bold mb-3">Connect with us</h5>
+                        <div class="social-icons d-flex justify-content-center gap-3">
+                            <a
+                                rel="nofollow"
+                                href="{text location 1 facebook}"
+                                target="_blank"
+                                class="social-icon"
+                                style="font-size:1.8rem; color:var(--primary-color);"
+                                aria-label="Facebook"
+                                title="Follow us on Facebook"
+                            >
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a
+                                rel="nofollow"
+                                href="{text location 1 instagram}"
+                                target="_blank"
+                                class="social-icon"
+                                style="font-size:1.8rem; color:var(--primary-color);"
+                                aria-label="Instagram"
+                                title="Follow us on Instagram"
+                            >
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                rel="nofollow"
+                                href="{text location 1 tiktok}"
+                                target="_blank"
+                                class="social-icon"
+                                style="font-size:1.8rem; color:var(--primary-color);"
+                                aria-label="TikTok"
+                                title="Follow us on TikTok"
+                            >
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pb-2" style="background:#fff; color:var(--secondary-color);">
+            <div class="container">
+                <hr style="margin-bottom: 1.5rem; color:#eee;" />
+                <div class="footer-suggest-edit">
+                    <div class="edit-title" onclick="window.location.href='suggestion'">
+                        <i class="bi bi-pencil-square"></i>
+                        Suggest an Edit
+                    </div>
+                    <div class="edit-desc">This is not the official website. Content is updated by the community.</div>
+                </div>
+            </div>
+            <!-- Scroll to top button -->
+            <button
+                id="scrollTopBtn"
+                onclick="window.scrollTo({top:0,behavior:'smooth'});"
+                style="position:fixed;bottom:32px;right:32px;z-index:999;background:var(--primary-color);color:#fff;border:none;width:48px;height:48px;border-radius:50%;box-shadow:0 2px 8px rgba(139, 95, 14, 0.12);display:flex;align-items:center;justify-content:center;font-size:1.6rem;"
+            >
+                <i class="bi bi-arrow-up-short"></i>
+            </button>
+            <script>
+                // Map location data
+                const locationData = {
+                    'location-1': {
+                        mapUrl: "{text location 1 google maps}",
+                        mapsLink: "{text location 1 google maps}",
+                        address: "{text location 1 address}"
+                    },
+                    'location-2': {
+                        mapUrl: "{text location 2 google maps}",
+                        mapsLink: "{text location 2 google maps}",
+                        address: "{text location 2 address}"
+                    }
+                };
+
+                // Function to update map based on selected location
+                function updateMap(locationId) {
+                    const location = locationData[locationId];
+                    document.getElementById('mapFrame').src = location.mapUrl;
+                    document.getElementById('mapsLink').href = location.mapsLink;
+
+                    // Update modal map too
+                    const modalMap = document.getElementById('modalMapFrame');
+                    if (modalMap) modalMap.src = location.mapUrl;
+
+                    const modalMapsLink = document.getElementById('modalMapsLink');
+                    if (modalMapsLink) modalMapsLink.href = location.mapsLink;
+
+                    const modalAddress = document.getElementById('modalAddress');
+                    if (modalAddress) modalAddress.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${location.address}`;
+                }
+
+                // Show/hide scroll top button
+                const scrollBtn = document.getElementById('scrollTopBtn');
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 200) scrollBtn.style.display = 'flex';
+                    else scrollBtn.style.display = 'none';
+                });
+                scrollBtn.style.display = 'none';
+            </script>
+        </footer>
+
+        <!-- Map Modal -->
+        <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mapModalLabel">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Restaurant Location
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="map-responsive-full">
+                            <iframe
+                                id="modalMapFrame"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8222.302746720417!2d-96.25588930907615!3d29.94916985337683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864153b5846d2e6f%3A0x99e31ee2d650690!2sTrump%20Burger%20of%20Bellville!5e0!3m2!1svi!2s!4v1746542534457!5m2!1svi!2s"
+                                width="100%"
+                                height="500"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Out and About Burgers Location - Detailed Map View"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="contact-info-small me-auto">
+                            <small id="modalAddress">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                14214 Meridian E, Puyallup, WA 98373, USA
+                            </small>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a
+                            rel="nofollow"
+                            href="https://maps.app.goo.gl/Cu2Mp8YnWEdiH5kYA"
+                            target="_blank"
+                            class="btn btn-primary"
+                            id="modalMapsLink"
+                        >
+                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                            Open in Google Maps
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap JS & Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-</body>
-
+        <!-- Bootstrap JS & Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    </body>
 </html>

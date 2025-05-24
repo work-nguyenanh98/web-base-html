@@ -250,17 +250,3 @@ image caption = Experience Seattle's most authentic punk dive bar atmosphere
 ## Schema Placeholder
 schema = <!-- JSON-LD Schema will be inserted here --> 
 
-
-## Missing Address Tokens
-address location 1 = 5828 Roosevelt Way NE, Seattle, WA 98105
-address location 2 = Coming Soon - Capitol Hill, Seattle, WA
-price range location 1 = $20–30 per person
-price range location 2 = $20–30 per person
-
-## Missing Table Placeholders
-opening hours location 1 table = <!-- Hours table for location 1 -->
-opening hours location 2 table = <!-- Hours table for location 2 -->
-
-
-## Missing Highlights Title 6 Fix
-text highlights title 6 = Community First 
