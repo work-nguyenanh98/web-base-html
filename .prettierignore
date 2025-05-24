@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Backup files
+*.backup
+*.bak
+
+# Content files that contain tokens
+Content-Website.txt
+
+# Specific HTML files with tokens (optional - remove if you want them formatted)
+# *.html 
