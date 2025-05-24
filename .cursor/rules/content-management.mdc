@@ -1,0 +1,366 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Content Management & Data Organization Rules
+
+## Overview
+This rule establishes standards for managing content data using a key-value format, organizing information hierarchically, and maintaining consistency across all website templates and pages. This is a template system that works with any data source file.
+
+## Data File Structure Template
+
+### Primary Data Source Format
+- **File**: Any `.txt` file with business data
+- **Format**: Key-value pairs with `key = value` syntax
+- **Encoding**: UTF-8
+- **Line Endings**: Unix (LF) or Windows (CRLF)
+- **Comments**: Lines starting with `#` are treated as comments
+
+### Data Organization Hierarchy Template
+
+#### 1. Basic Information Template
+```
+brand name = [Business Name]
+color = [Brand Color Hex Code]
+```
+
+#### 2. SEO & Meta Data Template (Page-Specific)
+```
+# Homepage SEO
+title = [Page Title with Keywords]
+description = [Meta Description 150-160 chars]
+keywords = [Comma-separated keywords]
+canonical = [Canonical URL]
+image = [Social Media Image URL]
+
+# About Page SEO
+about page title = [About Page Title]
+about page description = [About Page Description]
+
+# Menu Page SEO
+menu page title = [Menu Page Title]
+menu page description = [Menu Page Description]
+
+# Photos Page SEO
+photos page title = [Photos Page Title]
+photos page description = [Photos Page Description]
+
+# Services Page SEO
+services page title = [Services Page Title]
+services page description = [Services Page Description]
+
+# Contact Page SEO
+contact page title = [Contact Page Title]
+contact page description = [Contact Page Description]
+```
+
+#### 3. Hero Sections Template (Page-Specific)
+```
+# Homepage Hero
+text hero title = [Main Hero Title]
+text hero description = [Hero Description]
+
+# About Page Hero
+about hero title = [About Hero Title]
+about hero description = [About Hero Description]
+
+# Menu Page Hero
+menu hero title = [Menu Hero Title]
+menu hero description = [Menu Hero Description]
+
+# Photos Page Hero
+photos hero title = [Photos Hero Title]
+photos hero description = [Photos Hero Description]
+
+# Services Page Hero
+services hero title = [Services Hero Title]
+services hero description = [Services Hero Description]
+
+# Contact Page Hero
+contact hero title = [Contact Hero Title]
+contact hero description = [Contact Hero Description]
+```
+
+#### 4. Location Information Template
+```
+name location 1 = [Location Name]
+address location 1 = [Full Address]
+phone location 1 = [Phone Number with Country Code]
+email location 1 = [Email Address]
+price range location 1 = [Price Range Description]
+
+# For multiple locations, use location 2, location 3, etc.
+name location 2 = [Second Location Name]
+address location 2 = [Second Location Address]
+# ... continue pattern
+```
+
+#### 5. Maps & Navigation Template
+```
+link map embed location 1 = [Google Maps Embed URL]
+link maps location 1 = [Google Maps Direct Link]
+
+# For multiple locations
+link map embed location 2 = [Second Location Embed URL]
+link maps location 2 = [Second Location Direct Link]
+```
+
+#### 6. Operating Hours Template
+```
+day 1 = [Day Name - Monday]
+time 1 = [Operating Hours - e.g., 9:00 AM - 10:00 PM]
+status 1 = [Status - open/closed]
+
+day 2 = [Day Name - Tuesday]
+time 2 = [Operating Hours]
+status 2 = [Status]
+
+# Continue for all 7 days
+# day 3 through day 7 following same pattern
+```
+
+#### 7. Social Media Links Template
+```
+facebook location 1 = [Facebook Page URL]
+instagram location 1 = [Instagram Profile URL]
+twitter location 1 = [Twitter Profile URL]
+tiktok location 1 = [TikTok Profile URL]
+youtube location 1 = [YouTube Channel URL]
+linkedin location 1 = [LinkedIn Profile URL]
+```
+
+#### 8. Online Ordering Platforms Template
+```
+name link 1 = [Platform Name - e.g., DoorDash]
+link link 1 = [Platform URL]
+
+name link 2 = [Platform Name - e.g., Uber Eats]
+link link 2 = [Platform URL]
+
+name link 3 = [Platform Name - e.g., Grubhub]
+link link 3 = [Platform URL]
+
+name link 4 = [Platform Name - e.g., Postmates]
+link link 4 = [Platform URL]
+
+name link 5 = [Platform Name - e.g., Direct Order]
+link link 5 = [Platform URL]
+```
+
+## Content Categories & Management Templates
+
+### 1. Homepage Content Templates
+
+#### About Story Section Template
+```
+our Story = [Business story and description - 2-3 sentences about what makes the business unique, its history, and what customers can expect]
+```
+
+#### Highlights Section Template
+```
+text highlights title = [Main Highlights Section Title]
+
+text highlights title 1 = [First Highlight Title]
+text highlights description 1 = [First Highlight Description - 1-2 sentences]
+
+text highlights title 2 = [Second Highlight Title]
+text highlights description 2 = [Second Highlight Description]
+
+text highlights title 3 = [Third Highlight Title]
+text highlights description 3 = [Third Highlight Description]
+
+text highlights title 4 = [Fourth Highlight Title]
+text highlights description 4 = [Fourth Highlight Description]
+
+text highlights title 5 = [Fifth Highlight Title]
+text highlights description 5 = [Fifth Highlight Description]
+
+text highlights title 6 = [Sixth Highlight Title]
+text highlights description 6 = [Sixth Highlight Description]
+```
+
+#### Featured Menu Section Template
+```
+text menu title 1 = [Featured Item 1 Name]
+text menu description 1 = [Item 1 Description]
+text menu price 1 = [Item 1 Price - e.g., $12.00]
+
+text menu title 2 = [Featured Item 2 Name]
+text menu description 2 = [Item 2 Description]
+text menu price 2 = [Item 2 Price]
+
+text menu title 3 = [Featured Item 3 Name]
+text menu description 3 = [Item 3 Description]
+text menu price 3 = [Item 3 Price]
+```
+
+### 2. About Page Content Template
+```
+text about title 1 = [First About Section Title]
+text about description 1 = [First About Section Content]
+
+text about title 2 = [Second About Section Title]
+text about description 2 = [Second About Section Content]
+
+text about title 3 = [Third About Section Title]
+text about description 3 = [Third About Section Content]
+
+text about title 4 = [Fourth About Section Title]
+text about description 4 = [Fourth About Section Content]
+
+text about title 5 = [Fifth About Section Title]
+text about description 5 = [Fifth About Section Content]
+
+text about title 6 = [Sixth About Section Title]
+text about description 6 = [Sixth About Section Content]
+```
+
+### 3. Menu Page Content Template
+```
+phone = [Main Phone Number]
+our menu description = [Menu Page Description]
+menu intro title = [Menu Introduction Title]
+menu intro description = [Menu Introduction Text]
+menu section title = [Menu Section Title]
+menu section description = [Menu Section Description]
+menu item name = [Sample Menu Item Name]
+menu item price = [Sample Menu Item Price]
+```
+
+### 4. Photos Page Content Template
+```
+text title item 1 = [First Photo Section Title]
+text description item 1 = [First Photo Section Description]
+
+text title item 2 = [Second Photo Section Title]
+text description item 2 = [Second Photo Section Description]
+
+text title item 3 = [Third Photo Section Title]
+text description item 3 = [Third Photo Section Description]
+
+text title item 4 = [Fourth Photo Section Title]
+text description item 4 = [Fourth Photo Section Description]
+
+text title item 5 = [Fifth Photo Section Title]
+text description item 5 = [Fifth Photo Section Description]
+```
+
+### 5. Services Page Content Template
+```
+text title item 1 = [First Service Title]
+text description item 1 = [First Service Description]
+
+text title item 2 = [Second Service Title]
+text description item 2 = [Second Service Description]
+
+text title item 3 = [Third Service Title]
+text description item 3 = [Third Service Description]
+
+text title item 4 = [Fourth Service Title]
+text description item 4 = [Fourth Service Description]
+
+text title item 5 = [Fifth Service Title]
+text description item 5 = [Fifth Service Description]
+
+text title item 6 = [Sixth Service Title]
+text description item 6 = [Sixth Service Description]
+```
+
+### 6. Contact Page Content Template
+```
+text location 1 name = [Location Name for Contact Page]
+text location 1 address = [Location Address for Contact Page]
+text location 1 phone = [Location Phone for Contact Page]
+text location 1 hours = [Location Hours Summary]
+text location 1 features = [Location Features/Amenities]
+text location 1 facebook = [Location Facebook URL]
+text location 1 google maps = [Location Google Maps URL]
+
+# For second location
+text location 2 name = [Second Location Name]
+text location 2 address = [Second Location Address]
+text location 2 phone = [Second Location Phone]
+text location 2 hours = [Second Location Hours]
+```
+
+### 7. Image Assets Template
+```
+image alt = [Default Alt Text for Images]
+image caption = [Default Caption for Gallery Images]
+```
+
+## Content Management Guidelines
+
+### 1. Data Entry Standards
+- **Key Format**: Use lowercase with spaces (e.g., `text hero title`)
+- **Value Format**: Plain text, no HTML tags in data file
+- **Line Length**: Keep values under 500 characters for readability
+- **Special Characters**: Use proper encoding for quotes, apostrophes, and symbols
+- **Consistency**: Use consistent naming patterns across similar items
+
+### 2. Content Consistency Rules
+- **Brand Name**: Use full business name consistently
+- **Location References**: Include city/area for local SEO
+- **Tone**: Maintain consistent brand voice across all content
+- **Voice**: Keep messaging aligned with brand personality
+
+### 3. SEO Content Guidelines
+- **Titles**: Include brand name and location keywords
+- **Descriptions**: 150-160 characters, include primary keywords
+- **Keywords**: Focus on relevant business and location terms
+- **Content**: Natural keyword integration, avoid keyword stuffing
+
+### 4. Content Update Process
+1. **Edit Data File**: Update the business data file
+2. **Validate Format**: Ensure proper key = value syntax
+3. **Test Locally**: Run build process to verify token replacement
+4. **Review Output**: Check all affected HTML pages
+5. **Deploy Changes**: Push updated content to production
+
+### 5. Quality Assurance Checklist
+- [ ] All keys follow naming conventions
+- [ ] No duplicate keys in data file
+- [ ] All values are properly formatted
+- [ ] SEO meta data is complete for all pages
+- [ ] Brand consistency maintained across all content
+- [ ] Contact information is accurate and up-to-date
+- [ ] Social media links are functional
+- [ ] Operating hours are current
+
+### 6. Content Backup & Version Control
+- **Git Tracking**: Track all changes to data file
+- **Backup Schedule**: Regular automated backups
+- **Change Log**: Document all content updates
+- **Rollback Plan**: Maintain previous versions for quick recovery
+
+### 7. Multi-Page Content Coordination
+- **Homepage**: Focus on overview and key highlights
+- **About**: Deep dive into brand story and history
+- **Menu**: Product/service-focused content with descriptions
+- **Photos**: Visual storytelling and atmosphere
+- **Services**: Detailed service offerings and descriptions
+- **Contact**: Practical information and location details
+
+### 8. Scalability Considerations
+- **Multiple Locations**: Use numbered suffixes (location 1, location 2, etc.)
+- **Menu Items**: Use numbered sequences for expandable lists
+- **Services**: Create consistent patterns for easy addition
+- **Content Sections**: Use numbered items for flexible content blocks
+
+## Token Naming Conventions
+
+### Standard Patterns
+- **Page-specific**: `[page] page [element]` (e.g., `about page title`)
+- **Location-specific**: `[element] location [number]` (e.g., `phone location 1`)
+- **Numbered items**: `[element] [number]` (e.g., `day 1`, `text menu title 1`)
+- **Hierarchical**: `text [section] [element] [number]` (e.g., `text highlights title 1`)
+
+### Best Practices
+- Use descriptive, self-documenting key names
+- Maintain consistent patterns across similar content types
+- Group related content with common prefixes
+- Use numbers for ordered or multiple items
+- Avoid abbreviations unless universally understood
+
+This template system ensures consistent, maintainable content management that can adapt to any business while maintaining clean separation between content data and HTML templates.

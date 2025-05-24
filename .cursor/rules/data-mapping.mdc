@@ -1,0 +1,227 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Data Mapping Rules for HTML Templates
+
+## Overview
+This project uses a template-based approach where HTML files contain placeholder tokens that need to be replaced with actual data from the data source file. The data mapping system should automatically identify and replace these placeholders with corresponding values.
+
+## Template Token Format
+All template tokens follow the pattern: `{token name}` where:
+- Tokens are enclosed in curly braces `{}`
+- Token names use lowercase with spaces for readability
+- Examples: `{brand name}`, `{title}`, `{description}`, `{text hero title}`
+
+## Data Sources
+
+### Primary Data File
+- [Content-Website.txt](mdc:Content-Website.txt) - Contains all business information in key-value format
+
+### HTML Template Files
+- [index.html](mdc:index.html) - Main homepage template with hero section, menu, reviews, locations
+- [about.html](mdc:about.html) - About page template with story sections
+- [contact.html](mdc:contact.html) - Contact page with location details and maps
+- [menu.html](mdc:menu.html) - Menu page template with food items
+- [photos.html](mdc:photos.html) - Photo gallery template
+- [services.html](mdc:services.html) - Services page template
+
+## Complete Token Mapping
+
+### SEO & Meta Data
+- `{title}` → Maps to page-specific title from data file
+- `{description}` → Maps to page-specific description
+- `{keywords}` → Maps to page-specific keywords
+- `{canonical}` → Maps to canonical URL
+- `{image}` → Maps to social media image URL
+- `{schema}` → Maps to structured data schema
+
+### Brand & Identity
+- `{brand name}` → Maps to "brand name" from data file
+- `{color}` → Maps to "color" from data file
+
+### Hero Sections (All Pages)
+- `{text hero title}` → Maps to page-specific hero title
+- `{text hero description}` → Maps to page-specific hero description
+
+### Homepage Specific Tokens
+
+#### About Story Section
+- `{our Story}` → Maps to "our Story" from data file
+
+#### Highlights Section
+- `{text highlights title}` → Maps to "text highlights title"
+- `{text highlights title 1}` → Maps to "text highlights title 1"
+- `{text highlights description 1}` → Maps to "text highlights description 1"
+- `{text highlights title 2}` → Maps to "text highlights title 2"
+- `{text highlights description 2}` → Maps to "text highlights description 2"
+- `{text highlights title 3}` → Maps to "text highlights title 3"
+- `{text highlights description 3}` → Maps to "text highlights description 3"
+- `{text highlights title 4}` → Maps to "text highlights title 4"
+- `{text highlights description 4}` → Maps to "text highlights description 4"
+- `{text highlights title 5}` → Maps to "text highlights title 5"
+- `{text highlights description 5}` → Maps to "text highlights description 5"
+- `{text highlights title 6}` → Maps to "text highlights title 6"
+- `{text highlights description 6}` → Maps to "text highlights description 6"
+
+#### Featured Menu Section
+- `{text menu title 1}` → Maps to "text menu title 1"
+- `{text menu description 1}` → Maps to "text menu description 1"
+- `{text menu price 1}` → Maps to "text menu price 1"
+- `{text menu title 2}` → Maps to "text menu title 2"
+- `{text menu description 2}` → Maps to "text menu description 2"
+- `{text menu price 2}` → Maps to "text menu price 2"
+- `{text menu title 3}` → Maps to "text menu title 3"
+- `{text menu description 3}` → Maps to "text menu description 3"
+- `{text menu price 3}` → Maps to "text menu price 3"
+
+### Location Information
+- `{name location 1}` → Maps to "name location 1"
+- `{address location 1}` → Maps to "address location 1"
+- `{phone location 1}` → Maps to "phone location 1"
+- `{email location 1}` → Maps to "email location 1"
+- `{price range location 1}` → Maps to "price range location 1"
+
+### Maps & Links
+- `{link map embed location 1}` → Maps to "link map embed location 1"
+- `{link maps location 1}` → Maps to "link maps location 1"
+
+### Operating Hours
+- `{day 1}` → Maps to "day 1" (Monday)
+- `{time 1}` → Maps to "time 1" (3:00 PM - 1:00 AM)
+- `{status 1}` → Maps to "status 1" (open)
+- `{day 2}` → Maps to "day 2" (Tuesday)
+- `{time 2}` → Maps to "time 2" (3:00 PM - 1:00 AM)
+- `{status 2}` → Maps to "status 2" (open)
+- ... (continues for all 7 days)
+
+### Social Media
+- `{facebook location 1}` → Maps to "facebook location 1"
+- `{instagram location 1}` → Maps to "instagram location 1"
+- `{twitter location 1}` → Maps to "twitter location 1"
+- `{tiktok location 1}` → Maps to "tiktok location 1"
+
+### Online Ordering
+- `{name link 1}` → Maps to "name link 1" (DoorDash)
+- `{link link 1}` → Maps to "link link 1"
+- `{name link 2}` → Maps to "name link 2" (Uber Eats)
+- `{link link 2}` → Maps to "link link 2"
+- `{name link 3}` → Maps to "name link 3" (Grubhub)
+- `{link link 3}` → Maps to "link link 3"
+- `{name link 4}` → Maps to "name link 4" (Postmates)
+- `{link link 4}` → Maps to "link link 4"
+- `{name link 5}` → Maps to "name link 5" (Direct Order)
+- `{link link 5}` → Maps to "link link 5"
+
+### Images
+- `{image alt}` → Maps to "image alt"
+- `{image caption}` → Maps to "image caption"
+
+### About Page Specific Tokens
+- `{text about title 1}` → Maps to about content sections
+- `{text about description 1}` → Maps to about content sections
+- `{text about title 2}` → Maps to about content sections
+- `{text about description 2}` → Maps to about content sections
+- ... (continues for all 6 about sections)
+
+### Menu Page Specific Tokens
+- `{phone}` → Maps to main phone number
+- `{our menu description}` → Maps to menu description
+- `{menu intro title}` → Maps to menu introduction title
+- `{menu intro description}` → Maps to menu introduction description
+- `{menu section title}` → Maps to menu section title
+- `{menu section description}` → Maps to menu section description
+- `{menu item name}` → Maps to menu item name
+- `{menu item price}` → Maps to menu item price
+
+### Contact Page Specific Tokens
+- `{text location 1 name}` → Maps to location name
+- `{text location 1 address}` → Maps to location address
+- `{text location 1 phone}` → Maps to location phone
+- `{text location 1 hours}` → Maps to location hours
+- `{text location 1 features}` → Maps to location features
+- `{text location 1 facebook}` → Maps to location Facebook
+- `{text location 1 google maps}` → Maps to location Google Maps
+- `{text location 2 name}` → Maps to second location name
+- `{text location 2 address}` → Maps to second location address
+- `{text location 2 phone}` → Maps to second location phone
+- `{text location 2 hours}` → Maps to second location hours
+
+### Photos Page Specific Tokens
+- `{text title item 1}` → Maps to photo content title 1
+- `{text description item 1}` → Maps to photo content description 1
+- `{text title item 2}` → Maps to photo content title 2
+- `{text description item 2}` → Maps to photo content description 2
+- ... (continues for all 5 photo content sections)
+
+### Services Page Specific Tokens
+- `{text title item 1}` → Maps to service title 1
+- `{text description item 1}` → Maps to service description 1
+- `{text title item 2}` → Maps to service title 2
+- `{text description item 2}` → Maps to service description 2
+- ... (continues for all 6 service sections)
+
+## Data Mapping Implementation Guidelines
+
+### 1. Token Detection Process
+```javascript
+// Scan HTML files for all tokens matching the pattern
+const tokenPattern = /\{([^}]+)\}/g;
+const tokens = htmlContent.match(tokenPattern);
+```
+
+### 2. Data Source Parsing
+```javascript
+// Parse the data file format: key = value
+const dataLines = fileContent.split('\n');
+const dataMap = {};
+dataLines.forEach(line => {
+    if (line.includes(' = ')) {
+        const [key, value] = line.split(' = ');
+        dataMap[key.trim()] = value.trim();
+    }
+});
+```
+
+### 3. Token Replacement Strategy
+```javascript
+// Replace tokens with actual data
+function replaceTokens(htmlContent, dataMap) {
+    return htmlContent.replace(/\{([^}]+)\}/g, (match, tokenName) => {
+        return dataMap[tokenName] || match; // Keep original if not found
+    });
+}
+```
+
+### 4. Page-Specific Data Mapping
+- **Homepage**: Uses general data + homepage specific content
+- **About Page**: Uses "about page" prefixed data + general data
+- **Menu Page**: Uses "menu page" prefixed data + general data
+- **Photos Page**: Uses "photos page" prefixed data + general data
+- **Services Page**: Uses "services page" prefixed data + general data
+- **Contact Page**: Uses "contact page" prefixed data + general data
+
+### 5. Validation Rules
+- All SEO tokens (`{title}`, `{description}`, `{keywords}`) must be populated
+- Brand name and color must be consistent across all pages
+- Location data must be complete for contact and location sections
+- Image alt text and captions should be provided for accessibility
+
+### 6. Build Process Integration
+1. Read the data source file [Content-Website.txt](mdc:Content-Website.txt)
+2. Parse key-value pairs into a data object
+3. For each HTML template file:
+   - Read the template content
+   - Find all tokens using regex pattern
+   - Replace tokens with corresponding data values
+   - Validate that critical tokens are replaced
+   - Write the processed HTML to output directory
+
+### 7. Error Handling
+- Log warnings for missing data values
+- Provide fallback values for non-critical tokens
+- Fail build if critical SEO or brand tokens are missing
+- Generate report of all token replacements
+
+This mapping system ensures that all content from the data file is properly integrated into the HTML templates while maintaining clean separation between content and presentation.

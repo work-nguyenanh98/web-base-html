@@ -1,0 +1,170 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Template Automation & Build Process Rules
+
+## Overview
+This rule defines the automation processes for managing HTML templates with dynamic data mapping from the Kraken Bar and Lounge data file, ensuring consistent and efficient content management across all pages.
+
+## File Structure & Organization
+
+### Template Files
+- [index.html](mdc:index.html) - Homepage with hero slider, highlights, featured menu, locations, reviews
+- [about.html](mdc:about.html) - About page with brand story sections and image gallery
+- [contact.html](mdc:contact.html) - Contact page with location details, maps, hours, and ordering links
+- [menu.html](mdc:menu.html) - Menu page with food gallery and menu sections
+- [photos.html](mdc:photos.html) - Photo gallery with lightbox functionality and content sections
+- [services.html](mdc:services.html) - Services page with service offerings and descriptions
+
+### Data Configuration
+- [Content-Website.txt](mdc:Content-Website.txt) - Master data file with all content in key-value format
+
+## Token Structure Analysis
+
+### Common Tokens (All Pages)
+```
+{title} - Page-specific SEO title
+{description} - Page-specific meta description  
+{keywords} - Page-specific SEO keywords
+{canonical} - Page canonical URL
+{image} - Social media image URL
+{brand name} - Business name (Kraken Bar and Lounge)
+{color} - Brand color (#4FC3F7)
+{text hero title} - Page hero title
+{text hero description} - Page hero description
+{image alt} - Image alt text
+{image caption} - Image caption text
+{schema} - Structured data schema
+```
+
+### Homepage Specific Tokens
+```
+{our Story} - About story content
+{text highlights title} - Main highlights section title
+{text highlights title 1-6} - Individual highlight titles
+{text highlights description 1-6} - Individual highlight descriptions
+{text menu title 1-3} - Featured menu item titles
+{text menu description 1-3} - Featured menu item descriptions
+{text menu price 1-3} - Featured menu item prices
+```
+
+### Location & Contact Tokens
+```
+{name location 1} - Location name
+{address location 1} - Location address
+{phone location 1} - Location phone number
+{email location 1} - Location email
+{price range location 1} - Price range
+{link map embed location 1} - Embedded map URL
+{link maps location 1} - Google Maps link
+{facebook location 1} - Facebook URL
+{instagram location 1} - Instagram URL
+{twitter location 1} - Twitter URL
+{tiktok location 1} - TikTok URL
+```
+
+### Operating Hours Tokens
+```
+{day 1-7} - Days of the week (Monday-Sunday)
+{time 1-7} - Operating hours for each day
+{status 1-7} - Status (open/closed) for each day
+```
+
+### Online Ordering Tokens
+```
+{name link 1-5} - Ordering platform names (DoorDash, Uber Eats, etc.)
+{link link 1-5} - Ordering platform URLs
+```
+
+### Page-Specific Content Tokens
+
+#### About Page
+```
+{text about title 1-6} - About section titles
+{text about description 1-6} - About section descriptions
+```
+
+#### Menu Page
+```
+{phone} - Main phone number
+{our menu description} - Menu description
+{menu intro title} - Menu introduction title
+{menu intro description} - Menu introduction description
+{menu section title} - Menu section title
+{menu section description} - Menu section description
+{menu item name} - Menu item name
+{menu item price} - Menu item price
+```
+
+#### Contact Page
+```
+{text location 1 name} - Location name for contact
+{text location 1 address} - Location address for contact
+{text location 1 phone} - Location phone for contact
+{text location 1 hours} - Location hours for contact
+{text location 1 features} - Location features
+{text location 1 facebook} - Location Facebook for contact
+{text location 1 google maps} - Location Google Maps for contact
+{text location 2 name} - Second location name
+{text location 2 address} - Second location address
+{text location 2 phone} - Second location phone
+{text location 2 hours} - Second location hours
+```
+
+#### Photos Page
+```
+{text title item 1-5} - Photo content section titles
+{text description item 1-5} - Photo content section descriptions
+```
+
+#### Services Page
+```
+{text title item 1-6} - Service titles
+{text description item 1-6} - Service descriptions
+```
+
+## Build Automation Workflow
+
+### 1. Pre-Build Validation
+- Verify [Content-Website.txt](mdc:Content-Website.txt) exists and is readable
+- Validate data file format (key = value pairs)
+- Check for required tokens in data file
+
+### 2. Template Processing
+- Process each HTML template file
+- Replace all tokens with corresponding data values
+- Validate that critical tokens are replaced
+- Generate warnings for missing optional tokens
+
+### 3. Post-Build Validation
+- Verify all HTML files are valid
+- Check that SEO meta tags are properly populated
+- Validate that all images have alt text
+- Ensure all links are properly formatted
+
+### 4. Output Generation
+- Generate processed HTML files
+- Create build report with token replacement statistics
+- Log any warnings or errors
+
+
+## Quality Assurance
+
+### Token Coverage Validation
+- Ensure all tokens in HTML templates have corresponding data
+- Generate report of unused data entries
+- Validate token naming consistency
+
+### Content Validation
+- Check for proper HTML structure after token replacement
+- Validate SEO meta tags completeness
+- Ensure accessibility attributes are present
+
+### Performance Optimization
+- Minimize HTML output
+- Optimize image references
+- Validate CSS and JavaScript references
+
+This automation system ensures consistent, error-free content management while maintaining the separation between content data and HTML templates.
