@@ -59,9 +59,19 @@ phone location 1 = +1-206-385-9609
 email location 1 = info@kraken-bar-lounge.site
 price range location 1 = $20–30 per person
 
+## Location 2 Information (Secondary/Future Location)
+name location 2 = Kraken Bar and Lounge - Capitol Hill
+address location 2 = Coming Soon - Capitol Hill, Seattle, WA
+phone location 2 = +1-206-385-9609
+email location 2 = info@kraken-bar-lounge.site
+price range location 2 = $20–30 per person
+
 ## Maps and Links
 link map embed location 1 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
 link maps location 1 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+
+link map embed location 2 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
+link maps location 2 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
 
 ## Operating Hours
 day 1 = Monday
@@ -98,6 +108,11 @@ instagram location 1 = https://instagram.com/krakenbarseattle
 twitter location 1 = https://twitter.com/krakenbarseattle
 tiktok location 1 = https://tiktok.com/@krakenbarseattle
 
+facebook location 2 = https://www.facebook.com/KrakenBarSeattle
+instagram location 2 = https://instagram.com/krakenbarseattle
+twitter location 2 = https://twitter.com/krakenbarseattle
+tiktok location 2 = https://tiktok.com/@krakenbarseattle
+
 ## Online Ordering
 name link 1 = DoorDash
 link link 1 = #
@@ -120,17 +135,23 @@ about page description = Discover the roots of Kraken Bar and Lounge, Seattle's 
 about hero title = About Kraken Bar and Lounge
 about hero description = Where loud lives, fries crunch, bands scream, and nobody pretends.
 
-about content 1 = Located in Seattle's Roosevelt neighborhood, Kraken Bar and Lounge is a no-frills dive bar that roars with punk rock energy, late-night eats, and local community love. Known for its killer live music, pinball tournaments, and unapologetically bold vibe, Kraken is where metalheads, misfits, and foodies find common ground.
+text about title 1 = Our Story
+text about description 1 = Located in Seattle's Roosevelt neighborhood, Kraken Bar and Lounge is a no-frills dive bar that roars with punk rock energy, late-night eats, and local community love. Known for its killer live music, pinball tournaments, and unapologetically bold vibe, Kraken is where metalheads, misfits, and foodies find common ground.
 
-about content 2 = Kraken Bar and Lounge has long been a staple in Seattle's underground scene. Originally founded as a gritty dive with a passion for punk, it grew into a safe space for music lovers, misfits, and neighborhood regulars. Through relocations, shutdowns, and rebuilds, Kraken never lost its voice—or its volume.
+text about title 2 = Our History
+text about description 2 = Kraken Bar and Lounge has long been a staple in Seattle's underground scene. Originally founded as a gritty dive with a passion for punk, it grew into a safe space for music lovers, misfits, and neighborhood regulars. Through relocations, shutdowns, and rebuilds, Kraken never lost its voice—or its volume.
 
-about content 3 = The menu at Kraken Bar and Lounge hits harder than you'd expect from a dive bar. Favorites include the Bacon Blue Burger, Chipotle Black Bean Burger, and Grilled Chicken Ciabatta—all served with fries, tots, or a crisp slaw. For late-night cravings, the Beef Brisket Sandwich and BLT are crowd favorites.
+text about title 3 = Our Food
+text about description 3 = The menu at Kraken Bar and Lounge hits harder than you'd expect from a dive bar. Favorites include the Bacon Blue Burger, Chipotle Black Bean Burger, and Grilled Chicken Ciabatta—all served with fries, tots, or a crisp slaw. For late-night cravings, the Beef Brisket Sandwich and BLT are crowd favorites.
 
-about content 4 = Step into Kraken and you'll instantly feel like you've entered a world of loud riffs, dim lighting, and pure character. The venue boasts walls adorned with posters, stickers, and memories from decades of punk shows. A dedicated stage draws local and touring acts weekly, while pinball machines light up the back room.
+text about title 4 = Our Atmosphere
+text about description 4 = Step into Kraken and you'll instantly feel like you've entered a world of loud riffs, dim lighting, and pure character. The venue boasts walls adorned with posters, stickers, and memories from decades of punk shows. A dedicated stage draws local and touring acts weekly, while pinball machines light up the back room.
 
-about content 5 = What makes Kraken more than just a dive? It's the heart. From sober regulars who still show up for the camaraderie, to bands who cut their teeth on its stage, Kraken builds real community. It's not just about drinks and decibels—it's about people.
+text about title 5 = Our Community
+text about description 5 = What makes Kraken more than just a dive? It's the heart. From sober regulars who still show up for the camaraderie, to bands who cut their teeth on its stage, Kraken builds real community. It's not just about drinks and decibels—it's about people.
 
-about content 6 = Kraken Bar and Lounge isn't trying to be trendy—it's trying to be true. The team behind the bar promises fast service, fair prices, and a space where everyone can feel seen. Whether you're rolling in solo, hitting up a band night, or just hungry after midnight, Kraken keeps its kitchen open late and its vibe loud.
+text about title 6 = Our Promise
+text about description 6 = Kraken Bar and Lounge isn't trying to be trendy—it's trying to be true. The team behind the bar promises fast service, fair prices, and a space where everyone can feel seen. Whether you're rolling in solo, hitting up a band night, or just hungry after midnight, Kraken keeps its kitchen open late and its vibe loud.
 
 ## MENU PAGE Content
 menu page title = Kraken Bar and Lounge Menu & Prices - Full Update May 2025
@@ -138,7 +159,12 @@ menu page description = Explore the Kraken Bar and Lounge menu featuring smash-s
 menu hero title = Kraken Bar and Lounge Menu & Prices
 menu hero description = Late-night burgers, bold bites, loud vibes, and zero apologies served.
 
-menu intro = Welcome to Kraken Bar and Lounge, Seattle's unapologetically punk neighborhood hangout serving up bold bar food until late. Located in the heart of Roosevelt, this is where heavy riffs, high scores, and hard-smashing burgers meet.
+menu intro title = Welcome to Kraken Bar and Lounge
+menu intro description = Seattle's unapologetically punk neighborhood hangout serving up bold bar food until late. Located in the heart of Roosevelt, this is where heavy riffs, high scores, and hard-smashing burgers meet.
+menu section title = Featured Items
+menu item name = Kraken Special Burger
+menu item price = $14.00
+menu section description = Our signature dishes that keep customers coming back for more. Each item is crafted with fresh ingredients and bold flavors.
 
 ## PHOTOS PAGE Content
 photos page title = Kraken Bar and Lounge Photos – Dive Bar Vibes & Punk Energy
@@ -146,13 +172,20 @@ photos page description = Explore Kraken Bar and Lounge photos showcasing live s
 photos hero title = Kraken Bar and Lounge Photos
 photos hero description = Grit, glow, burgers, bands, every snapshot tells a louder story here.
 
-photos content 1 = Kraken Bar and Lounge isn't just a venue—it's an experience soaked in energy, grit, and unapologetic personality. Tucked into Seattle's Roosevelt neighborhood, it's where live music shakes the walls, laughter rises above the clatter of pinball machines, and the scent of smoked brisket lingers in the air.
+text title item 1 = Interior & Atmosphere
+text description item 1 = Kraken Bar and Lounge isn't just a venue—it's an experience soaked in energy, grit, and unapologetic personality. Tucked into Seattle's Roosevelt neighborhood, it's where live music shakes the walls, laughter rises above the clatter of pinball machines, and the scent of smoked brisket lingers in the air.
 
-photos content 2 = The decor here leans heavily into punk roots: black walls, layered stickers, weathered posters, and raw textures that tell a thousand stories. It's not polished or pristine, but that's the point. Every inch feels lived-in—from the dim bar lighting to the rugged furniture.
+text title item 2 = Punk Decor & Style
+text description item 2 = The decor here leans heavily into punk roots: black walls, layered stickers, weathered posters, and raw textures that tell a thousand stories. It's not polished or pristine, but that's the point. Every inch feels lived-in—from the dim bar lighting to the rugged furniture.
 
-photos content 3 = What stands out most in Kraken Bar and Lounge photos is the surprising boldness of the food. Think tender brisket smoked in-house, ciabatta stacked with grilled chicken or ham and Gruyère, and burgers that rival any upscale spot in town.
+text title item 3 = Food & Kitchen
+text description item 3 = What stands out most in Kraken Bar and Lounge photos is the surprising boldness of the food. Think tender brisket smoked in-house, ciabatta stacked with grilled chicken or ham and Gruyère, and burgers that rival any upscale spot in town.
 
-photos content 4 = The exterior doesn't boast flash, but that's part of the mystique. Often dimly lit, modest, and wrapped in band posters, Kraken keeps a low profile—until you walk in. The moment you do, the world outside fades, replaced by pulsing guitars, bar chatter, and the comforting noise of community.
+text title item 4 = Exterior & Entrance
+text description item 4 = The exterior doesn't boast flash, but that's part of the mystique. Often dimly lit, modest, and wrapped in band posters, Kraken keeps a low profile—until you walk in. The moment you do, the world outside fades, replaced by pulsing guitars, bar chatter, and the comforting noise of community.
+
+text title item 5 = Live Music & Events
+text description item 5 = The stage at Kraken comes alive with local and touring punk bands, creating an electric atmosphere that defines the venue's soul. Every show is intimate, loud, and unforgettable.
 
 ## SERVICES PAGE Content
 services page title = Services at Kraken Bar and Lounge – Food, Music & Pinball Vibes
@@ -160,13 +193,23 @@ services page description = Discover services at Kraken Bar and Lounge: live pun
 services hero title = Services at Kraken Bar and Lounge
 services hero description = Brisket, booze, bands, and pinball full throttle vibes, zero pretense.
 
-services content 1 = Kraken Bar and Lounge is more than just a dive bar—it's a local landmark in Seattle's punk scene, serving up bold flavors, unapologetic vibes, and a fierce sense of community. Whether you're here for the live shows, the arcade games, or just a damn good burger, Kraken offers a no-frills experience packed with heart.
+text title item 1 = Bar & Restaurant Services
+text description item 1 = Kraken Bar and Lounge is more than just a dive bar—it's a local landmark in Seattle's punk scene, serving up bold flavors, unapologetic vibes, and a fierce sense of community. Whether you're here for the live shows, the arcade games, or just a damn good burger, Kraken offers a no-frills experience packed with heart.
 
-services content 2 = At Kraken, food is as much a part of the experience as the music. Our kitchen serves crowd-favorite pub fare with attitude—think house-smoked beef brisket sandwiches, grilled cheese with a cult following, and a chipotle black bean burger that doesn't mess around.
+text title item 2 = Food & Kitchen
+text description item 2 = At Kraken, food is as much a part of the experience as the music. Our kitchen serves crowd-favorite pub fare with attitude—think house-smoked beef brisket sandwiches, grilled cheese with a cult following, and a chipotle black bean burger that doesn't mess around.
 
-services content 3 = Live punk and metal shows are the soul of Kraken. Our stage hosts high-energy performances throughout the week, often featuring underground bands and local legends. Shows are up close and personal—exactly how they should be.
+text title item 3 = Live Music & Entertainment
+text description item 3 = Live punk and metal shows are the soul of Kraken. Our stage hosts high-energy performances throughout the week, often featuring underground bands and local legends. Shows are up close and personal—exactly how they should be.
 
-services content 4 = Kraken isn't just a bar—it's a chosen family. We're proud to be a safe space for punks, misfits, metalheads, and everyone in between. The staff look out for you, the crowd looks out for each other, and the vibe is always authentic.
+text title item 4 = Community & Atmosphere
+text description item 4 = Kraken isn't just a bar—it's a chosen family. We're proud to be a safe space for punks, misfits, metalheads, and everyone in between. The staff look out for you, the crowd looks out for each other, and the vibe is always authentic.
+
+text title item 5 = Pinball & Arcade
+text description item 5 = Our collection of vintage and modern pinball machines provides endless entertainment. Join our Monday night leagues or just enjoy casual games with friends.
+
+text title item 6 = Private Events
+text description item 6 = Host your next event at Kraken! We offer space for private parties, band showcases, and community gatherings that match our authentic, no-frills vibe.
 
 ## CONTACT PAGE Content
 contact page title = Contact Kraken Bar and Lounge – Seattle Dive Bar Info & Location
@@ -174,6 +217,59 @@ contact page description = Find contact info for Kraken Bar and Lounge: address,
 contact hero title = Contact Kraken Bar and Lounge
 contact hero description = Find the address, hours, socials, and your next favorite dive.
 
+## Contact Page Location Details
+text location 1 name = Kraken Bar and Lounge
+text location 1 address = 5828 Roosevelt Way NE, Seattle, WA 98105
+text location 1 phone = +1-206-385-9609
+text location 1 hours = Mon-Sun: 3:00 PM - 1:00 AM
+text location 1 features = Live Music, Pinball Arcade, Late Night Kitchen, Full Bar
+text location 1 facebook = https://www.facebook.com/KrakenBarSeattle
+text location 1 instagram = https://instagram.com/krakenbarseattle
+text location 1 tiktok = https://tiktok.com/@krakenbarseattle
+text location 1 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 1 main = Main Location
+
+text location 2 name = Kraken Bar and Lounge - Capitol Hill
+text location 2 address = Coming Soon - Capitol Hill, Seattle, WA
+text location 2 phone = +1-206-385-9609
+text location 2 hours = Coming Soon
+text location 2 features = Coming Soon
+text location 2 facebook = https://www.facebook.com/KrakenBarSeattle
+text location 2 instagram = https://instagram.com/krakenbarseattle
+text location 2 tiktok = https://tiktok.com/@krakenbarseattle
+text location 2 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+
+## Additional Missing Tokens
+phone = +1-206-385-9609
+our menu description = Discover our full menu of punk-inspired comfort food, craft drinks, and late-night favorites.
+
 ## Image Alt Text and Captions
 image alt = Kraken Bar and Lounge interior with punk decor
-image caption = Experience Seattle's most authentic punk dive bar atmosphere 
+image caption = Experience Seattle's most authentic punk dive bar atmosphere
+
+## Schema Placeholder
+schema = <!-- JSON-LD Schema will be inserted here --> 
+
+## Missing Price Tokens
+text menu price 1 = $13.00
+text menu price 2 = $10.00
+text menu price 3 = $15.00
+
+## Missing Address Tokens
+address location 1 = 5828 Roosevelt Way NE, Seattle, WA 98105
+address location 2 = Coming Soon - Capitol Hill, Seattle, WA
+price range location 1 = $20–30 per person
+price range location 2 = $20–30 per person
+
+## Missing Table Placeholders
+opening hours location 1 table = <!-- Hours table for location 1 -->
+opening hours location 2 table = <!-- Hours table for location 2 -->
+
+## Missing Location Main Token
+text location 1 main = Main Location
+
+## Missing Hero Title for Contact
+text hero title = Contact Kraken Bar and Lounge
+
+## Missing Highlights Title 6 Fix
+text highlights title 6 = Community First 
