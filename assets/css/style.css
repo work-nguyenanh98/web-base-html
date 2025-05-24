@@ -98,7 +98,11 @@ body {
     padding-bottom: 10px;
   }
 }
-
+.hero-title {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+}
+/* Section Title */
 .section-title {
   font-family: var(--font-title);
   color: var(--primary-color);
