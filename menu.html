@@ -1,259 +1,318 @@
 <!DOCTYPE html>
 <html lang="en" style="--color: #324f9b">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <title>{menu page title}</title>
+        <meta name="description" content="{menu page description}" />
+        <meta name="keywords" content="{menu page keywords}" />
+        <!-- Stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/menu.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>{title}</title>
-    <meta name="description" content="{description}">
-    <meta name="keywords" content="{keywords}">
-    <!-- Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
+        <!-- SEO Meta Tags -->
+        <link rel="canonical" href="{menu page canonical}" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="theme-color" content="{color}" />
 
-    <!-- SEO Meta Tags -->
-    <link rel="canonical" href="{canonical}">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
-    <meta name="format-detection" content="telephone=yes">
-    <meta name="theme-color" content="#324f9b">
-    <meta name="robots" content="noindex, nofollow"> <!-- Mobile optimization -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="{description}">
-    <meta property="og:url" content="{canonical}">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{image}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="{brand name}"> <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{image}">
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- Mobile optimization -->
 
-    <!-- Apple touch icon -->
-    <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Social Media Meta Tags -->
+        <meta property="og:title" content="{menu page title}" />
+        <meta property="og:description" content="{menu page description}" />
+        <meta property="og:url" content="{menu page canonical}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="{menu page image}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="{brand name}" />
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{menu page title}" />
+        <meta name="twitter:description" content="{menu page description}" />
+        <meta name="twitter:image" content="{menu page image}" />
 
-</head>
+        <!-- Apple touch icon -->
+        <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png" />
+    </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/"> <span class="brand-name">{brand name}</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <span class="brand-name">{brand name}</span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/menu">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menu Hero Section -->
+        <header class="py-5 menu-hero">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold hero-title">{menu hero title}</h1>
+                <p class="lead mb-4">{menu hero description}</p>
+            </div>
+        </header>
+
+        <!-- Featured Menu Items Section -->
+        <section class="py-4">
+            <div class="container">
+                <div class="card border-0 shadow-sm rounded-4 p-3 mb-4 info-card">
+                    <div class="text-center mb-3">
+                        <!-- Phone -->
+                        <p class="mb-0">
+                            If you would like to know more about upcoming changes, please contact the phone number:
+                            <a href="tel:{phone}">{phone}</a>
+                        </p>
+                    </div>
+
+                    <div class="p-2 rounded-4 bg-white food-gallery-container">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-6 col-md-3">
+                                <div class="position-relative">
+                                    <div class="rounded-circle overflow-hidden food-gallery-item">
+                                        <a
+                                            href="assets/images/menu/food/food-1.jpg"
+                                            data-fancybox="food-gallery"
+                                            data-caption="{image caption}"
+                                        >
+                                            <img
+                                                src="assets/images/menu/food/food-1.jpg"
+                                                alt="{image alt}"
+                                                class="img-fluid w-100 h-100"
+                                            />
+                                        </a>
+                                        <div class="corner-accent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="position-relative">
+                                    <div class="rounded-circle overflow-hidden food-gallery-item">
+                                        <a
+                                            href="assets/images/menu/food/food-2.jpg"
+                                            data-fancybox="food-gallery"
+                                            data-caption="{image caption}"
+                                        >
+                                            <img
+                                                src="assets/images/menu/food/food-2.jpg"
+                                                alt="{image alt}"
+                                                class="img-fluid w-100 h-100"
+                                            />
+                                        </a>
+                                        <div class="corner-accent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="position-relative">
+                                    <div class="rounded-circle overflow-hidden food-gallery-item">
+                                        <a
+                                            href="assets/images/menu/food/food-3.jpg"
+                                            data-fancybox="food-gallery"
+                                            data-caption="{image caption}"
+                                        >
+                                            <img
+                                                src="assets/images/menu/food/food-3.jpg"
+                                                alt="{image alt}"
+                                                class="img-fluid w-100 h-100"
+                                            />
+                                        </a>
+                                        <div class="corner-accent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="position-relative">
+                                    <div class="rounded-circle overflow-hidden food-gallery-item">
+                                        <a
+                                            href="assets/images/menu/food/food-4.jpg"
+                                            data-fancybox="food-gallery"
+                                            data-caption="{image caption}"
+                                        >
+                                            <img
+                                                src="assets/images/menu/food/food-4.jpg"
+                                                alt="{image alt}"
+                                                class="img-fluid w-100 h-100"
+                                            />
+                                        </a>
+                                        <div class="corner-accent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Viewer Section -->
+        <section class="py-4">
+            <div class="container">
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-3 menu-viewer-card">
+                    <div class="text-center p-4 mb-0 menu-header">
+                        <h2 class="fw-bold">Our Menu</h2>
+                        <p class="mb-0">{our menu description}</p>
+                    </div>
+
+                    <!-- Main Menu Display -->
+                    <div class="menu-display p-0">
+                        <div class="position-relative overflow-hidden shadow-sm menu-image-container">
+                            <!-- Large menu image with Fancybox -->
+                            <a href="#" id="mainMenuLink" class="d-block menu-main-image">
+                                <img
+                                    src="#"
+                                    id="mainMenuImage"
+                                    class="img-fluid w-100"
+                                    alt="Birria Barrio full menu board"
+                                />
+                            </a>
+                            <!-- Navigation arrows directly on main image -->
+                            <div class="gallery-navigation">
+                                <button class="gallery-nav-btn prev-btn">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button class="gallery-nav-btn next-btn">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden Fancybox Gallery Links -->
+                    <div id="gallery-links-container" style="display: none;">
+                        <!-- Gallery links will be generated dynamically based on the number of images -->
+                    </div>
+
+                    <!-- Thumbnails Gallery -->
+                    <div class="menu-thumbnails-wrapper">
+                        <div class="menu-thumbnails-container">
+                            <!-- Thumbnails will be dynamically generated here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Categories Section -->
+        <section class="py-2 menu-categories">
+            <div class="container">
+                <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                    <div class="card-body p-4 p-lg-5">
+                        <h3 class="fw-bold mb-4">{menu intro title}</h3>
+                        <ul class="menu-items">
+                            <li class="menu-intro">{menu intro description}</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Menu Section -->
+                <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
+                    <div class="card-body p-4 p-lg-5">
+                        <h3 class="fw-bold mb-4">{menu section title 1}</h3>
+                        <ul class="menu-items">
+                            <li class="menu-item">
+                                <div class="menu-item-header">
+                                    <span class="item-name">{menu item name 1}</span>
+                                    <span class="item-price">{menu item price 1}</span>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="menu-item-header">
+                                    <span class="item-name">{menu item name 1}</span>
+                                    <span class="item-price">{menu item price 1}</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="menu-section-intro mt-3">{menu section description 1  }</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pb-2">
+            <div class="container">
+                <hr />
+                <div class="footer-suggest-edit">
+                    <div class="edit-title" onclick="window.location.href='suggestion'">
+                        <i class="bi bi-pencil-square"></i>
+                        Suggest an Edit
+                    </div>
+                    <div class="edit-desc">This is not the official website. Content is updated by the community.</div>
+                </div>
+            </div>
+            <!-- Scroll to top button -->
+            <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});" aria-label="Scroll to top">
+                <i class="bi bi-arrow-up-short"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/menu">MENU</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
+        </footer>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Menu Hero Section -->
-    <header class="py-5 menu-hero">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold hero-title">{text hero title}</h1>
-            <p class="lead mb-4">{text hero description}</p>
-        </div>
-    </header>
-
-    <!-- Featured Menu Items Section -->
-    <section class="py-4">
-        <div class="container">
-            <div class="card border-0 shadow-sm rounded-4 p-3 mb-4 info-card">
-                <div class="text-center mb-3"> <!-- Phone -->
-                    <p class="mb-0">If you would like to know more about upcoming changes, please contact the phone
-                        number: <a href="tel:{phone}">{phone}</a></p>
-                </div>
-
-                <div class="p-2 rounded-4 bg-white food-gallery-container">
-                    <div class="row g-3 justify-content-center">
-                        <div class="col-6 col-md-3">
-                            <div class="position-relative">
-                                <div class="rounded-circle overflow-hidden food-gallery-item">
-                                    <a href="assets/images/menu/food/food-1.jpg" data-fancybox="food-gallery"
-                                        data-caption="{image caption}">
-                                        <img src="assets/images/menu/food/food-1.jpg" alt="{image alt}"
-                                            class="img-fluid w-100 h-100">
-                                    </a>
-                                    <div class="corner-accent"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="position-relative">
-                                <div class="rounded-circle overflow-hidden food-gallery-item">
-                                    <a href="assets/images/menu/food/food-2.jpg" data-fancybox="food-gallery"
-                                        data-caption="{image caption}">
-                                        <img src="assets/images/menu/food/food-2.jpg" alt="{image alt}"
-                                            class="img-fluid w-100 h-100">
-                                    </a>
-                                    <div class="corner-accent"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="position-relative">
-                                <div class="rounded-circle overflow-hidden food-gallery-item">
-                                    <a href="assets/images/menu/food/food-3.jpg" data-fancybox="food-gallery"
-                                        data-caption="{image caption}">
-                                        <img src="assets/images/menu/food/food-3.jpg" alt="{image alt}"
-                                            class="img-fluid w-100 h-100">
-                                    </a>
-                                    <div class="corner-accent"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="position-relative">
-                                <div class="rounded-circle overflow-hidden food-gallery-item">
-                                    <a href="assets/images/menu/food/food-4.jpg" data-fancybox="food-gallery"
-                                        data-caption="{image caption}">
-                                        <img src="assets/images/menu/food/food-4.jpg" alt="{image alt}"
-                                            class="img-fluid w-100 h-100">
-                                    </a>
-                                    <div class="corner-accent"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Viewer Section -->
-    <section class="py-4">
-        <div class="container">
-            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-3 menu-viewer-card">
-                <div class="text-center p-4 mb-0 menu-header">
-                    <h2 class="fw-bold">Our Menu</h2>
-                    <p class="mb-0">{our menu description}</p>
-                </div>
-
-                <!-- Main Menu Display -->
-                <div class="menu-display p-0">
-                    <div class="position-relative overflow-hidden shadow-sm menu-image-container">
-                        <!-- Large menu image with Fancybox -->
-                        <a href="#" id="mainMenuLink" class="d-block menu-main-image">
-                            <img src="#" id="mainMenuImage" class="img-fluid w-100" alt="Birria Barrio full menu board">
-                        </a>
-                        <!-- Navigation arrows directly on main image -->
-                        <div class="gallery-navigation">
-                            <button class="gallery-nav-btn prev-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="15 18 9 12 15 6"></polyline>
-                                </svg>
-                            </button>
-                            <button class="gallery-nav-btn next-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hidden Fancybox Gallery Links -->
-                <div id="gallery-links-container" style="display: none;">
-                    <!-- Gallery links will be generated dynamically based on the number of images -->
-                </div>
-
-                <!-- Thumbnails Gallery -->
-                <div class="menu-thumbnails-wrapper">
-                    <div class="menu-thumbnails-container">
-                        <!-- Thumbnails will be dynamically generated here by JavaScript -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Categories Section -->
-    <section class="py-2 menu-categories">
-        <div class="container">
-            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
-                <div class="card-body p-4 p-lg-5">
-                    <h3 class="fw-bold mb-4">{menu intro title}</h3>
-                    <ul class="menu-items">
-                        <li class="menu-intro">{menu intro description}</li>
-                    </ul>
-                </div>
-            </article>
-
-            <!-- Menu Section -->
-            <article class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden menu-category">
-                <div class="card-body p-4 p-lg-5">
-                    <h3 class="fw-bold mb-4">{menu section title}</h3>
-                    <ul class="menu-items"> 
-                        <li class="menu-item">
-                            <div class="menu-item-header">
-                                <span class="item-name">{menu item name}</span>
-                                <span class="item-price">{menu item price}</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="menu-section-intro mt-3">{menu section description}</p>
-                </div>
-            </article>
-        
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="pb-2">
-        <div class="container">
-            <hr>
-            <div class="footer-suggest-edit">
-                <div class="edit-title" onclick="window.location.href='suggestion'">
-                    <i class="bi bi-pencil-square"></i>
-                    Suggest an Edit
-                </div>
-                <div class="edit-desc">
-                    This is not the official website. Content is updated by the community.
-                </div>
-            </div>
-        </div>
-        <!-- Scroll to top button -->
-        <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});" aria-label="Scroll to top">
-            <i class="bi bi-arrow-up-short"></i>
-        </button>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="assets/js/menu.js"></script>
-</body>
-
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script src="assets/js/menu.js"></script>
+    </body>
 </html>

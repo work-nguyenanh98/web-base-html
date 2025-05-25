@@ -1,313 +1,357 @@
 <!DOCTYPE html>
 <html lang="en" style="--color: #324f9b">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no, interactive-widget=resizes-content"
+        />
+        <title>{about page title}</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no, interactive-widget=resizes-content">
-    <title>{title}</title>
+        <meta name="description" content="{about page description}" />
+        <meta name="keywords" content="{about page keywords}" />
 
-    <meta name="description" content="{description}">
-    <meta name="keywords" content="{keywords}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/slider.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+        <link rel="canonical" href="{about page canonical}" />
+        <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+        <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="theme-color" content="{color}" />
 
-    <link rel="canonical" href="{canonical}">
-    <link rel="sitemap" type="application/xml" href="sitemap.xml">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
-    <meta name="format-detection" content="telephone=yes">
-    <meta name="theme-color" content="#324f9b">
+        <meta name="robots" content="noindex, nofollow" />
 
-    <meta name="robots" content="noindex, nofollow">
+        <!-- Mobile optimization -->
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Mobile optimization -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="{about page title}" />
+        <meta property="og:description" content="{about page description}" />
+        <meta property="og:url" content="{about page canonical}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="{about page image}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="{brand name}" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="{description}">
-    <meta property="og:url" content="{canonical}">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{image}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="{brand name}">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{about page title}" />
+        <meta name="twitter:description" content="{about page description}" />
+        <meta name="twitter:image" content="{about page image}" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{image}">
+        <!-- Apple touch icon -->
+        <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png" />
 
-    <!-- Apple touch icon -->
-    <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png">
+        <!-- About Page Specific Schema -->
+        <!-- {schema} -->
+    </head>
 
-    <!-- About Page Specific Schema -->
-    <!-- {schema} -->
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-lg sticky-top"
+            style="background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);"
+        >
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <span class="brand-name">{brand name}</span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/about" aria-current="page">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/menu">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-</head>
+        <!-- About Hero Section -->
+        <header class="py-5" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%);">
+            <div class="container text-center">
+                <div class="mb-5">
+                    <h1 class="display-4 fw-bold hero-title">{about hero title}</h1>
+                    <span class="lead mb-4">{about hero description}</span>
+                </div>
+                <div class="position-relative">
+                    <div class="swiper-container" id="slide-TRTD1ERvz" style="max-height: 600px; overflow: hidden;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-1.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-1.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-2.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-2.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-3.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-3.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-4.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-4.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-5.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="Out and About Burgers double cheeseburger"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-5.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-6.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-6.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-7.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-7.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-8.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-8.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-9.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-9.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="./assets/images/slider/slider-10.jpg"
+                                    data-fancybox="hero-gallery"
+                                    data-caption="{image caption}"
+                                >
+                                    <img
+                                        src="./assets/images/slider/slider-10.jpg"
+                                        alt="{image alt}"
+                                        loading="lazy"
+                                        style="width: 100%; height: 500px; object-fit: cover;"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination banner-pagination"></div>
+                    </div>
+                    <!-- Navigation buttons outside the swiper container for better positioning -->
+                    <div class="banner-button-prev"><i class="bi bi-chevron-left"></i></div>
+                    <div class="banner-button-next"><i class="bi bi-chevron-right"></i></div>
+                </div>
+            </div>
+        </header>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top" style="background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <span class="brand-name">{brand name}</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <!-- Brand Story Section -->
+        <main class="py-5">
+            <div class="container">
+                <section class="mb-5">
+                    <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">{text about title 1}</h2>
+                            <p class="mb-0">{text about description 1}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">{text about title 2}</h2>
+                            <p>{text about description 2}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">{text about title 3}</h2>
+                            <p>{text about description 3}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">{text about title 4}</h2>
+                            <p>{text about description 4}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">{text about title 5}</h2>
+                            <p>{text about description 5}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="fw-bold mb-4" style="color:var(--primary-color);">{text about title 6}</h2>
+                            <p>{text about description 6}</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="pb-2" style="background:#fff; color:var(--secondary-color);">
+            <div class="container">
+                <hr style="margin-bottom: 1.5rem; color:#eee;" />
+                <div class="footer-suggest-edit">
+                    <div class="edit-title" onclick="window.location.href='suggestion'">
+                        <i class="bi bi-pencil-square"></i>
+                        Suggest an Edit
+                    </div>
+                    <div class="edit-desc">This is not the official website. Content is updated by the community.</div>
+                </div>
+            </div>
+            <!-- Scroll to top button -->
+            <button
+                id="scrollTopBtn"
+                onclick="window.scrollTo({top:0,behavior:'smooth'});"
+                aria-label="Scroll to top"
+                style="position:fixed;bottom:32px;right:32px;z-index:999;background:var(--primary-color);color:#fff;border:none;width:48px;height:48px;border-radius:50%;box-shadow:0 2px 8px rgba(139, 95, 14, 0.12);display:flex;align-items:center;justify-content:center;font-size:1.6rem;"
+            >
+                <i class="bi bi-arrow-up-short"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/about" aria-current="page">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/menu">MENU</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/photos">PHOTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#locations">LOCATIONS</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+            <script>
+                // Show/hide scroll top button
+                const scrollBtn = document.getElementById('scrollTopBtn');
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 200) scrollBtn.style.display = 'flex';
+                    else scrollBtn.style.display = 'none';
+                });
+                scrollBtn.style.display = 'none';
+            </script>
+        </footer>
 
-    <!-- About Hero Section -->
-    <header class="py-5" style="background: linear-gradient(90deg, #fff, #ffe0d3 80%);">
-        <div class="container text-center">
-            <div class="mb-5">
+        <!-- Bootstrap JS & Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
-                <h1 class="display-4 fw-bold hero-title">
-                    {text hero title}
-                </h1>
-                <span class="lead mb-4">{text hero description}</span>
-
-            </div>
-            <div class="position-relative">
-                <div class="swiper-container" id="slide-TRTD1ERvz" style="max-height: 600px; overflow: hidden;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-1.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-1.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-2.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-2.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-3.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-3.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-4.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-4.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-5.jpg" data-fancybox="hero-gallery"
-                                data-caption="Out and About Burgers double cheeseburger">
-                                <img src="./assets/images/slider/slider-5.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-6.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-6.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-7.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-7.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-8.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-8.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-9.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-9.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./assets/images/slider/slider-10.jpg" data-fancybox="hero-gallery"
-                                data-caption="{image caption}">
-                                <img src="./assets/images/slider/slider-10.jpg" alt="{image alt}" loading="lazy"
-                                    style="width: 100%; height: 500px; object-fit: cover;">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Pagination -->
-                    <div class="swiper-pagination banner-pagination"></div>
-                </div>
-                <!-- Navigation buttons outside the swiper container for better positioning -->
-                <div class="banner-button-prev"><i class="bi bi-chevron-left"></i></div>
-                <div class="banner-button-next"><i class="bi bi-chevron-right"></i></div>
-            </div>
-
-        </div>
-
-    </header>
-
-    <!-- Brand Story Section -->
-    <main class="py-5">
-        <div class="container">
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color:var(--primary-color);">
-                            {text about title 1}
-                        </h2>
-                        <p class="mb-0">
-                            {text about description 1}
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color:var(--primary-color);">
-                            {text about title 2}
-                        </h2>
-                        <p>
-                            {text about description 2}
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color:var(--primary-color);">
-                            {text about title 3}
-                        </h2>
-                        <p>
-                            {text about description 3}
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color:var(--primary-color);">
-                            {text about title 4}
-                        </h2>
-                        <p>
-                            {text about description 4}
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color:var(--primary-color);">
-                            {text about title 5}
-                        </h2>
-                        <p>
-                            {text about description 5}
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="mb-5">
-                <div class="card border-0 shadow-sm mb-5 rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="fw-bold mb-4" style="color:var(--primary-color);">
-                            {text about title 6}
-                        </h2>
-                        <p>
-                            {text about description 6}
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="pb-2" style="background:#fff; color:var(--secondary-color);">
-        <div class="container">
-            <hr style="margin-bottom: 1.5rem; color:#eee;">
-            <div class="footer-suggest-edit">
-                <div class="edit-title" onclick="window.location.href='suggestion'">
-                    <i class="bi bi-pencil-square"></i>
-                    Suggest an Edit
-                </div>
-                <div class="edit-desc">
-                    This is not the official website. Content is updated by the community.
-                </div>
-            </div>
-        </div>
-        <!-- Scroll to top button -->
-        <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});" aria-label="Scroll to top"
-            style="position:fixed;bottom:32px;right:32px;z-index:999;background:var(--primary-color);color:#fff;border:none;width:48px;height:48px;border-radius:50%;box-shadow:0 2px 8px rgba(139, 95, 14, 0.12);display:flex;align-items:center;justify-content:center;font-size:1.6rem;">
-            <i class="bi bi-arrow-up-short"></i>
-        </button>
-        <script>
-            // Show/hide scroll top button
-            const scrollBtn = document.getElementById('scrollTopBtn');
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 200) scrollBtn.style.display = 'flex';
-                else scrollBtn.style.display = 'none';
-            });
-            scrollBtn.style.display = 'none';
-        </script>
-    </footer>
-
-    <!-- Bootstrap JS & Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
-
-    <script src="assets/js/home.js"></script>
-
-</body>
-
+        <script src="assets/js/home.js"></script>
+    </body>
 </html>
