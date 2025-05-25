@@ -52,37 +52,28 @@ text menu title 3 = Beef Brisket Sandwich
 text menu description 3 = Slow-smoked, dry-rubbed brisket topped with spicy BBQ sauce, grilled onions, and garlic aioli on a toasted bun.
 text menu price 3 = $15.00
 
-## Location Information
+## ========================================
+## LOCATION 1 - MAIN ROOSEVELT LOCATION
+## ========================================
+
+# Basic Information
 name location 1 = Kraken Bar and Lounge
-address location 1 = 5828 Roosevelt Way NE, Seattle, WA 98105
-phone location 1 = +1-206-385-9609
-email location 1 = info@kraken-bar-lounge.site
-price range location 1 = $20–30 per person
-
-## Location 2 Information (Secondary/Future Location)
-name location 2 = Kraken Bar and Lounge - Capitol Hill
-address location 2 = Coming Soon - Capitol Hill, Seattle, WA
-phone location 2 = +1-206-385-9609
-email location 2 = info@kraken-bar-lounge.site
-price range location 2 = $20–30 per person
-
-## Contact Page Location Details
-
-# LOCATION 1 - Main Roosevelt Location
 text location 1 name = Kraken Bar and Lounge
 text location 1 address = 5828 Roosevelt Way NE, Seattle, WA 98105
+address location 1 = 5828 Roosevelt Way NE, Seattle, WA 98105
 text location 1 phone = +1-206-385-9609
+phone location 1 = +1-206-385-9609
+text location 1 email = info@kraken-bar-lounge.site
+email location 1 = info@kraken-bar-lounge.site
+text location 1 price range = $20–30 per person
+price range location 1 = $20–30 per person
+text location 1 main = Main Location
+
+# Hours and Status
 text location 1 hours = Mon-Sun: 3:00 PM - 1:00 AM
 text location 1 features = Live Music, Pinball Arcade, Late Night Kitchen, Full Bar
-text location 1 facebook = https://www.facebook.com/KrakenBarSeattle
-text location 1 instagram = https://instagram.com/krakenbarseattle
-text location 1 tiktok = https://tiktok.com/@krakenbarseattle
-text location 1 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
-text location 1 main = Main Location
-text location 1 email = info@kraken-bar-lounge.site
-text location 1 price range = $20–30 per person
 
-# LOCATION 1 - Operating Hours
+# Daily Operating Hours
 day 1 location 1 = Monday
 time 1 location 1 = 3:00 PM - 1:00 AM
 status 1 location 1 = open
@@ -111,7 +102,7 @@ day 7 location 1 = Sunday
 time 7 location 1 = 3:00 PM - 1:00 AM
 status 7 location 1 = open
 
-# LOCATION 1 - Contact Page Hours Format
+# Contact Page Hours Format
 hours schedule 1 location 1 = Monday - Sunday
 hours time 1 location 1 = 3:00 PM - 1:00 AM
 hours schedule 2 location 1 = 
@@ -119,20 +110,57 @@ hours time 2 location 1 =
 hours schedule 3 location 1 = 
 hours time 3 location 1 = 
 
-# LOCATION 2 - Capitol Hill (Coming Soon)
+# Maps and Links
+link map embed location 1 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
+link maps location 1 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 1 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+
+# Social Media
+text location 1 facebook = https://www.facebook.com/KrakenBarSeattle
+facebook location 1 = https://www.facebook.com/KrakenBarSeattle
+text location 1 instagram = https://instagram.com/krakenbarseattle
+instagram location 1 = https://instagram.com/krakenbarseattle
+twitter location 1 = https://twitter.com/krakenbarseattle
+text location 1 tiktok = https://tiktok.com/@krakenbarseattle
+tiktok location 1 = https://tiktok.com/@krakenbarseattle
+
+# Online Ordering
+name link 1 location 1 = DoorDash
+link link 1 location 1 = #
+
+name link 2 location 1 = Uber Eats
+link link 2 location 1 = #
+
+name link 3 location 1 = Grubhub
+link link 3 location 1 = #
+
+name link 4 location 1 = Postmates
+link link 4 location 1 = #
+
+name link 5 location 1 = Direct Order
+link link 5 location 1 = #
+
+## ========================================
+## LOCATION 2 - CAPITOL HILL (COMING SOON)
+## ========================================
+
+# Basic Information
+name location 2 = Kraken Bar and Lounge - Capitol Hill
 text location 2 name = Kraken Bar and Lounge - Capitol Hill
 text location 2 address = Coming Soon - Capitol Hill, Seattle, WA
+address location 2 = Coming Soon - Capitol Hill, Seattle, WA
 text location 2 phone = +1-206-385-9609
+phone location 2 = +1-206-385-9609
+text location 2 email = info@kraken-bar-lounge.site
+email location 2 = info@kraken-bar-lounge.site
+text location 2 price range = $20–30 per person
+price range location 2 = $20–30 per person
+
+# Hours and Status
 text location 2 hours = Coming Soon
 text location 2 features = Coming Soon
-text location 2 facebook = https://www.facebook.com/KrakenBarSeattle
-text location 2 instagram = https://instagram.com/krakenbarseattle
-text location 2 tiktok = https://tiktok.com/@krakenbarseattle
-text location 2 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
-text location 2 email = info@kraken-bar-lounge.site
-text location 2 price range = $20–30 per person
 
-# LOCATION 2 - Operating Hours (Coming Soon)
+# Daily Operating Hours (Coming Soon)
 day 1 location 2 = Monday
 time 1 location 2 = Coming Soon
 status 1 location 2 = coming-soon
@@ -161,7 +189,7 @@ day 7 location 2 = Sunday
 time 7 location 2 = Coming Soon
 status 7 location 2 = coming-soon
 
-# LOCATION 2 - Contact Page Hours Format
+# Contact Page Hours Format
 hours schedule 1 location 2 = Monday - Sunday
 hours time 1 location 2 = Coming Soon
 hours schedule 2 location 2 = 
@@ -169,22 +197,57 @@ hours time 2 location 2 =
 hours schedule 3 location 2 = 
 hours time 3 location 2 = 
 
-## Opening Hours Details for Contact Page (Legacy - Remove after update)
-hours schedule 1 = Thursday, Sunday, Wednesday
-hours time 1 = 2:00 PM - 12:00 AM
-hours schedule 2 = Friday - Saturday
-hours time 2 = 2:00 PM - 2:00 AM
-hours schedule 3 = Monday - Tuesday
-hours time 3 = Closed
-
-## Maps and Links
-link map embed location 1 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
-link maps location 1 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
-
+# Maps and Links
 link map embed location 2 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
 link maps location 2 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 2 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
 
-## Operating Hours (Legacy - Remove after update)
+# Social Media
+text location 2 facebook = https://www.facebook.com/KrakenBarSeattle
+facebook location 2 = https://www.facebook.com/KrakenBarSeattle
+text location 2 instagram = https://instagram.com/krakenbarseattle
+instagram location 2 = https://instagram.com/krakenbarseattle
+twitter location 2 = https://twitter.com/krakenbarseattle
+text location 2 tiktok = https://tiktok.com/@krakenbarseattle
+tiktok location 2 = https://tiktok.com/@krakenbarseattle
+
+# Online Ordering (Coming Soon)
+name link 1 location 2 = Coming Soon
+link link 1 location 2 = #
+
+name link 2 location 2 = Coming Soon
+link link 2 location 2 = #
+
+name link 3 location 2 = Coming Soon
+link link 3 location 2 = #
+
+name link 4 location 2 = Coming Soon
+link link 4 location 2 = #
+
+name link 5 location 2 = Coming Soon
+link link 5 location 2 = #
+
+## ========================================
+## LEGACY/GENERAL DATA (For Backward Compatibility)
+## ========================================
+
+# General Online Ordering (Legacy)
+name link 1 = DoorDash
+link link 1 = #
+
+name link 2 = Uber Eats
+link link 2 = #
+
+name link 3 = Grubhub
+link link 3 = #
+
+name link 4 = Postmates
+link link 4 = #
+
+name link 5 = Direct Order
+link link 5 = #
+
+# Legacy Operating Hours (Remove after update)
 day 1 = Monday
 time 1 = 3:00 PM - 1:00 AM
 status 1 = open
@@ -213,64 +276,17 @@ day 7 = Sunday
 time 7 = 3:00 PM - 1:00 AM
 status 7 = open
 
-## Social Media
-facebook location 1 = https://www.facebook.com/KrakenBarSeattle
-instagram location 1 = https://instagram.com/krakenbarseattle
-twitter location 1 = https://twitter.com/krakenbarseattle
-tiktok location 1 = https://tiktok.com/@krakenbarseattle
+# Legacy Contact Page Hours (Remove after update)
+hours schedule 1 = Thursday, Sunday, Wednesday
+hours time 1 = 2:00 PM - 12:00 AM
+hours schedule 2 = Friday - Saturday
+hours time 2 = 2:00 PM - 2:00 AM
+hours schedule 3 = Monday - Tuesday
+hours time 3 = Closed
 
-facebook location 2 = https://www.facebook.com/KrakenBarSeattle
-instagram location 2 = https://instagram.com/krakenbarseattle
-twitter location 2 = https://twitter.com/krakenbarseattle
-tiktok location 2 = https://tiktok.com/@krakenbarseattle
-
-## Online Ordering
-name link 1 = DoorDash
-link link 1 = #
-
-name link 2 = Uber Eats
-link link 2 = #
-
-name link 3 = Grubhub
-link link 3 = #
-
-name link 4 = Postmates
-link link 4 = #
-
-name link 5 = Direct Order
-link link 5 = #
-
-## Online Ordering - Location 1
-name link 1 location 1 = DoorDash
-link link 1 location 1 = #
-
-name link 2 location 1 = Uber Eats
-link link 2 location 1 = #
-
-name link 3 location 1 = Grubhub
-link link 3 location 1 = #
-
-name link 4 location 1 = Postmates
-link link 4 location 1 = #
-
-name link 5 location 1 = Direct Order
-link link 5 location 1 = #
-
-## Online Ordering - Location 2
-name link 1 location 2 = Coming Soon
-link link 1 location 2 = #
-
-name link 2 location 2 = Coming Soon
-link link 2 location 2 = #
-
-name link 3 location 2 = Coming Soon
-link link 3 location 2 = #
-
-name link 4 location 2 = Coming Soon
-link link 4 location 2 = #
-
-name link 5 location 2 = Coming Soon
-link link 5 location 2 = #
+## ========================================
+## PAGE CONTENT SECTIONS
+## ========================================
 
 ## ABOUT PAGE Content
 about page title = About Kraken Bar and Lounge – Seattle's Gritty Punk Rock Dive
@@ -363,24 +379,22 @@ contact page description = Find contact info for Kraken Bar and Lounge: address,
 contact hero title = Contact Kraken Bar and Lounge
 contact hero description = Find the address, hours, socials, and your next favorite dive.
 
-## Additional Missing Tokens
+## ========================================
+## ADDITIONAL TOKENS AND PLACEHOLDERS
+## ========================================
+
+# Additional Missing Tokens
 phone = +1-206-385-9609
 our menu description = Discover our full menu of punk-inspired comfort food, craft drinks, and late-night favorites.
 
-## Image Alt Text and Captions
+# Image Alt Text and Captions
 image alt = Kraken Bar and Lounge interior with punk decor
 image caption = Experience Seattle's most authentic punk dive bar atmosphere
 
-## Schema Placeholder
+# Schema Placeholder
 schema = <!-- JSON-LD Schema will be inserted here --> 
 
-## Missing Address Tokens
-address location 1 = 5828 Roosevelt Way NE, Seattle, WA 98105
-address location 2 = Coming Soon - Capitol Hill, Seattle, WA
-price range location 1 = $20–30 per person
-price range location 2 = $20–30 per person
-
-## Missing Table Placeholders
+# Missing Table Placeholders
 opening hours location 1 table = <!-- Hours table for location 1 -->
 opening hours location 2 table = <!-- Hours table for location 2 -->
 
