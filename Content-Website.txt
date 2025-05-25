@@ -522,6 +522,9 @@ menu page description = Explore the Kraken Bar and Lounge menu featuring smash-s
 menu hero title = Kraken Bar and Lounge Menu & Prices
 menu hero description = Late-night burgers, bold bites, loud vibes, and zero apologies served.
 
+phone = +1-206-385-9609
+our menu description = Discover our full menu of punk-inspired comfort food, craft drinks, and late-night favorites.
+
 menu intro title = Welcome to Kraken Bar and Lounge
 menu intro description = Seattle's unapologetically punk neighborhood hangout serving up bold bar food until late. Located in the heart of Roosevelt, this is where heavy riffs, high scores, and hard-smashing burgers meet.
 menu section title = Featured Items
@@ -586,10 +589,6 @@ contact hero description = Find the address, hours, socials, and your next favor
 ## ========================================
 ## ADDITIONAL TOKENS AND PLACEHOLDERS
 ## ========================================
-
-# Additional Missing Tokens
-phone = +1-206-385-9609
-our menu description = Discover our full menu of punk-inspired comfort food, craft drinks, and late-night favorites.
 
 # Image Alt Text and Captions
 image alt = Kraken Bar and Lounge interior with punk decor
