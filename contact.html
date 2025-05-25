@@ -172,6 +172,48 @@
                             {text location 2 name}
                         </button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="location-3-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#location-3"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                            onclick="updateMap('location-3')"
+                        >
+                            {text location 3 name}
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="location-4-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#location-4"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                            onclick="updateMap('location-4')"
+                        >
+                            {text location 4 name}
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            id="location-5-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#location-5"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                            onclick="updateMap('location-5')"
+                        >
+                            {text location 5 name}
+                        </button>
+                    </li>
                 </ul>
 
                 <div class="row g-4">
@@ -326,6 +368,153 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="tab-pane fade" id="location-3" role="tabpanel">
+                                <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
+                                    <h4 class="fw-bold" style="color:var(--primary-color);">{text location 3 name}</h4>
+                                    <div class="d-flex align-items-start mt-4 mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-geo-alt-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Address</h5>
+                                            <p class="mb-0">{text location 3 address}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i
+                                                class="bi bi-telephone-fill fs-4"
+                                                style="color:var(--primary-color);"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Phone</h5>
+                                            <p class="mb-0">
+                                                <a href="tel:{text location 3 phone}" class="text-decoration-none">
+                                                    +1 {text location 3 phone}
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-clock-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Opening Hours</h5>
+                                            <p class="mb-0">{text location 3 hours}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-star-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Features</h5>
+                                            <p class="mb-0">{text location 3 features}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="location-4" role="tabpanel">
+                                <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
+                                    <h4 class="fw-bold" style="color:var(--primary-color);">{text location 4 name}</h4>
+                                    <div class="d-flex align-items-start mt-4 mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-geo-alt-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Address</h5>
+                                            <p class="mb-0">{text location 4 address}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i
+                                                class="bi bi-telephone-fill fs-4"
+                                                style="color:var(--primary-color);"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Phone</h5>
+                                            <p class="mb-0">
+                                                <a href="tel:{text location 4 phone}" class="text-decoration-none">
+                                                    +1 {text location 4 phone}
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-clock-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Opening Hours</h5>
+                                            <p class="mb-0">{text location 4 hours}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-star-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Features</h5>
+                                            <p class="mb-0">{text location 4 features}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="location-5" role="tabpanel">
+                                <div class="location-card p-4 bg-white rounded-4 shadow-sm h-100">
+                                    <h4 class="fw-bold" style="color:var(--primary-color);">{text location 5 name}</h4>
+                                    <div class="d-flex align-items-start mt-4 mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-geo-alt-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Address</h5>
+                                            <p class="mb-0">{text location 5 address}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i
+                                                class="bi bi-telephone-fill fs-4"
+                                                style="color:var(--primary-color);"
+                                            ></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Phone</h5>
+                                            <p class="mb-0">
+                                                <a href="tel:{text location 5 phone}" class="text-decoration-none">
+                                                    +1 {text location 5 phone}
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-clock-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Opening Hours</h5>
+                                            <p class="mb-0">{text location 5 hours}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-star-fill fs-4" style="color:var(--primary-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Features</h5>
+                                            <p class="mb-0">{text location 5 features}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -392,7 +581,7 @@
                     </div>
                 </div>
 
-                <!-- S Flores St Location -->
+                <!-- Capitol Hill Location -->
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-10">
                         <div class="card border-0 shadow-sm">
@@ -442,6 +631,159 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Belltown Location -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header border-0 py-3" style="background-color: #f8f9fa;">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3 class="mb-0" style="color: var(--primary-color);">
+                                            <i class="bi bi-geo-alt-fill me-2"></i>
+                                            {text location 3 name}
+                                        </h3>
+                                        <p class="mb-0 mt-1 text-muted">{text location 3 address}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Hours:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 1 location 3}:</strong></span>
+                                                <span>{hours time 1 location 3}</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 2 location 3}:</strong></span>
+                                                <span>{hours time 2 location 3}</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 3 location 3}:</strong></span>
+                                                <span>{hours time 3 location 3}</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Contact:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-telephone-fill me-2"></i>
+                                                <a href="tel:{text location 3 phone}" class="text-decoration-none">
+                                                    {text location 3 phone}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fremont Location -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header border-0 py-3" style="background-color: #f8f9fa;">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3 class="mb-0" style="color: var(--primary-color);">
+                                            <i class="bi bi-geo-alt-fill me-2"></i>
+                                            {text location 4 name}
+                                        </h3>
+                                        <p class="mb-0 mt-1 text-muted">{text location 4 address}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Hours:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 1 location 4}:</strong></span>
+                                                <span>{hours time 1 location 4}</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 2 location 4}:</strong></span>
+                                                <span>{hours time 2 location 4}</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 3 location 4}:</strong></span>
+                                                <span>{hours time 3 location 4}</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Contact:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-telephone-fill me-2"></i>
+                                                <a href="tel:{text location 4 phone}" class="text-decoration-none">
+                                                    {text location 4 phone}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wallingford Location -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header border-0 py-3" style="background-color: #f8f9fa;">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h3 class="mb-0" style="color: var(--primary-color);">
+                                            <i class="bi bi-geo-alt-fill me-2"></i>
+                                            {text location 5 name}
+                                        </h3>
+                                        <p class="mb-0 mt-1 text-muted">{text location 5 address}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Hours:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 1 location 5}:</strong></span>
+                                                <span>{hours time 1 location 5}</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 2 location 5}:</strong></span>
+                                                <span>{hours time 2 location 5}</span>
+                                            </li>
+                                            <li class="mb-2 d-flex justify-content-between">
+                                                <span><strong>{hours schedule 3 location 5}:</strong></span>
+                                                <span>{hours time 3 location 5}</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3">Contact:</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="bi bi-telephone-fill me-2"></i>
+                                                <a href="tel:{text location 5 phone}" class="text-decoration-none">
+                                                    {text location 5 phone}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -451,13 +793,14 @@
                 <h2 class="fw-bold mb-4 text-center" style="color:var(--primary-color);">Order Now</h2>
 
                 <div class="row justify-content-center">
-                    <!-- S Presa St Order Card -->
-                    <div class="col-lg-6 col-md-12 mb-4">
+                    <!-- Roosevelt Location Order Card -->
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card border-0 shadow-sm h-100">
                             <div class="card-header py-3" style="background-color: #f8f9fa;">
                                 <h4 class="mb-0" style="color: var(--primary-color);">
                                     <i class="bi bi-geo-alt-fill me-2"></i>
                                     {text location 1 name}
+                                    <span class="badge bg-primary ms-2">Main</span>
                                 </h4>
                             </div>
                             <div class="card-body">
@@ -479,7 +822,7 @@
                                         rel="nofollow"
                                         href="{link link 1 location 1}"
                                         target="_blank"
-                                        class="btn btn-outline-primary "
+                                        class="btn btn-outline-primary"
                                     >
                                         <i class="bi bi-box-arrow-up-right me-2"></i>
                                         {name link 1 location 1}
@@ -488,7 +831,7 @@
                                         rel="nofollow"
                                         href="{link link 2 location 1}"
                                         target="_blank"
-                                        class="btn btn-outline-primary "
+                                        class="btn btn-outline-primary"
                                     >
                                         <i class="bi bi-box-arrow-up-right me-2"></i>
                                         {name link 2 location 1}
@@ -497,35 +840,18 @@
                                         rel="nofollow"
                                         href="{link link 3 location 1}"
                                         target="_blank"
-                                        class="btn btn-outline-primary "
+                                        class="btn btn-outline-primary"
                                     >
                                         <i class="bi bi-box-arrow-up-right me-2"></i>
                                         {name link 3 location 1}
-                                    </a>
-                                    <a
-                                        rel="nofollow"
-                                        href="{link link 4 location 1}"
-                                        target="_blank"
-                                        class="btn btn-outline-primary "
-                                    >
-                                        <i class="bi bi-box-arrow-up-right me-2"></i>
-                                        {name link 4 location 1}
-                                    </a>
-                                    <a
-                                        rel="nofollow"
-                                        href="{link link 5 location 1}"
-                                        target="_blank"
-                                        class="btn btn-outline-primary "
-                                    >
-                                        <i class="bi bi-box-arrow-up-right me-2"></i>
-                                        {name link 5 location 1}
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 mb-4">
+                    <!-- Capitol Hill Location Order Card -->
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card border-0 shadow-sm h-100">
                             <div class="card-header py-3" style="background-color: #f8f9fa;">
                                 <h4 class="mb-0" style="color: var(--primary-color);">
@@ -575,23 +901,173 @@
                                         <i class="bi bi-clock me-2"></i>
                                         {name link 3 location 2}
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Belltown Location Order Card -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header py-3" style="background-color: #f8f9fa;">
+                                <h4 class="mb-0" style="color: var(--primary-color);">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    {text location 3 name}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="bi bi-map me-2"></i>
+                                    {text location 3 address}
+                                </p>
+                                <p>
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    Phone:
+                                    <a href="tel:{text location 3 phone}" class="text-decoration-none">
+                                        {text location 3 phone}
+                                    </a>
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Order Online:</h5>
+                                <div class="d-grid gap-2">
                                     <a
                                         rel="nofollow"
-                                        href="{link link 4 location 2}"
+                                        href="{link link 1 location 3}"
                                         target="_blank"
                                         class="btn btn-outline-secondary disabled"
                                     >
                                         <i class="bi bi-clock me-2"></i>
-                                        {name link 4 location 2}
+                                        {name link 1 location 3}
                                     </a>
                                     <a
                                         rel="nofollow"
-                                        href="{link link 5 location 2}"
+                                        href="{link link 2 location 3}"
                                         target="_blank"
                                         class="btn btn-outline-secondary disabled"
                                     >
                                         <i class="bi bi-clock me-2"></i>
-                                        {name link 5 location 2}
+                                        {name link 2 location 3}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 3 location 3}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 3 location 3}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fremont Location Order Card -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header py-3" style="background-color: #f8f9fa;">
+                                <h4 class="mb-0" style="color: var(--primary-color);">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    {text location 4 name}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="bi bi-map me-2"></i>
+                                    {text location 4 address}
+                                </p>
+                                <p>
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    Phone:
+                                    <a href="tel:{text location 4 phone}" class="text-decoration-none">
+                                        {text location 4 phone}
+                                    </a>
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Order Online:</h5>
+                                <div class="d-grid gap-2">
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 1 location 4}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 1 location 4}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 2 location 4}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 2 location 4}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 3 location 4}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 3 location 4}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wallingford Location Order Card -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header py-3" style="background-color: #f8f9fa;">
+                                <h4 class="mb-0" style="color: var(--primary-color);">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    {text location 5 name}
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="bi bi-map me-2"></i>
+                                    {text location 5 address}
+                                </p>
+                                <p>
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    Phone:
+                                    <a href="tel:{text location 5 phone}" class="text-decoration-none">
+                                        {text location 5 phone}
+                                    </a>
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Order Online:</h5>
+                                <div class="d-grid gap-2">
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 1 location 5}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 1 location 5}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 2 location 5}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 2 location 5}
+                                    </a>
+                                    <a
+                                        rel="nofollow"
+                                        href="{link link 3 location 5}"
+                                        target="_blank"
+                                        class="btn btn-outline-secondary disabled"
+                                    >
+                                        <i class="bi bi-clock me-2"></i>
+                                        {name link 3 location 5}
                                     </a>
                                 </div>
                             </div>
@@ -829,6 +1305,21 @@
                         mapUrl: "{link map embed location 2}",
                         mapsLink: "{link maps location 2}",
                         address: "{text location 2 address}"
+                    },
+                    'location-3': {
+                        mapUrl: "{link map embed location 3}",
+                        mapsLink: "{link maps location 3}",
+                        address: "{text location 3 address}"
+                    },
+                    'location-4': {
+                        mapUrl: "{link map embed location 4}",
+                        mapsLink: "{link maps location 4}",
+                        address: "{text location 4 address}"
+                    },
+                    'location-5': {
+                        mapUrl: "{link map embed location 5}",
+                        mapsLink: "{link maps location 5}",
+                        address: "{text location 5 address}"
                     }
                 };
 

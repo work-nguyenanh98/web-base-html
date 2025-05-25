@@ -228,61 +228,265 @@ name link 5 location 2 = Coming Soon
 link link 5 location 2 = #
 
 ## ========================================
-## LEGACY/GENERAL DATA (For Backward Compatibility)
+## LOCATION 3 - BELLTOWN (OPENING SOON)
 ## ========================================
 
-# General Online Ordering (Legacy)
-name link 1 = DoorDash
-link link 1 = #
+# Basic Information
+name location 3 = Kraken Bar and Lounge - Belltown
+text location 3 name = Kraken Bar and Lounge - Belltown
+text location 3 address = Opening Soon - Belltown, Seattle, WA
+address location 3 = Opening Soon - Belltown, Seattle, WA
+text location 3 phone = +1-206-385-9609
+phone location 3 = +1-206-385-9609
+text location 3 email = info@kraken-bar-lounge.site
+email location 3 = info@kraken-bar-lounge.site
+text location 3 price range = $20–30 per person
+price range location 3 = $20–30 per person
 
-name link 2 = Uber Eats
-link link 2 = #
+# Hours and Status
+text location 3 hours = Opening Soon
+text location 3 features = Opening Soon
 
-name link 3 = Grubhub
-link link 3 = #
+# Daily Operating Hours (Opening Soon)
+day 1 location 3 = Monday
+time 1 location 3 = Opening Soon
+status 1 location 3 = opening-soon
 
-name link 4 = Postmates
-link link 4 = #
+day 2 location 3 = Tuesday
+time 2 location 3 = Opening Soon
+status 2 location 3 = opening-soon
 
-name link 5 = Direct Order
-link link 5 = #
+day 3 location 3 = Wednesday
+time 3 location 3 = Opening Soon
+status 3 location 3 = opening-soon
 
-# Legacy Operating Hours (Remove after update)
-day 1 = Monday
-time 1 = 3:00 PM - 1:00 AM
-status 1 = open
+day 4 location 3 = Thursday
+time 4 location 3 = Opening Soon
+status 4 location 3 = opening-soon
 
-day 2 = Tuesday
-time 2 = 3:00 PM - 1:00 AM
-status 2 = open
+day 5 location 3 = Friday
+time 5 location 3 = Opening Soon
+status 5 location 3 = opening-soon
 
-day 3 = Wednesday
-time 3 = 3:00 PM - 1:00 AM
-status 3 = open
+day 6 location 3 = Saturday
+time 6 location 3 = Opening Soon
+status 6 location 3 = opening-soon
 
-day 4 = Thursday
-time 4 = 3:00 PM - 1:00 AM
-status 4 = open
+day 7 location 3 = Sunday
+time 7 location 3 = Opening Soon
+status 7 location 3 = opening-soon
 
-day 5 = Friday
-time 5 = 3:00 PM - 1:00 AM
-status 5 = open
+# Contact Page Hours Format
+hours schedule 1 location 3 = Monday - Sunday
+hours time 1 location 3 = Opening Soon
+hours schedule 2 location 3 = 
+hours time 2 location 3 = 
+hours schedule 3 location 3 = 
+hours time 3 location 3 = 
 
-day 6 = Saturday
-time 6 = 3:00 PM - 1:00 AM
-status 6 = open
+# Maps and Links
+link map embed location 3 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
+link maps location 3 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 3 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
 
-day 7 = Sunday
-time 7 = 3:00 PM - 1:00 AM
-status 7 = open
+# Social Media
+text location 3 facebook = https://www.facebook.com/KrakenBarSeattle
+facebook location 3 = https://www.facebook.com/KrakenBarSeattle
+text location 3 instagram = https://instagram.com/krakenbarseattle
+instagram location 3 = https://instagram.com/krakenbarseattle
+twitter location 3 = https://twitter.com/krakenbarseattle
+text location 3 tiktok = https://tiktok.com/@krakenbarseattle
+tiktok location 3 = https://tiktok.com/@krakenbarseattle
 
-# Legacy Contact Page Hours (Remove after update)
-hours schedule 1 = Thursday, Sunday, Wednesday
-hours time 1 = 2:00 PM - 12:00 AM
-hours schedule 2 = Friday - Saturday
-hours time 2 = 2:00 PM - 2:00 AM
-hours schedule 3 = Monday - Tuesday
-hours time 3 = Closed
+# Online Ordering (Opening Soon)
+name link 1 location 3 = Opening Soon
+link link 1 location 3 = #
+
+name link 2 location 3 = Opening Soon
+link link 2 location 3 = #
+
+name link 3 location 3 = Opening Soon
+link link 3 location 3 = #
+
+name link 4 location 3 = Opening Soon
+link link 4 location 3 = #
+
+name link 5 location 3 = Opening Soon
+link link 5 location 3 = #
+
+## ========================================
+## LOCATION 4 - FREMONT (COMING SOON)
+## ========================================
+
+# Basic Information
+name location 4 = Kraken Bar and Lounge - Fremont
+text location 4 name = Kraken Bar and Lounge - Fremont
+text location 4 address = Coming Soon - Fremont, Seattle, WA
+address location 4 = Coming Soon - Fremont, Seattle, WA
+text location 4 phone = +1-206-385-9609
+phone location 4 = +1-206-385-9609
+text location 4 email = info@kraken-bar-lounge.site
+email location 4 = info@kraken-bar-lounge.site
+text location 4 price range = $20–30 per person
+price range location 4 = $20–30 per person
+
+# Hours and Status
+text location 4 hours = Coming Soon
+text location 4 features = Coming Soon
+
+# Daily Operating Hours (Coming Soon)
+day 1 location 4 = Monday
+time 1 location 4 = Coming Soon
+status 1 location 4 = coming-soon
+
+day 2 location 4 = Tuesday
+time 2 location 4 = Coming Soon
+status 2 location 4 = coming-soon
+
+day 3 location 4 = Wednesday
+time 3 location 4 = Coming Soon
+status 3 location 4 = coming-soon
+
+day 4 location 4 = Thursday
+time 4 location 4 = Coming Soon
+status 4 location 4 = coming-soon
+
+day 5 location 4 = Friday
+time 5 location 4 = Coming Soon
+status 5 location 4 = coming-soon
+
+day 6 location 4 = Saturday
+time 6 location 4 = Coming Soon
+status 6 location 4 = coming-soon
+
+day 7 location 4 = Sunday
+time 7 location 4 = Coming Soon
+status 7 location 4 = coming-soon
+
+# Contact Page Hours Format
+hours schedule 1 location 4 = Monday - Sunday
+hours time 1 location 4 = Coming Soon
+hours schedule 2 location 4 = 
+hours time 2 location 4 = 
+hours schedule 3 location 4 = 
+hours time 3 location 4 = 
+
+# Maps and Links
+link map embed location 4 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
+link maps location 4 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 4 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+
+# Social Media
+text location 4 facebook = https://www.facebook.com/KrakenBarSeattle
+facebook location 4 = https://www.facebook.com/KrakenBarSeattle
+text location 4 instagram = https://instagram.com/krakenbarseattle
+instagram location 4 = https://instagram.com/krakenbarseattle
+twitter location 4 = https://twitter.com/krakenbarseattle
+text location 4 tiktok = https://tiktok.com/@krakenbarseattle
+tiktok location 4 = https://tiktok.com/@krakenbarseattle
+
+# Online Ordering (Coming Soon)
+name link 1 location 4 = Coming Soon
+link link 1 location 4 = #
+
+name link 2 location 4 = Coming Soon
+link link 2 location 4 = #
+
+name link 3 location 4 = Coming Soon
+link link 3 location 4 = #
+
+name link 4 location 4 = Coming Soon
+link link 4 location 4 = #
+
+name link 5 location 4 = Coming Soon
+link link 5 location 4 = #
+
+## ========================================
+## LOCATION 5 - WALLINGFORD (OPENING SOON)
+## ========================================
+
+# Basic Information
+name location 5 = Kraken Bar and Lounge - Wallingford
+text location 5 name = Kraken Bar and Lounge - Wallingford
+text location 5 address = Opening Soon - Wallingford, Seattle, WA
+address location 5 = Opening Soon - Wallingford, Seattle, WA
+text location 5 phone = +1-206-385-9609
+phone location 5 = +1-206-385-9609
+text location 5 email = info@kraken-bar-lounge.site
+email location 5 = info@kraken-bar-lounge.site
+text location 5 price range = $20–30 per person
+price range location 5 = $20–30 per person
+
+# Hours and Status
+text location 5 hours = Opening Soon
+text location 5 features = Opening Soon
+
+# Daily Operating Hours (Opening Soon)
+day 1 location 5 = Monday
+time 1 location 5 = Opening Soon
+status 1 location 5 = opening-soon
+
+day 2 location 5 = Tuesday
+time 2 location 5 = Opening Soon
+status 2 location 5 = opening-soon
+
+day 3 location 5 = Wednesday
+time 3 location 5 = Opening Soon
+status 3 location 5 = opening-soon
+
+day 4 location 5 = Thursday
+time 4 location 5 = Opening Soon
+status 4 location 5 = opening-soon
+
+day 5 location 5 = Friday
+time 5 location 5 = Opening Soon
+status 5 location 5 = opening-soon
+
+day 6 location 5 = Saturday
+time 6 location 5 = Opening Soon
+status 6 location 5 = opening-soon
+
+day 7 location 5 = Sunday
+time 7 location 5 = Opening Soon
+status 7 location 5 = opening-soon
+
+# Contact Page Hours Format
+hours schedule 1 location 5 = Monday - Sunday
+hours time 1 location 5 = Opening Soon
+hours schedule 2 location 5 = 
+hours time 2 location 5 = 
+hours schedule 3 location 5 = 
+hours time 3 location 5 = 
+
+# Maps and Links
+link map embed location 5 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
+link maps location 5 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 5 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+
+# Social Media
+text location 5 facebook = https://www.facebook.com/KrakenBarSeattle
+facebook location 5 = https://www.facebook.com/KrakenBarSeattle
+text location 5 instagram = https://instagram.com/krakenbarseattle
+instagram location 5 = https://instagram.com/krakenbarseattle
+twitter location 5 = https://twitter.com/krakenbarseattle
+text location 5 tiktok = https://tiktok.com/@krakenbarseattle
+tiktok location 5 = https://tiktok.com/@krakenbarseattle
+
+# Online Ordering (Opening Soon)
+name link 1 location 5 = Opening Soon
+link link 1 location 5 = #
+
+name link 2 location 5 = Opening Soon
+link link 2 location 5 = #
+
+name link 3 location 5 = Opening Soon
+link link 3 location 5 = #
+
+name link 4 location 5 = Opening Soon
+link link 4 location 5 = #
+
+name link 5 location 5 = Opening Soon
+link link 5 location 5 = #
 
 ## ========================================
 ## PAGE CONTENT SECTIONS
@@ -397,4 +601,7 @@ schema = <!-- JSON-LD Schema will be inserted here -->
 # Missing Table Placeholders
 opening hours location 1 table = <!-- Hours table for location 1 -->
 opening hours location 2 table = <!-- Hours table for location 2 -->
+opening hours location 3 table = <!-- Hours table for location 3 -->
+opening hours location 4 table = <!-- Hours table for location 4 -->
+opening hours location 5 table = <!-- Hours table for location 5 -->
 
