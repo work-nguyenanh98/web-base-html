@@ -67,6 +67,8 @@ email location 2 = info@kraken-bar-lounge.site
 price range location 2 = $20–30 per person
 
 ## Contact Page Location Details
+
+# LOCATION 1 - Main Roosevelt Location
 text location 1 name = Kraken Bar and Lounge
 text location 1 address = 5828 Roosevelt Way NE, Seattle, WA 98105
 text location 1 phone = +1-206-385-9609
@@ -77,7 +79,47 @@ text location 1 instagram = https://instagram.com/krakenbarseattle
 text location 1 tiktok = https://tiktok.com/@krakenbarseattle
 text location 1 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
 text location 1 main = Main Location
+text location 1 email = info@kraken-bar-lounge.site
+text location 1 price range = $20–30 per person
 
+# LOCATION 1 - Operating Hours
+day 1 location 1 = Monday
+time 1 location 1 = 3:00 PM - 1:00 AM
+status 1 location 1 = open
+
+day 2 location 1 = Tuesday
+time 2 location 1 = 3:00 PM - 1:00 AM
+status 2 location 1 = open
+
+day 3 location 1 = Wednesday
+time 3 location 1 = 3:00 PM - 1:00 AM
+status 3 location 1 = open
+
+day 4 location 1 = Thursday
+time 4 location 1 = 3:00 PM - 1:00 AM
+status 4 location 1 = open
+
+day 5 location 1 = Friday
+time 5 location 1 = 3:00 PM - 1:00 AM
+status 5 location 1 = open
+
+day 6 location 1 = Saturday
+time 6 location 1 = 3:00 PM - 1:00 AM
+status 6 location 1 = open
+
+day 7 location 1 = Sunday
+time 7 location 1 = 3:00 PM - 1:00 AM
+status 7 location 1 = open
+
+# LOCATION 1 - Contact Page Hours Format
+hours schedule 1 location 1 = Monday - Sunday
+hours time 1 location 1 = 3:00 PM - 1:00 AM
+hours schedule 2 location 1 = 
+hours time 2 location 1 = 
+hours schedule 3 location 1 = 
+hours time 3 location 1 = 
+
+# LOCATION 2 - Capitol Hill (Coming Soon)
 text location 2 name = Kraken Bar and Lounge - Capitol Hill
 text location 2 address = Coming Soon - Capitol Hill, Seattle, WA
 text location 2 phone = +1-206-385-9609
@@ -87,8 +129,47 @@ text location 2 facebook = https://www.facebook.com/KrakenBarSeattle
 text location 2 instagram = https://instagram.com/krakenbarseattle
 text location 2 tiktok = https://tiktok.com/@krakenbarseattle
 text location 2 google maps = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
+text location 2 email = info@kraken-bar-lounge.site
+text location 2 price range = $20–30 per person
 
-## Opening Hours Details for Contact Page
+# LOCATION 2 - Operating Hours (Coming Soon)
+day 1 location 2 = Monday
+time 1 location 2 = Coming Soon
+status 1 location 2 = coming-soon
+
+day 2 location 2 = Tuesday
+time 2 location 2 = Coming Soon
+status 2 location 2 = coming-soon
+
+day 3 location 2 = Wednesday
+time 3 location 2 = Coming Soon
+status 3 location 2 = coming-soon
+
+day 4 location 2 = Thursday
+time 4 location 2 = Coming Soon
+status 4 location 2 = coming-soon
+
+day 5 location 2 = Friday
+time 5 location 2 = Coming Soon
+status 5 location 2 = coming-soon
+
+day 6 location 2 = Saturday
+time 6 location 2 = Coming Soon
+status 6 location 2 = coming-soon
+
+day 7 location 2 = Sunday
+time 7 location 2 = Coming Soon
+status 7 location 2 = coming-soon
+
+# LOCATION 2 - Contact Page Hours Format
+hours schedule 1 location 2 = Monday - Sunday
+hours time 1 location 2 = Coming Soon
+hours schedule 2 location 2 = 
+hours time 2 location 2 = 
+hours schedule 3 location 2 = 
+hours time 3 location 2 = 
+
+## Opening Hours Details for Contact Page (Legacy - Remove after update)
 hours schedule 1 = Thursday, Sunday, Wednesday
 hours time 1 = 2:00 PM - 12:00 AM
 hours schedule 2 = Friday - Saturday
@@ -103,7 +184,7 @@ link maps location 1 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
 link map embed location 2 = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6674479574585!2d-122.31715005547704!3d47.67145640858109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901463e9a7868f%3A0x273f16ffb1e0dc4a!2sThe%20Kraken%20Bar%20%26%20Lounge!5e0!3m2!1sen!2sus!4v1747739575703!5m2!1sen!2sus
 link maps location 2 = https://maps.app.goo.gl/oKJbj79GaVXYX3DM6
 
-## Operating Hours
+## Operating Hours (Legacy - Remove after update)
 day 1 = Monday
 time 1 = 3:00 PM - 1:00 AM
 status 1 = open
@@ -158,6 +239,38 @@ link link 4 = #
 
 name link 5 = Direct Order
 link link 5 = #
+
+## Online Ordering - Location 1
+name link 1 location 1 = DoorDash
+link link 1 location 1 = #
+
+name link 2 location 1 = Uber Eats
+link link 2 location 1 = #
+
+name link 3 location 1 = Grubhub
+link link 3 location 1 = #
+
+name link 4 location 1 = Postmates
+link link 4 location 1 = #
+
+name link 5 location 1 = Direct Order
+link link 5 location 1 = #
+
+## Online Ordering - Location 2
+name link 1 location 2 = Coming Soon
+link link 1 location 2 = #
+
+name link 2 location 2 = Coming Soon
+link link 2 location 2 = #
+
+name link 3 location 2 = Coming Soon
+link link 3 location 2 = #
+
+name link 4 location 2 = Coming Soon
+link link 4 location 2 = #
+
+name link 5 location 2 = Coming Soon
+link link 5 location 2 = #
 
 ## ABOUT PAGE Content
 about page title = About Kraken Bar and Lounge – Seattle's Gritty Punk Rock Dive
