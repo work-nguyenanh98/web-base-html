@@ -550,10 +550,14 @@ our menu description = Discover our full menu of punk-inspired comfort food, cra
 menu intro title = Welcome to Kraken Bar and Lounge
 menu intro description = Seattle's unapologetically punk neighborhood hangout serving up bold bar food until late. Located in the heart of Roosevelt, this is where heavy riffs, high scores, and hard-smashing burgers meet.
 
-menu section title 1 = Featured Items
-menu item name 1 = Kraken Special Burger
-menu item price 1 = $14.00
-menu section description 1 = Our signature dishes that keep customers coming back for more. Each item is crafted with fresh ingredients and bold flavors.
+menu intro title 2 = #
+menu intro description 2 = #
+
+menu intro title 3 = #
+menu intro description 3 = #
+
+menu intro title 4 = #
+menu intro description 4 = #
 
 ## PHOTOS PAGE Content
 
