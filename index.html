@@ -614,12 +614,31 @@
                                 autocomplete="off">
                             <label class="btn location-btn" for="112th-btn" data-bs-toggle="tab"
                                 data-bs-target="#second-location">{name location 2}</label>
+
+                            <!-- Branch 3 -->   
+                            <input type="radio" class="btn-check" name="location-options" id="112th-btn"
+                            autocomplete="off">
+                            <label class="btn location-btn" for="112th-btn" data-bs-toggle="tab"
+                            data-bs-target="#third-location">{name location 3}</label>
+
+                             <!-- Branch 4 -->
+                             <input type="radio" class="btn-check" name="location-options" id="112th-btn"
+                             autocomplete="off">
+                             <label class="btn location-btn" for="112th-btn" data-bs-toggle="tab"
+                             data-bs-target="#fourth-location">{name location 4}</label>
+
+                            <!-- Branch 5 -->
+                            <input type="radio" class="btn-check" name="location-options" id="112th-btn"
+                            autocomplete="off">
+                            <label class="btn location-btn" for="112th-btn" data-bs-toggle="tab"
+                            data-bs-target="#fifth-location">{name location 5}</label>
+
                         </div>
                     </div>
 
                     <!-- Tab Content -->
                     <div class="tab-content" id="locationTabContent">
-                        <!-- S Presa St Location -->
+                        <!-- Location 1 -->
                         <div class="tab-pane fade show active" id="first-location" role="tabpanel">
                             <div class="location-card p-4">
                                 <div class="location-header text-center mb-4">
@@ -746,7 +765,7 @@
                             </div>
                         </div>
 
-                        <!-- S Flores St Location -->
+                        <!-- Location 2 -->
                         <div class="tab-pane fade" id="second-location" role="tabpanel">
                             <div class="location-card p-4">
                                 <div class="location-header text-center mb-4">
@@ -872,6 +891,383 @@
                             </div>
                         </div>
 
+                        <!-- Location 3 -->
+                        <div class="tab-pane fade" id="third-location" role="tabpanel">
+                            <div class="location-card p-4">
+                                <div class="location-header text-center mb-4">
+                                    <div class="location-name fw-bold fs-4 mb-2" style="color:var(--primary-color);">
+                                        {name location 3}</div>
+                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>
+                                        {address location 3}
+                                    </p>
+                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>
+                                        {text location 3 price range}
+                                    </p>
+                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>{phone location 3}
+                                    </p>
+                                    <p class="email mb-3"><i class="bi bi-envelope-fill me-2"></i>{text location 3 email}
+                                    </p>
+
+                                    <div class="social-icons">
+                                        <a rel="nofollow" target="_blank" href="{facebook location 3}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 3} on Facebook"><i class="bi bi-facebook"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{instagram location 3}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 3} on Instagram"><i
+                                                class="bi bi-instagram" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{twitter location 3}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 3} on Twitter"><i class="bi bi-twitter"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{tiktok location 3}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 3} on TikTok"><i class="bi bi-tiktok"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Map (Left Side) -->
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <div class="map-container">
+                                            <div class="map-responsive">
+                                                <iframe src="{link map embed location 3}" width="100%" height="350"
+                                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"
+                                                    title="{name location 3} location map"></iframe>
+                                            </div>
+                                            <button class="map-expand-btn" data-bs-toggle="modal"
+                                                data-bs-target="#mapModal" data-map-url="{link map embed location 3}"
+                                                data-location="{name location 3}"
+                                                data-maps-link="{link maps location 3}">
+                                                <i class="bi bi-arrows-fullscreen"></i>
+                                            </button>
+                                        </div>
+                                        <div class="map-actions mt-2">
+                                            <div class="text-center">
+                                                <p class="small text-muted mb-2"><i class="bi bi-arrows-fullscreen"></i>
+                                                    Click the icon to view a larger map</p>
+                                                <a rel="nofollow" href="{link maps location 3}" target="_blank"
+                                                    class="btn btn-outline-primary btn-sm">
+                                                    <i class="bi bi-box-arrow-up-right me-1"></i>Open in Google Maps
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Opening Hours (Right Side) -->
+                                    <div class="col-md-6">
+                                        <div class="hours-container">
+                                            <div class="hours-header">
+                                                <h4 class="mb-3"><i class="bi bi-clock me-2"></i>Opening Hours</h4>
+                                            </div>
+
+                                            <!-- location 3 Operating Hours -->
+                                            <table class="hours-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                        <th class="status-column">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>{day 1 location 3}</td>
+                                                        <td>{time 1 location 3}</td>
+                                                        <td class="status {status 1 location 3}">{status 1 location 3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 2 location 3}</td>
+                                                        <td>{time 2 location 3}</td>
+                                                        <td class="status {status 2 location 3}">{status 2 location 3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 3 location 3}</td>
+                                                        <td>{time 3 location 3}</td>
+                                                        <td class="status {status 3 location 3}">{status 3 location 3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 4 location 3}</td>
+                                                        <td>{time 4 location 3}</td>
+                                                        <td class="status {status 4 location 3}">{status 4 location 3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 5 location 3}</td>
+                                                        <td>{time 5 location 3}</td>
+                                                        <td class="status {status 5 location 3}">{status 5 location 3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 6 location 3}</td>
+                                                        <td>{time 6 location 3}</td>
+                                                        <td class="status {status 6 location 3}">{status 6 location 3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 7 location 3}</td>
+                                                        <td>{time 7 location 3}</td>
+                                                        <td class="status {status 7 location 3}">{status 7 location 3}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location 4 -->
+                        <div class="tab-pane fade" id="fourth-location" role="tabpanel">
+                            <div class="location-card p-4">
+                                <div class="location-header text-center mb-4">
+                                    <div class="location-name fw-bold fs-4 mb-2" style="color:var(--primary-color);">
+                                        {name location 4}</div>
+                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>
+                                        {address location 4}
+                                    </p>
+                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>
+                                        {text location 4 price range}
+                                    </p>
+                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>{phone location 4}
+                                    </p>
+                                    <p class="email mb-3"><i class="bi bi-envelope-fill me-2"></i>{text location 4 email}
+                                    </p>
+
+                                    <div class="social-icons">
+                                        <a rel="nofollow" target="_blank" href="{facebook location 4}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 4} on Facebook"><i class="bi bi-facebook"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{instagram location 4}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 4} on Instagram"><i
+                                                class="bi bi-instagram" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{twitter location 4}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 4} on Twitter"><i class="bi bi-twitter"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{tiktok location 4}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 4} on TikTok"><i class="bi bi-tiktok"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Map (Left Side) -->
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <div class="map-container">
+                                            <div class="map-responsive">
+                                                <iframe src="{link map embed location 4}" width="100%" height="350"
+                                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"
+                                                    title="{name location 4} location map"></iframe>
+                                            </div>
+                                            <button class="map-expand-btn" data-bs-toggle="modal"
+                                                data-bs-target="#mapModal" data-map-url="{link map embed location 4}"
+                                                data-location="{name location 4}"
+                                                data-maps-link="{link maps location 4}">
+                                                <i class="bi bi-arrows-fullscreen"></i>
+                                            </button>
+                                        </div>
+                                        <div class="map-actions mt-2">
+                                            <div class="text-center">
+                                                <p class="small text-muted mb-2"><i class="bi bi-arrows-fullscreen"></i>
+                                                    Click the icon to view a larger map</p>
+                                                <a rel="nofollow" href="{link maps location 4}" target="_blank"
+                                                    class="btn btn-outline-primary btn-sm">
+                                                    <i class="bi bi-box-arrow-up-right me-1"></i>Open in Google Maps
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Opening Hours (Right Side) -->
+                                    <div class="col-md-6">
+                                        <div class="hours-container">
+                                            <div class="hours-header">
+                                                <h4 class="mb-3"><i class="bi bi-clock me-2"></i>Opening Hours</h4>
+                                            </div>
+
+                                            <!-- location 4 Operating Hours -->
+                                            <table class="hours-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                        <th class="status-column">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>{day 1 location 4}</td>
+                                                        <td>{time 1 location 4}</td>
+                                                        <td class="status {status 1 location 4}">{status 1 location 4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 2 location 4}</td>
+                                                        <td>{time 2 location 4}</td>
+                                                        <td class="status {status 2 location 4}">{status 2 location 4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 3 location 4}</td>
+                                                        <td>{time 3 location 4}</td>
+                                                        <td class="status {status 3 location 4}">{status 3 location 4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 4 location 4}</td>
+                                                        <td>{time 4 location 4}</td>
+                                                        <td class="status {status 4 location 4}">{status 4 location 4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 5 location 4}</td>
+                                                        <td>{time 5 location 4}</td>
+                                                        <td class="status {status 5 location 4}">{status 5 location 4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 6 location 4}</td>
+                                                        <td>{time 6 location 4}</td>
+                                                        <td class="status {status 6 location 4}">{status 6 location 4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 7 location 4}</td>
+                                                        <td>{time 7 location 4}</td>
+                                                        <td class="status {status 7 location 4}">{status 7 location 4}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Location 5 -->
+                        <div class="tab-pane fade" id="fifth-location" role="tabpanel">
+                            <div class="location-card p-4">
+                                <div class="location-header text-center mb-4">
+                                    <div class="location-name fw-bold fs-4 mb-2" style="color:var(--primary-color);">
+                                        {name location 5}</div>
+                                    <p class="location-address mb-2"><i class="bi bi-geo-alt-fill me-2"></i>
+                                        {address location 5}
+                                    </p>
+                                    <p class="price-range mb-2"><i class="bi bi-cash-coin me-2"></i>
+                                        {text location 5 price range}
+                                    </p>
+                                    <p class="phone mb-2"><i class="bi bi-telephone-fill me-2"></i>{phone location 5}
+                                    </p>
+                                    <p class="email mb-3"><i class="bi bi-envelope-fill me-2"></i>{text location 5 email}
+                                    </p>
+
+                                    <div class="social-icons">
+                                        <a rel="nofollow" target="_blank" href="{facebook location 5}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 5} on Facebook"><i class="bi bi-facebook"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{instagram location 5}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 5} on Instagram"><i
+                                                class="bi bi-instagram" aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{twitter location 5}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 5} on Twitter"><i class="bi bi-twitter"
+                                                aria-hidden="true"></i></a>
+                                        <a rel="nofollow" target="_blank" href="{tiktok location 5}"
+                                            class="social-icon-link" rel="noopener"
+                                            aria-label="Follow {name location 5} on TikTok"><i class="bi bi-tiktok"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Map (Left Side) -->
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <div class="map-container">
+                                            <div class="map-responsive">
+                                                <iframe src="{link map embed location 5}" width="100%" height="350"
+                                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"
+                                                    title="{name location 5} location map"></iframe>
+                                            </div>
+                                            <button class="map-expand-btn" data-bs-toggle="modal"
+                                                data-bs-target="#mapModal" data-map-url="{link map embed location 5}"
+                                                data-location="{name location 5}"
+                                                data-maps-link="{link maps location 5}">
+                                                <i class="bi bi-arrows-fullscreen"></i>
+                                            </button>
+                                        </div>
+                                        <div class="map-actions mt-2">
+                                            <div class="text-center">
+                                                <p class="small text-muted mb-2"><i class="bi bi-arrows-fullscreen"></i>
+                                                    Click the icon to view a larger map</p>
+                                                <a rel="nofollow" href="{link maps location 5}" target="_blank"
+                                                    class="btn btn-outline-primary btn-sm">
+                                                    <i class="bi bi-box-arrow-up-right me-1"></i>Open in Google Maps
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Opening Hours (Right Side) -->
+                                    <div class="col-md-6">
+                                        <div class="hours-container">
+                                            <div class="hours-header">
+                                                <h4 class="mb-3"><i class="bi bi-clock me-2"></i>Opening Hours</h4>
+                                            </div>
+
+                                            <!-- location 5 Operating Hours -->
+                                            <table class="hours-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                        <th class="status-column">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>{day 1 location 5}</td>
+                                                        <td>{time 1 location 5}</td>
+                                                        <td class="status {status 1 location 5}">{status 1 location 5}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 2 location 5}</td>
+                                                        <td>{time 2 location 5}</td>
+                                                        <td class="status {status 2 location 5}">{status 2 location 5}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 3 location 5}</td>
+                                                        <td>{time 3 location 5}</td>
+                                                        <td class="status {status 3 location 5}">{status 3 location 5}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 4 location 5}</td>
+                                                        <td>{time 4 location 5}</td>
+                                                        <td class="status {status 4 location 5}">{status 4 location 5}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 5 location 5}</td>
+                                                        <td>{time 5 location 5}</td>
+                                                        <td class="status {status 5 location 5}">{status 5 location 5}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 6 location 5}</td>
+                                                        <td>{time 6 location 5}</td>
+                                                        <td class="status {status 6 location 5}">{status 6 location 5}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{day 7 location 5}</td>
+                                                        <td>{time 7 location 5}</td>
+                                                        <td class="status {status 7 location 5}">{status 7 location 5}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
